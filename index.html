@@ -28,7 +28,8 @@
 </script>
 
 <script type="text/x-handlebars" data-template-name="project">
-    <!--project-->
+    <!--project{{html}}-->
+    
 	{{outlet}}
 </script>
 
@@ -60,7 +61,7 @@
 			{{#linkTo 'project'}}Edit{{/linkTo}}
 		</td>
 		<td colspan=2 rowspan=2 >
-			<iframe srcdoc="<html><body><h1>helloworld</h1></body></html>"></iframe>
+			<iframe frameborder="0" srcdoc="<html><body><h1>helloworld</h1></body></html>"></iframe>
 		</td>
 	</tr>
 </script>

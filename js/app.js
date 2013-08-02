@@ -30,6 +30,14 @@ App.ProjectRoute = Ember.Route.extend({
 	}
 });
 
+App.ProjectIndexRoute = Ember.Route.extend({
+    model: function(params) {
+        console.log("setting project/index model");
+        console.log(this.modelFor("project"));
+        day = this.modelFor("Project");
+    }
+});
+
 App.NewRoute = Ember.Route.extend({
   redirect: function() {
     this.transitionTo('project');
