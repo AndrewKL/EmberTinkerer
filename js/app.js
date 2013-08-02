@@ -17,8 +17,8 @@ App.ProjectRoute = Ember.Route.extend({
 			console.log("creating new project");
 			return App.Project.create({
 				id: 7,
-				html: "<h1>Hello Wrold</h1>",
-				javascript:"alert('this is working');"
+				html: "asdfasdfasdf",//$("#generic-html-body").text(),
+				javascript: $("#generic-javascript").text()
 			});
 		}
 		console.log("loading existing project");
