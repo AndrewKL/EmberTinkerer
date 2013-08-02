@@ -33,7 +33,7 @@ App.ProjectRoute = Ember.Route.extend({
 App.ProjectIndexRoute = Ember.Route.extend({
     model: function(params) {
         console.log("setting project/index model");
-        console.log(this.modelFor("project"));
+        console.log(this);
         day = this.modelFor("Project");
     }
 });
