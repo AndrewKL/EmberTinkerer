@@ -5,10 +5,6 @@
     <title>Ember Tinkerer</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-
-
-    </style>
 </head>
 <body>
 <script type="text/x-handlebars">
@@ -19,7 +15,6 @@
 				|{{#linkTo 'about'}}About{{/linkTo}}
 			</th>
 		</tr>
-		
 		{{outlet}}
 	</table>
 </script>
@@ -33,16 +28,20 @@
 </script>
 
 <script type="text/x-handlebars" data-template-name="project">
+    <!--project-->
+	{{outlet}}
+</script>
+
+<script type="text/x-handlebars" data-template-name="project/index">
 	<tr>
 		<td rowspan=2 class="controls" >
 			{{#linkTo 'run'}}Run{{/linkTo}}
-			
 		</td>
 		<td class="code-input-header">
 			Javascript:
 		</td>
 		<td class="code-input-header" >
-			Html:
+			Html Body:
 		</td>
 	</tr>
     <tr>
@@ -55,23 +54,31 @@
 	</tr>
 </script>
 
-<script type="text/x-handlebars" data-template-name="project.run">
+<script type="text/x-handlebars" data-template-name="run">
 	<tr>
 		<td rowspan=2 class="controls" >
-			{{#linkTo 'edit'}}Edit{{/linkTo}}
+			{{#linkTo 'project'}}Edit{{/linkTo}}
 		</td>
 		<td colspan=2 rowspan=2 >
-			run:
+			<iframe> </iframe>
 		</td>
 	</tr>
 </script>
 
-<script type="text/x-handlebars" data-template-name="about">
+<script type="text" data-template-name="about">
 	<tr>
 		<td colspan=3 rowspan=2 >
 			About Ember Tinkerer
 		</td>
 	</tr>
+</script>
+
+<script id="generic-html-body">
+<h1>Hello Wrold</h1>
+</script>
+
+<script type="text" id="generic-javascript">
+alert("hello world");
 </script>
     
     <script src="js/libs/jquery-1.9.1.js"></script>

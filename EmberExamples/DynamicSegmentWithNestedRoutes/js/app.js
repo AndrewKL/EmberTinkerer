@@ -28,7 +28,9 @@ App.Post = DS.Model.extend({
 
 
 App.Post.FIXTURES = [
-  { id: 1, title: "hamburger" }  
+    { id: 1, title: "hamburger" },
+    { id: 2, title: "cheeseburger" } ,
+    { id: 3, title: "bacon cheeseburger" }  
 ];
 
 App.PostsIndexController = Ember.ArrayController.extend();

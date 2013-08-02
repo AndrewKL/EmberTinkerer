@@ -5,11 +5,10 @@ App = Ember.Application.create({
 App.Router.map(function() {
 	this.resource('index', { path: '/' });
 	this.resource('project', { path: '/project/:project_id' }, function() {
-		//this.resource('edit');
-		this.resource('run');
+		this.resource('run', { path: "/run" });
 	});
-	this.resource('about');
 	this.route('new');
+    this.resource('about');
 });
 
 App.ProjectRoute = Ember.Route.extend({
@@ -18,7 +17,7 @@ App.ProjectRoute = Ember.Route.extend({
 			console.log("creating new project");
 			return App.Project.create({
 				id: 7,
-				html: "<html></html>",
+				html: "<h1>Hello Wrold</h1>",
 				javascript:"alert('this is working');"
 			});
 		}
