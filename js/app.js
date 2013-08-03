@@ -44,21 +44,13 @@ App.RunRoute = Ember.Route.extend({
 });
 
 App.NewRoute = Ember.Route.extend({
-  redirect: function() {
-    this.transitionTo('project');
-  }
+	redirect: function() {
+		this.transitionTo('project');
+	}
 });
-
 
 App.ApplicationView = Ember.View.extend({
-  classNames: ['full']
-});
-
-
-App.IndexRoute = Ember.Route.extend({
-  model: function() {
-    return ['red', 'yellow', 'blue'];
-  }
+	classNames: ['full']
 });
 
 App.Project = Ember.Object.extend({
@@ -69,5 +61,4 @@ App.Project = Ember.Object.extend({
 			javascript:"alert('this is working');"
 		});
 	},
-	
 });
