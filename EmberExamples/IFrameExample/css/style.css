@@ -29,12 +29,7 @@
         td.code-input-header{
 			height:25px;
 		}
-        td.code-input > textarea,iframe{
-            width:99%;
-            height:100%;
-			resize:none;
-        }
-		textarea.code-input {
+        td.code-input > textarea{
             width:99%;
             height:100%;
 			resize:none;

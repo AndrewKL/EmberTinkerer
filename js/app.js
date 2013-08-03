@@ -32,7 +32,13 @@ App.ProjectRoute = Ember.Route.extend({
 
 App.ProjectIndexRoute = Ember.Route.extend({
     model: function(params) {
-        //console.log(this.modelFor ('project'));
+        console.log("project/index");
+        return this.modelFor ('project');
+    }
+});
+App.RunRoute = Ember.Route.extend({
+    model: function(params) {
+		console.log("project/run");
         return this.modelFor ('project');
     }
 });

@@ -1,0 +1,26 @@
+<html style="height:100%">
+<head>
+    <meta charset="utf-8">
+    <title>IFrame Example</title>
+    <link rel="stylesheet" href="css/bootstrap-combined.min.css">
+	<script src="js/libs/jquery-1.9.1.js"></script>
+</head>
+<body>
+	
+	<h1>Iframe Test</h1>
+	<div><textarea id="html-textarea"></textarea></div>
+	<div><input type='button' value="set html" id="set-button" onclick="replaceContent();"/></div>
+	
+	<iframe id="iframe"></iframe>
+	
+	<script>
+		replaceContent = function(){
+			var d = $("#iframe")[0].contentWindow.document; // contentWindow works in IE7 and FF
+			d.open(); d.close(); // must open and close document object to start using it!
+
+			// now start doing normal jQuery:
+			$("body", d).append($('#html-textarea').val());
+		}
+	</script>
+</body>
+</html>

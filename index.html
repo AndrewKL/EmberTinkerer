@@ -28,9 +28,7 @@
 </script>
 
 <script type="text/x-handlebars" data-template-name="project">
-    <!--project{{html}}-->
-    
-	{{outlet}}
+    {{outlet}}
 </script>
 
 <script type="text/x-handlebars" data-template-name="project/index">
@@ -47,10 +45,10 @@
 	</tr>
     <tr>
 		<td class="code-input">
-			{{view Ember.TextArea valueBinding="javascript"}}
+			{{view Ember.TextArea valueBinding="javascript" class="code-input"}}
 		</td>
 		<td class="code-input" style="background-color:grey;">
-			{{view Ember.TextArea valueBinding="html"}}
+			{{view Ember.TextArea valueBinding="html" class="code-input"}}
 		</td>
 	</tr>
 </script>
@@ -61,7 +59,11 @@
 			{{#linkTo 'project'}}Edit{{/linkTo}}
 		</td>
 		<td colspan=2 rowspan=2 >
-			<iframe frameborder="0" srcdoc="<html><body><h1>helloworld</h1></body></html>"></iframe>
+			<iframe
+			  id="run-frame" 
+			  frameborder="0"
+			  {{bindAttr srcDoc="html"}}
+			  "></iframe>
 		</td>
 	</tr>
 </script>
@@ -74,12 +76,13 @@
 	</tr>
 </script>
 
+
 <script type="text" id="generic-html-body">
 <h1>Hello Wrold</h1>
 </script>
 
 <script type="text" id="generic-javascript">
-alert("hello world");
+c("hello world");
 </script>
     
     <script src="js/libs/jquery-1.9.1.js"></script>
