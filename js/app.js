@@ -17,7 +17,7 @@ App.ProjectRoute = Ember.Route.extend({
 			console.log("creating new project");
 			return App.Project.create({
 				id: 7,
-				html: "asdfasdfasdf",//$("#generic-html-body").text(),
+				html: $("#generic-html-body").text(),
 				javascript: $("#generic-javascript").text()
 			});
 		}
@@ -32,9 +32,8 @@ App.ProjectRoute = Ember.Route.extend({
 
 App.ProjectIndexRoute = Ember.Route.extend({
     model: function(params) {
-        console.log("setting project/index model");
-        console.log(this);
-        day = this.modelFor("Project");
+        //console.log(this.modelFor ('project'));
+        return this.modelFor ('project');
     }
 });
 
