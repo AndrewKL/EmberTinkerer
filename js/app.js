@@ -42,6 +42,12 @@ App.RunRoute = Ember.Route.extend({
         return this.modelFor ('project');
     }
 });
+/*App.RunView = Ember.View.extend({
+		Ember.run.next(this, function(){
+			alert("post run");//this.$().isotope({}) // or watever code u want to write
+		});
+	}
+});*///causes rendering to fuck up upon running
 
 App.NewRoute = Ember.Route.extend({
 	redirect: function() {
