@@ -23,8 +23,8 @@ App.ProjectRoute = Ember.Route.extend({
 		}
 		console.log("loading existing project");
 		console.log(params);
-		return $.getJSON(Tinkerer.get+"/"+params.project_id).then(function (response) {
-		    console.log(response);
+		return $.getJSON(Tinkerer.getURL+"/"+params.project_id).then(function (response) {
+		    console.log("getting project w/ id: " + params.project_id);
 		    return App.Project.create(response);
 		});
 	}
@@ -33,7 +33,7 @@ App.IndexRoute = Ember.Route.extend({
     model: function (params) {
         console.log("index route");
         return $.getJSON(Tinkerer.getAll).then(function (response) {
-            console.log(response);
+            console.log("getting all projects");
             var projects = [];
 
             response.forEach(function (project) {

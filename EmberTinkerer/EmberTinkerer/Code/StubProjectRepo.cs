@@ -46,8 +46,8 @@ namespace EmberTinkerer.Code
                 new Project()
                 {
                     id =2,
-                    description = "test description",
-                    name = "hello world",
+                    description = "another test description",
+                    name = "MEMEMEMEMEMEMEMEME project",
                     html = "<h1>hello world</h1>",
                     javascript = "alert('hello world');"
                 },
@@ -55,14 +55,14 @@ namespace EmberTinkerer.Code
                 {
                     id =3,
                     description = "test description",
-                    name = "hello world2",
+                    name = "RAWR",
                     html = "<h1>hello world</h1>",
                     javascript = "alert('hello world');"
                 },
                 new Project()
                 {
                     id =4,
-                    description = "test description",
+                    description = "a simple application",
                     name = "hello world3",
                     html = "<h1>hello world</h1>",
                     javascript = "alert('hello world');"
