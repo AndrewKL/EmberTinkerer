@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
-using System.Web.Mvc;
 using EmberTinkerer.Code;
 using EmberTinkerer.Models;
 
@@ -30,11 +29,13 @@ namespace EmberTinkerer.Controllers
             _repo.Update(project);
         }
 
+        [HttpGet]
         public IEnumerable<Project> SearchByName(string text)
         {
             return _repo.SearchByName(text);
         }
 
+        [HttpPost]
         public void Add(Project project)
         {
             _repo.Add(project);
