@@ -52,10 +52,12 @@
     {{outlet}}
 </script>
 
-<script type="text/x-handlebars" data-template-name="project/index">
+    <script type="text/x-handlebars" data-template-name="project/index">
 	<tr>
 		<td rowspan=2 class="controls" >
+            Project: {{name}}
 			{{#linkTo 'run'}}Run{{/linkTo}}
+            Save
 		</td>
 		<td class="code-input-header">
 			Javascript:

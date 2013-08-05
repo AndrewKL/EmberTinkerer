@@ -22,10 +22,10 @@ App.ProjectRoute = Ember.Route.extend({
 			});
 		}
 		console.log("loading existing project");
-		return App.Project.create({
-			id: 7,
-			html: "<html></html>",
-			javascript:"alert('this is working');"
+		console.log(params);
+		return $.getJSON(Tinkerer.get+"/"+params.project_id).then(function (response) {
+		    console.log(response);
+		    return App.Project.create(response);
 		});
 	}
 });
