@@ -13,7 +13,7 @@ namespace EmberTinkerer.Controllers
     {
         //
         // GET: /Project/
-        public static StubProjectRepo _repo;
+        public static StubProjectRepo _repo = new StubProjectRepo();
 
         public IEnumerable<Project> GetAll()
         {
