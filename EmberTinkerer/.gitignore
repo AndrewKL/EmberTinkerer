@@ -25,9 +25,13 @@ bin/
 csx/
 obj/
 
-embertinkerer/bin/
-embertinkerer/csx/
-embertinkerer/obj/
+EmberTinkerer\bin
+EmberTinkerer\csx
+EmberTinkerer\obj
+
+EmberTinkerer/bin
+EmberTinkerer/csx
+EmberTinkerer/obj
 
 # Windows Azure Publish Settings contain security keys for accessing your Windows Azure account
 .publishsettings
