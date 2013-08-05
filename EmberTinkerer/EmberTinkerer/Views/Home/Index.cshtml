@@ -14,11 +14,11 @@
     <script>
         Tinkerer = window.Tinkerer || {};
 
-        Tinkerer.getURL = '@Url.Action("Get","Project")';
-        Tinkerer.getAll = '@Url.Action("GetAll","Project")';
-        Tinkerer.searchURL = '@Url.Action("SearchByName","Project")';
-        Tinkerer.updateURL = '@Url.Action("Update","Project")';
-        Tinkerer.addURL = '@Url.Action("Add","Project")';
+        Tinkerer.getURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "Get"})';
+        Tinkerer.getAll = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "GetAll"})';
+        Tinkerer.searchURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "SearchByName"})';
+        Tinkerer.updateURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "Update"})';
+        Tinkerer.addURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "Add"})';
     </script>
 </head>
 <body>
@@ -34,10 +34,16 @@
 	</table>
 </script>
 
-<script type="text/x-handlebars" data-template-name="index">
+    <script type="text/x-handlebars" data-template-name="index">
 	<tr>
-		<td colspan=3 rowspan=2 >
+		<td class="index-wrapper" colspan=3 rowspan=2 >
 			{{#linkTo 'new'}}Start a new EmberJS project{{/linkTo}}
+            <ul>
+                {{#each project in model}}
+                    <li>{{#linkTo project.index project}}{{project.name}}{{/linkTo}}</li>
+                {{/each}}
+            </ul>
+            
 		</td>
 	</tr>
 </script>

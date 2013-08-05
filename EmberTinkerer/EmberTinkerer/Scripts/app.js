@@ -29,10 +29,25 @@ App.ProjectRoute = Ember.Route.extend({
 		});
 	}
 });
+App.IndexRoute = Ember.Route.extend({
+    model: function (params) {
+        console.log("index route");
+        return $.getJSON(Tinkerer.getAll).then(function (response) {
+            console.log(response);
+            var projects = [];
+
+            response.forEach(function (project) {
+                projects.push(App.Project.create(project));
+            });
+
+            return projects;
+        });
+    }
+});
 
 App.ProjectIndexRoute = Ember.Route.extend({
     model: function(params) {
-        console.log("project/index");
+        console.log("project/index route");
         return this.modelFor ('project');
     }
 });
