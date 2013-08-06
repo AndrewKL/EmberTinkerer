@@ -16,12 +16,13 @@ namespace EmberTinkerer.Code
         public IEnumerable<Project> GetAll()
         {
             return Projects;
-        } 
-        
-        public void Add(Project project)
+        }
+
+        public Project Add(Project project)
         {
             project.id = Projects.Count + 1;
             Projects.Add(project);
+            return project;
         }
         public void Update(Project project)
         {
@@ -101,5 +102,13 @@ namespace EmberTinkerer.Code
                 },
 
             };
+
+        public Project Create()
+        {
+            var project = new Project();
+            project.id = Projects.Count + 1;
+            Projects.Add(project);
+            return project;
+        }
     }
 }

@@ -36,9 +36,15 @@ namespace EmberTinkerer.Controllers
         }
 
         [HttpPost]
-        public void Add(Project project)
+        public Project Add(Project project)
         {
-            _repo.Add(project);
+            return _repo.Add(project);
+        }
+
+        [HttpGet]
+        public Project Create()
+        {
+            return _repo.Create();
         }
     }
 }

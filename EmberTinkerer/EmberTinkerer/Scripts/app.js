@@ -16,7 +16,7 @@ App.ProjectRoute = Ember.Route.extend({
 		if(params.project_id == undefined){
 			console.log("creating new project");
 			return App.Project.create({
-				id: 7,
+				id: 0,
 				html: $("#generic-html-body").text(),
 				javascript: $("#generic-javascript").text()
 			});
@@ -51,6 +51,12 @@ App.ProjectIndexRoute = Ember.Route.extend({
         return this.modelFor ('project');
     }
 });
+App.ProjectIndexController = Ember.ObjectController.extend({
+    save: function() {
+        console.log(this.get('model'));
+        this.get('model').update();
+    }
+});
 App.RunRoute = Ember.Route.extend({
     model: function(params) {
 		console.log("project/run");
@@ -76,10 +82,24 @@ App.ApplicationView = Ember.View.extend({
 
 App.Project = Ember.Object.extend({
 	find: function(id){
-		return App.Project.create({
-			id: id,
-			html: "<html></html>",
-			javascript:"alert('this is working');"
-		});
+	    $.getJSON(Tinkerer.getURL + "/" + id).then(function (response) {
+	        console.log("project w/ id: " + id);
+	        return App.Project.create(response);
+	    });
+	},
+	update: function() {
+	    var data = {
+	        id: this.id,
+	        name: this.name,
+	        description: this.description,
+	        html: this.html,
+	        javascript: this.javascript,
+	    };
+	    if (this.id == 0) {
+	        $.post(Tinkerer.addURL, data);
+	    } else {
+	        $.post(Tinkerer.updateURL, data);
+	    }
+	    
 	},
 });
