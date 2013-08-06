@@ -96,8 +96,23 @@ namespace EmberTinkerer.Code
                 {
                     id =8,
                     description = "test description",
-                    name = "hello world7",
-                    html = "<h1>hello world</h1>",
+                    name = "Blink Example",
+                    html = @"<h1><blink>Blinking Text</blink></h1>
+
+<script type='text/javascript'>
+  function blink() {
+    var blinks = document.getElementsByTagName('blink');
+    for (var i = blinks.length - 1; i >= 0; i--) {
+      var s = blinks[i];
+      s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+    }
+    window.setTimeout(blink, 1000);
+  }
+  if (document.addEventListener) document.addEventListener('DOMContentLoaded', blink, false);
+  else if (window.addEventListener) window.addEventListener('load', blink, false);
+  else if (window.attachEvent) window.attachEvent('onload', blink);
+  else window.onload = blink;
+</script>",
                     javascript = "alert('hello world');"
                 },
 
