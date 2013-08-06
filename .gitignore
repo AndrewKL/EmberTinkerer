@@ -42,7 +42,6 @@ obj/
 # NuGet
 # Also consider letting NuGet automatically restore missing packages for you:
 ## http://docs.nuget.org/docs/workflows/using-nuget-without-committing-packages/
-packages/
 
 # ReSharper
 _ReSharper*/
