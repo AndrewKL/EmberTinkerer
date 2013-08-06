@@ -103,7 +103,10 @@ App.Project = Ember.Object.extend({
 	        javascript: this.javascript,
 	    };
 	    if (this.id == 0) {
-	        $.post(Tinkerer.addURL, data);
+	        var project = this;
+	        $.post(Tinkerer.addURL, data, function (data) {
+	            project.id = data.id;
+	        });
 	    } else {
 	        $.post(Tinkerer.updateURL, data);
 	    }
