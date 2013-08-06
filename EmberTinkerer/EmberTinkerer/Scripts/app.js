@@ -14,26 +14,26 @@ App.Router.map(function() {
 App.ProjectRoute = Ember.Route.extend({
 	model: function(params) {
 		if(params.project_id == undefined){
-			console.log("creating new project");
+			//console.log("creating new project");
 			return App.Project.create({
 				id: 0,
 				html: $("#generic-html-body").text(),
 				javascript: $("#generic-javascript").text()
 			});
 		}
-		console.log("loading existing project");
-		console.log(params);
+		//console.log("loading existing project");
+		//console.log(params);
 		return $.getJSON(Tinkerer.getURL+"/"+params.project_id).then(function (response) {
-		    console.log("getting project w/ id: " + params.project_id);
+		    //console.log("getting project w/ id: " + params.project_id);
 		    return App.Project.create(response);
 		});
 	}
 });
 App.IndexRoute = Ember.Route.extend({
     model: function (params) {
-        console.log("index route");
+        //console.log("index route");
         return $.getJSON(Tinkerer.getAll).then(function (response) {
-            console.log("getting all projects");
+            //console.log("getting all projects");
             var projects = [];
 
             response.forEach(function (project) {
@@ -47,19 +47,24 @@ App.IndexRoute = Ember.Route.extend({
 
 App.ProjectIndexRoute = Ember.Route.extend({
     model: function(params) {
-        console.log("project/index route");
+        //console.log("project/index route");
         return this.modelFor ('project');
     }
 });
+
 App.ProjectIndexController = Ember.ObjectController.extend({
     save: function() {
-        console.log(this.get('model'));
+        //console.log(this.get('model'));
         this.get('model').update();
+    },
+    editDescription: function(){
+        alert("edit description");
     }
 });
+
 App.RunRoute = Ember.Route.extend({
     model: function(params) {
-		console.log("project/run");
+		//console.log("project/run");
         return this.modelFor ('project');
     }
 });
@@ -83,7 +88,7 @@ App.ApplicationView = Ember.View.extend({
 App.Project = Ember.Object.extend({
 	find: function(id){
 	    $.getJSON(Tinkerer.getURL + "/" + id).then(function (response) {
-	        console.log("project w/ id: " + id);
+	        //console.log("project w/ id: " + id);
 	        return App.Project.create(response);
 	    });
 	},

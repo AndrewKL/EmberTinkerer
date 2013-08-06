@@ -54,9 +54,15 @@
     <script type="text/x-handlebars" data-template-name="project/index">
 	<tr>
 		<td rowspan=2 class="controls" >
-            Project: {{name}}<br />
-			{{#linkTo 'run'}}Run{{/linkTo}}<br />
-            <button {{action 'save'}}>Save</button>
+            {{#linkTo 'run'}}Run{{/linkTo}}<br />
+            <hr />
+            <b>{{name}}</b><br />
+            description: {{description}}<br />
+			<button {{action 'editDescription'}}>Edit Description</button><br />
+            <button {{action 'save'}}>Save</button><br />
+            <hr />
+            {{view Ember.TextField valueBinding="name"}}
+            {{view Ember.TextArea valueBinding="dsecription"}}
 		</td>
 		<td class="code-input-header">
 			Javascript:
