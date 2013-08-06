@@ -53,12 +53,16 @@ App.ProjectIndexRoute = Ember.Route.extend({
 });
 
 App.ProjectIndexController = Ember.ObjectController.extend({
+    editMode: false,
+    
     save: function() {
         //console.log(this.get('model'));
         this.get('model').update();
+        this.set("editMode", false);
     },
     editDescription: function(){
-        alert("edit description");
+        //alert("edit description");
+        this.set("editMode", true);
     }
 });
 

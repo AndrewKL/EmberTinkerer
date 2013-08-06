@@ -56,13 +56,17 @@
 		<td rowspan=2 class="controls" >
             {{#linkTo 'run'}}Run{{/linkTo}}<br />
             <hr />
+            {{#if editMode}}
+            Name: {{view Ember.TextField valueBinding="name"}}
+            Description: {{view Ember.TextArea valueBinding="description"}}
+            <button {{action 'save'}}>Save</button><br />
+            {{else}}
             <b>{{name}}</b><br />
             description: {{description}}<br />
 			<button {{action 'editDescription'}}>Edit Description</button><br />
             <button {{action 'save'}}>Save</button><br />
-            <hr />
-            {{view Ember.TextField valueBinding="name"}}
-            {{view Ember.TextArea valueBinding="description"}}
+            {{/if}}
+            
 		</td>
 		<td class="code-input-header">
 			Javascript:
