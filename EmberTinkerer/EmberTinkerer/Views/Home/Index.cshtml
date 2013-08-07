@@ -34,7 +34,7 @@
 	</table>
 </script>
 
-    <script type="text/x-handlebars" data-template-name="index">
+<script type="text/x-handlebars" data-template-name="index">
 	<tr>
 		<td class="index-wrapper" colspan=3 rowspan=2 >
 			{{#linkTo 'new'}}Start a new EmberJS project{{/linkTo}}
@@ -51,7 +51,7 @@
     {{outlet}}
 </script>
 
-    <script type="text/x-handlebars" data-template-name="project/index">
+<script type="text/x-handlebars" data-template-name="project/index">
 	<tr>
 		<td rowspan=2 class="controls" >
             {{#linkTo 'run'}}Run{{/linkTo}}<br />
@@ -94,7 +94,7 @@
 			<iframe
 			  id="run-frame" 
 			  frameborder="0"
-			  {{bindAttr srcDoc="html"}}
+			  {{bindAttr srcDoc="generateFullHtml"}}
 			  "></iframe>
 		</td>
 	</tr>
@@ -107,7 +107,25 @@
 		</td>
 	</tr>
 </script>
+    
+<script type="text" id="full-html-body">
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ember Tinkerer</title>
+        <link rel="stylesheet" href="~/styles/normalize.css">
+        <link rel="stylesheet" href="~/styles/style.css">
 
+
+    </head>
+    <body>
+        {{html}}
+        
+        {{ javascript }}
+        
+    </body>
+    </html>
+</script>
 
 <script type="text" id="generic-html-body">
 <h1>Hello Wrold</h1>

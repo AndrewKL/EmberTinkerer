@@ -114,4 +114,11 @@ App.Project = Ember.Object.extend({
 	    }
 	    
 	},
+	
+    generateFullHtml: function() {
+        var source = $("#full-html-template").html();
+        var template = Handlebars.compile(source);
+        
+        return template( this );
+    }
 });
