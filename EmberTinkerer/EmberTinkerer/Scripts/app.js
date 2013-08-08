@@ -66,7 +66,7 @@ App.ProjectIndexController = Ember.ObjectController.extend({
 
 App.RunRoute = Ember.Route.extend({
     model: function(params) {
-		//console.log("project/run");
+        console.log(this.modelFor('project'));
         return this.modelFor ('project');
     }
 });
@@ -122,5 +122,5 @@ App.Project = Ember.Object.extend({
         var template = Handlebars.compile(source);
         
         return template( this );
-    }.property()
+    }.property("javascript","html")
 });
