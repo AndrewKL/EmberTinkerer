@@ -124,3 +124,10 @@ App.Project = Ember.Object.extend({
         return template( this );
     }.property("javascript","html")
 });
+
+Handlebars.registerHelper('scriptBlock', function (script) {
+    return '<script>' + script + '</script>';
+});
+Handlebars.registerHelper('scriptFromSource', function (source) {
+    return '<script src="'+source+'"></script>';
+});
