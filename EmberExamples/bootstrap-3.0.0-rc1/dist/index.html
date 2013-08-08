@@ -1,0 +1,96 @@
+<html>
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>Test Layout</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <!-- Documentation extras -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+    <script src="../assets/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            overflow: hidden;
+            height: 100%; 
+            max-height: 100%; 
+        }
+        div.main-container{
+            position: fixed;
+            top:50px;
+            bottom:0px;
+            right:0px;
+            left:0px;
+        }
+        div.main-container > div.col-1{
+            background-color:blue;
+            height:100%;
+        }
+        div.main-container > div.col-11{
+            background-color:green;
+            height:100%;
+        }
+        div.main-container > div.col-11 > div.col-6{
+            background-color:grey;
+            height:100%;
+        }
+    </style>
+</head>
+
+<body>
+</body>
+    <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="../" class="navbar-brand">Ember Tinkerer</a>
+        <div class="nav-collapse collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="../getting-started">Search</a></li>
+                <li><a href="../css">About</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-container row"style="background-color:red">
+        <div class="col-1">
+            <input type="button" class="btn" value="Run" />
+        </div>
+        <div class="col-11">
+            <div class="col-6">
+                test
+            </div>
+            <div class="col-6">
+                test
+            </div>
+        </div>
+        <!--<div class="control-bar">
+            run<br/>edit
+        </div>
+        <div class="input-area">
+            input area
+        </div>
+        <div class="input-area">
+            input area
+        </div>-->
+    </div>
+    <script src="./js/jquery-1.10.2.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</body>
