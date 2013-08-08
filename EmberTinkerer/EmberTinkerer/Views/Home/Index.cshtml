@@ -108,7 +108,7 @@
 	</tr>
 </script>
     
-<script type="text" id="full-html-body">
+<script type="text" id="full-html-template">
  <html>
     <head>
         <meta charset="utf-8">
@@ -119,9 +119,9 @@
 
     </head>
     <body>
-        {{html}}
+        {{{html}}}
         
-        {{ javascript }}
+        {{{ javascript }}}
         
     </body>
     </html>
@@ -132,7 +132,7 @@
 </script>
 
 <script type="text" id="generic-javascript">
-c("hello world");
+alert("hello world");
 </script>
     
     <script src="~/scripts/include/jquery-1.9.1.js"></script>
