@@ -39,16 +39,36 @@
             left:0px;
         }
         div.main-container > div.col-1{
-            background-color:blue;
+            background-color:FF683A;
             height:100%;
+        }
+        div.main-container > div.col-1 > .btn{
+            margin: 5px;
+            width:100%;
+            box-sizing: border-box;         /* For IE and modern versions of Chrome */
+            -moz-box-sizing: border-box;    /* For Firefox                          */
+            -webkit-box-sizing: border-box; /* For Safari                           */ 
         }
         div.main-container > div.col-11{
-            background-color:green;
-            height:100%;
-        }
-        div.main-container > div.col-11 > div.col-6{
             background-color:grey;
             height:100%;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        div.main-container > div.col-11 > div.col-6{
+            padding-right: 10px;
+            padding-left: 0px;
+            padding-top: 5px;
+            background-color:grey;
+            height:100%;
+        }
+        div.main-container > div.col-11 > div.col-6 > textarea{
+            width:100%;
+            height:100%; 
+            box-sizing: border-box;         /* For IE and modern versions of Chrome */
+            -moz-box-sizing: border-box;    /* For Firefox                          */
+            -webkit-box-sizing: border-box; /* For Safari                           */
+            resize: none;
         }
     </style>
 </head>
@@ -75,10 +95,10 @@
         </div>
         <div class="col-11">
             <div class="col-6">
-                test
+                <textarea></textarea>
             </div>
             <div class="col-6">
-                test
+                <textarea></textarea>
             </div>
         </div>
         <!--<div class="control-bar">
