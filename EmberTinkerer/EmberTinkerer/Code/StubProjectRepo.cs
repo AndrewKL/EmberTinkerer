@@ -88,8 +88,36 @@ namespace EmberTinkerer.Code
                 {
                     id =7,
                     description = "test description",
-                    name = "hello world6",
-                    html = "<h1>hello world</h1>",
+                    name = "boot strap example",
+                    html = @"<div class='navbar navbar-inverse navbar-fixed-top bs-docs-nav'>
+  <div class='container'>
+    <button class='navbar-toggle' type='button' data-toggle='collapse' data-target='.bs-navbar-collapse'>
+      <span class='icon-bar'></span>
+      <span class='icon-bar'></span>
+      <span class='icon-bar'></span>
+    </button>
+    <a href='../' class='navbar-brand'>Bootstrap 3 RC1</a>
+    <div class='nav-collapse collapse bs-navbar-collapse'>
+      <ul class='nav navbar-nav'>
+        <li class='active'>
+          <a href='../getting-started'>Getting started</a>
+        </li>
+        <li>
+          <a href='../css'>CSS</a>
+        </li>
+        <li>
+          <a href='../components'>Components</a>
+        </li>
+        <li>
+          <a href='../javascript'>JavaScript</a>
+        </li>
+        <li>
+          <a href='../customize'>Customize</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>",
                     javascript = "alert('hello world');"
                 },
                 new Project()
