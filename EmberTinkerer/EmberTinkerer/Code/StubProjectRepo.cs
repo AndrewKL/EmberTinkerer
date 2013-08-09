@@ -97,10 +97,10 @@ namespace EmberTinkerer.Code
                     id =8,
                     description = "test description",
                     name = "Blink Example",
-                    html = @"<h1><blink>Blinking Text</blink></h1>
+                    html = @"<h1><blink>Blinking Text</blink></h1>",
+                    javascript = @"alert('javascript test');
 
-<script type='text/javascript'>
-  function blink() {
+ function blink() {
     var blinks = document.getElementsByTagName('blink');
     for (var i = blinks.length - 1; i >= 0; i--) {
       var s = blinks[i];
@@ -112,8 +112,8 @@ namespace EmberTinkerer.Code
   else if (window.addEventListener) window.addEventListener('load', blink, false);
   else if (window.attachEvent) window.attachEvent('onload', blink);
   else window.onload = blink;
-</script>",
-                    javascript = "alert('hello world');"
+
+$('body').append('<blink>jquery test</blink>');;"
                 },
 
             };
