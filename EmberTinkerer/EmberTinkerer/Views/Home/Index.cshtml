@@ -54,14 +54,20 @@
                 <p>{{#linkTo 'new' classNames="btn btn-primary btn-large"}}Start a new EmberJS project{{/linkTo}}</p>
             </div>
         </div>
-        <div class="container">
+        <div class="container search-area">
+            <div class="input-group span12">
+                <input type="text" class="form-control">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                </span>
+            </div>
             {{#linkTo 'new'}}Start a new EmberJS project{{/linkTo}}
             <ul>
                 {{#each project in model}}
                     <li>{{#linkTo project.index project}}{{project.name}}{{/linkTo}}</li>
                 {{/each}}
             </ul>
-        </div>    
+        </div>
     </script>
 
     <script type="text/x-handlebars" data-template-name="project">
