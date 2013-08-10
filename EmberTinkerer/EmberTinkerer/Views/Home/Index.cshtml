@@ -61,13 +61,12 @@
                     <li>{{#linkTo project.index project}}{{project.name}}{{/linkTo}}</li>
                 {{/each}}
             </ul>
-        </div>
-    
+        </div>    
     </script>
 
-<script type="text/x-handlebars" data-template-name="project">
-    {{outlet}}
-</script>
+    <script type="text/x-handlebars" data-template-name="project">
+        {{outlet}}
+    </script>
 
     <script type="text/x-handlebars" data-template-name="project/index">
         <div class="main-container row">
@@ -82,7 +81,6 @@
 			        <button  class="btn" {{action 'editDescription'}}>Edit Description</button><br />
                     <button  class="btn" {{action 'save'}}>Save</button><br />
                 {{/if}}
-
             </div>
             <div class="col-10">
                 <div class="col-6">
