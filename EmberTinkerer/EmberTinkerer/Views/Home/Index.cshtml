@@ -14,81 +14,7 @@
 
     <title>Ember Tinkerer</title>
     <link href="~/styles/bootstrap.css" rel="stylesheet">
-    <!--<link rel="stylesheet" href="~/styles/style.css">-->
-    
-    <style>
-        body , .full{
-            margin: 0;
-            padding: 0;
-            border: 0;
-            overflow: hidden;
-            height: 100%; 
-            min-height: 100%; 
-        }
-        .full{
-            margin: 0;
-            padding: 0;
-            border: 0;
-            overflow: hidden;
-            height: 100%; 
-            max-height: 100%; 
-        }
-
-        /***for run and edit project******************************/
-        div.main-container{
-            position: fixed;
-            top:50px;
-            bottom:0px;
-            right:0px;
-            left:0px;
-        }
-        div.main-container > div.col-2{
-            background-color:#FF683A;
-            height:100%;
-        }
-        div.main-container > div > .btn{
-            margin: 5px;
-            width:100%;
-            box-sizing: border-box;         /* For IE and modern versions of Chrome */
-            -moz-box-sizing: border-box;    /* For Firefox                          */
-            -webkit-box-sizing: border-box; /* For Safari                           */ 
-        }
-        div.main-container > div > iframe{
-            margin: 5px;
-            height: 100%;
-            width:100%;
-            box-sizing: border-box;         /* For IE and modern versions of Chrome */
-            -moz-box-sizing: border-box;    /* For Firefox                          */
-            -webkit-box-sizing: border-box; /* For Safari                           */ 
-        }
-        div.main-container > div.col-10{
-            background-color:grey;
-            height:100%;
-            padding-right: 10px;
-            padding-left: 10px;
-        }
-        div.main-container > div.col-10 > div.col-6{
-            padding-right: 10px;
-            padding-left: 0px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            background-color:grey;
-            height:100%;
-        }
-        div.main-container > div.col-10 > div.col-6 > textarea{
-            width:100%;
-            height:100%; 
-            box-sizing: border-box;         /* For IE and modern versions of Chrome */
-            -moz-box-sizing: border-box;    /* For Firefox                          */
-            -webkit-box-sizing: border-box; /* For Safari                           */
-            resize: none;
-        }
-
-        /***for the front page***********/
-        .full > .container{
-            top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="~/styles/style.css">
 
     <script>
         Tinkerer = window.Tinkerer || {};
@@ -121,6 +47,13 @@
 
     <script type="text/x-handlebars" data-template-name="index">
         <div style="height:50px;"></div>
+        <div class="jumbotron masthead">
+            <div class="container">
+                <h1>Ember FireStarter</h1>
+                <p>An easy way to get started with Emberjs by combining everything you need to get started on a web app all wrapped up in one easy to use site</p>
+                <p>{{#linkTo 'new' classNames="btn btn-primary btn-large"}}Start a new EmberJS project{{/linkTo}}</p>
+            </div>
+        </div>
         <div class="container">
             {{#linkTo 'new'}}Start a new EmberJS project{{/linkTo}}
             <ul>
