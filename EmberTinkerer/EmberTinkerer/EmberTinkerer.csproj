@@ -138,6 +138,7 @@
     <Content Include="Scripts\include\handlebars-1.0.0-rc.4.js" />
     <Content Include="Scripts\include\jquery-1.10.2.js" />
     <Content Include="Scripts\include\jquery-1.9.1.js" />
+    <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\normalize.css" />
     <Content Include="Styles\style.css" />
     <Content Include="Web.config" />
