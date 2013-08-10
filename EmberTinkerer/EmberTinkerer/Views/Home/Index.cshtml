@@ -23,8 +23,18 @@
             border: 0;
             overflow: hidden;
             height: 100%; 
+            min-height: 100%; 
+        }
+        .full{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            overflow: hidden;
+            height: 100%; 
             max-height: 100%; 
         }
+
+        /***for run and edit project******************************/
         div.main-container{
             position: fixed;
             top:50px;
@@ -36,8 +46,16 @@
             background-color:#FF683A;
             height:100%;
         }
-        div.main-container > div.col-2 > .btn{
+        div.main-container > div > .btn{
             margin: 5px;
+            width:100%;
+            box-sizing: border-box;         /* For IE and modern versions of Chrome */
+            -moz-box-sizing: border-box;    /* For Firefox                          */
+            -webkit-box-sizing: border-box; /* For Safari                           */ 
+        }
+        div.main-container > div > iframe{
+            margin: 5px;
+            height: 100%;
             width:100%;
             box-sizing: border-box;         /* For IE and modern versions of Chrome */
             -moz-box-sizing: border-box;    /* For Firefox                          */
@@ -64,6 +82,11 @@
             -moz-box-sizing: border-box;    /* For Firefox                          */
             -webkit-box-sizing: border-box; /* For Safari                           */
             resize: none;
+        }
+
+        /***for the front page***********/
+        .full > .container{
+            top: 50px;
         }
     </style>
 
@@ -97,7 +120,8 @@
     </script>
 
     <script type="text/x-handlebars" data-template-name="index">
-        <div class="main-container row">
+        <div style="height:50px;"></div>
+        <div class="container">
             {{#linkTo 'new'}}Start a new EmberJS project{{/linkTo}}
             <ul>
                 {{#each project in model}}
@@ -105,6 +129,7 @@
                 {{/each}}
             </ul>
         </div>
+    
     </script>
 
 <script type="text/x-handlebars" data-template-name="project">
@@ -141,12 +166,13 @@
     <script type="text/x-handlebars" data-template-name="run">
         <div class="main-container row">
             <div class="col-2">
-                {{#linkTo 'project'}}Edit{{/linkTo}}
+                {{#linkTo 'project' classNames="btn btn-default"}}Edit{{/linkTo}}
             </div>
             <div class="col-10">
                 <iframe
                     id="run-frame" 
                     frameborder="0"
+                    src=""
                     {{bindAttr srcDoc="generateFullHtml"}}></iframe>
             </div>
         </div>
