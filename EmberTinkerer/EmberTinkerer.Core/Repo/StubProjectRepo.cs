@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using EmberTinkerer.Models;
+using EmberTinkerer.Core.Documents;
 
-namespace EmberTinkerer.Code
+namespace EmberTinkerer.Core.Repo
 {
     public class StubProjectRepo
     {

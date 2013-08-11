@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
-using EmberTinkerer.Code;
-using EmberTinkerer.Models;
+using EmberTinkerer.Core.Documents;
+using EmberTinkerer.Core.Repo;
 
 namespace EmberTinkerer.Controllers
 {

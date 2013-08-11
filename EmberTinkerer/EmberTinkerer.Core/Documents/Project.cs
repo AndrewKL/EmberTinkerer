@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace EmberTinkerer.Models
+namespace EmberTinkerer.Core.Documents
 {
     public class Project
     {
