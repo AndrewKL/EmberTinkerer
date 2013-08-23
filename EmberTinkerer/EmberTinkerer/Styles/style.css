@@ -48,22 +48,22 @@ div.main-container > div > iframe {
     -webkit-box-sizing: border-box; /* For Safari                           */
 }
 
-    div.main-container > div.col-10 {
-        background-color: grey;
-        height: 100%;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
+div.main-container > div.col-10 {
+    background-color: grey;
+    height: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
 
-        div.main-container > div.col-10 > div.col-6 
-        {
-            padding-right: 10px;
-            padding-left: 0px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            background-color: grey;
-            height: 100%;
-        }
+div.main-container > div.col-10 > div.col-6 
+{
+    padding-right: 10px;
+    padding-left: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: grey;
+    height: 100%;
+}
 
 div.main-container > div.col-10 > div.col-6 > textarea {
     width: 100%;
