@@ -25,27 +25,28 @@ div.main-container {
     left: 0px;
 }
 
-    div.main-container > div.col-2 {
-        background-color: #FF683A;
-        height: 100%;
-    }
+div.main-container > div.col-2 
+{
+    background-color: #FF683A;
+    height: 100%;
+}
 
-    div.main-container > div > .btn {
-        margin: 5px;
-        width: 100%;
-        box-sizing: border-box; /* For IE and modern versions of Chrome */
-        -moz-box-sizing: border-box; /* For Firefox                          */
-        -webkit-box-sizing: border-box; /* For Safari                           */
-    }
+div.main-container > div > .btn {
+    margin: 5px;
+    width: 100%;
+    box-sizing: border-box; /* For IE and modern versions of Chrome */
+    -moz-box-sizing: border-box; /* For Firefox                          */
+    -webkit-box-sizing: border-box; /* For Safari                           */
+}
 
-    div.main-container > div > iframe {
-        margin: 5px;
-        height: 100%;
-        width: 100%;
-        box-sizing: border-box; /* For IE and modern versions of Chrome */
-        -moz-box-sizing: border-box; /* For Firefox                          */
-        -webkit-box-sizing: border-box; /* For Safari                           */
-    }
+div.main-container > div > iframe {
+    margin: 5px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* For IE and modern versions of Chrome */
+    -moz-box-sizing: border-box; /* For Firefox                          */
+    -webkit-box-sizing: border-box; /* For Safari                           */
+}
 
     div.main-container > div.col-10 {
         background-color: grey;
@@ -54,7 +55,8 @@ div.main-container {
         padding-left: 10px;
     }
 
-        div.main-container > div.col-10 > div.col-6 {
+        div.main-container > div.col-10 > div.col-6 
+        {
             padding-right: 10px;
             padding-left: 0px;
             padding-top: 5px;
