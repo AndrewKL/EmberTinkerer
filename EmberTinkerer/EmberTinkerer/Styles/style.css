@@ -63,14 +63,20 @@ div.main-container {
             height: 100%;
         }
 
-            div.main-container > div.col-10 > div.col-6 > textarea {
-                width: 100%;
-                height: 100%;
-                box-sizing: border-box; /* For IE and modern versions of Chrome */
-                -moz-box-sizing: border-box; /* For Firefox                          */
-                -webkit-box-sizing: border-box; /* For Safari                           */
-                resize: none;
-            }
+div.main-container > div.col-10 > div.col-6 > textarea {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; /* For IE and modern versions of Chrome */
+    -moz-box-sizing: border-box; /* For Firefox   */
+    -webkit-box-sizing: border-box; /* For Safari */
+    resize: none;
+}
+
+/* Run Page Styling */
+#run-frame
+{
+    background-color:white;
+}
 
 /***for the front page***********/
 .full > .container {
