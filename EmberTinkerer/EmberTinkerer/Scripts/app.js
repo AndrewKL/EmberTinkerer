@@ -66,18 +66,22 @@ App.ProjectIndexController = Ember.ObjectController.extend({
 
 App.RunRoute = Ember.Route.extend({
     model: function(params) {
-        console.log(this.modelFor('project'));
+        //console.log(this.modelFor('project'));
         return this.modelFor ('project');
     }
 });
-//App.RunView = Ember.View.extend({
-//    didInsertElement: function () {
-//        alert("ran");
-//        /*Ember.run.next(this, function () {
-//			alert("post run");//this.$().isotope({}) // or watever code u want to write
-//		});*/
-//    }
-//});//causes rendering to fuck up upon running
+App.RunView = Ember.View.extend({
+    didInsertElement: function () {
+        //console.log(this);
+        //console.log(this.get('controller'));
+        //console.log(this.get('controller').get('model'));
+        var model = this.get('controller').get('model');
+        Ember.run.next(this, function () {
+            
+			alert("post run");// or watever code u want to write
+		});
+    }
+});//causes rendering to fuck up upon running
 
 App.NewRoute = Ember.Route.extend({
 	redirect: function() {
@@ -116,9 +120,9 @@ App.Project = Ember.Object.extend({
 	},
 	
 	generateFullHtml: function () {
-	    console.log("generating html");
+	    //console.log("generating html");
 	    var source = $("#full-html-template").html();
-	    console.log("source: " + source);
+	    //console.log("source: " + source);
         var template = Handlebars.compile(source);
         
         return template( this );
