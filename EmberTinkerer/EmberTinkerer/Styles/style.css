@@ -35,8 +35,8 @@ div.main-container > div > .btn {
     margin: 5px;
     width: 100%;
     box-sizing: border-box; /* For IE and modern versions of Chrome */
-    -moz-box-sizing: border-box; /* For Firefox                          */
-    -webkit-box-sizing: border-box; /* For Safari                           */
+    -moz-box-sizing: border-box; /* For Firefox  */
+    -webkit-box-sizing: border-box; /* For Safari */
 }
 
 div.main-container > div > iframe {
@@ -44,8 +44,8 @@ div.main-container > div > iframe {
     height: 100%;
     width: 100%;
     box-sizing: border-box; /* For IE and modern versions of Chrome */
-    -moz-box-sizing: border-box; /* For Firefox                          */
-    -webkit-box-sizing: border-box; /* For Safari                           */
+    -moz-box-sizing: border-box; /* For Firefox  */
+    -webkit-box-sizing: border-box; /* For Safari  */
 }
 
 div.main-container > div.col-10 {
@@ -93,7 +93,7 @@ div.main-container > div.col-10 > div.col-6 > textarea {
 /* Base class
 ------------------------- */
 .jumbotron {
-  position: relative;
+    position: relative;
   padding: 40px 0;
   color: #fff;
   text-align: center;
