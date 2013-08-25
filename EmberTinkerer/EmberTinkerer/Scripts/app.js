@@ -67,7 +67,7 @@ App.RunView = Ember.View.extend({
     didInsertElement: function () {//after iframe is inserted
         var model = this.get('controller').get('model');
         Ember.run.next(this, function () {
-            console.log(model);
+            //console.log(model);
             var iFrame = document.getElementById('run-frame');
             iFrame.contentWindow.document.write(model.get('generateFullHtml'));
             //console.log(model.get('generateFullHtml'));
