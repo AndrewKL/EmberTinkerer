@@ -8,7 +8,7 @@ namespace EmberTinkerer.Core.Repo
     {
         public Project Get(int id)
         {
-            return Projects.Single(x => x.id == id);
+            return null;// Projects.Single(x => x.id == id);
         }
 
         public IEnumerable<Project> GetAll()
@@ -18,68 +18,69 @@ namespace EmberTinkerer.Core.Repo
 
         public Project Add(Project project)
         {
-            project.id = Projects.Count + 1;
-            Projects.Add(project);
-            return project;
+            //project.id = Projects.Count + 1;
+            //Projects.Add(project);
+            //return project;
+            return null;
         }
         public void Update(Project project)
         {
-            Projects.Remove(Projects.Single(x => x.id == project.id));
+            Projects.Remove(Projects.Single(x => x.Id == project.Id));
             Projects.Add(project);
         }
         public IEnumerable<Project> SearchByName(string text)
         {
-            return Projects.Where(x => x.name.Contains(text));
+            return Projects.Where(x => x.Name.Contains(text));
         } 
 
         public static List<Project> Projects = new List<Project>()
             {
                 new Project()
                 {
-                    id =1,
-                    description = "test description",
-                    name = "hello world1",
-                    html = "<h1>hello world</h1>",
-                    javascript = "alert('hello world');"
+                    Id ="1",
+                    Description = "test description",
+                    Name = "hello world1",
+                    Html = "<h1>hello world</h1>",
+                    Javascript = "alert('hello world');"
                 },
                 new Project()
                 {
-                    id =2,
-                    description = "another test description",
-                    name = "MEMEMEMEMEMEMEMEME project",
-                    html = "<h1>hello world</h1>",
-                    javascript = "alert('hello world');"
+                    Id ="2",
+                    Description = "another test description",
+                    Name = "MEMEMEMEMEMEMEMEME project",
+                    Html = "<h1>hello world</h1>",
+                    Javascript = "alert('hello world');"
                 },
                 new Project()
                 {
-                    id =3,
-                    description = "test description",
-                    name = "RAWR",
-                    html = "<h1>hello world</h1>",
-                    javascript = "alert('hello world');"
+                    Id ="3",
+                    Description = "test description",
+                    Name = "RAWR",
+                    Html = "<h1>hello world</h1>",
+                    Javascript = "alert('hello world');"
                 },
                 new Project()
                 {
-                    id =4,
-                    description = "a simple application",
-                    name = "hello world3",
-                    html = "<h1>hello world</h1>",
-                    javascript = "alert('hello world');"
+                    Id ="4",
+                    Description = "a simple application",
+                    Name = "hello world3",
+                    Html = "<h1>hello world</h1>",
+                    Javascript = "alert('hello world');"
                 },
                 new Project()
                 {
-                    id =5,
-                    description = "test description",
-                    name = "hello world4",
-                    html = "<h1>hello world</h1>",
-                    javascript = "alert('hello world');"
+                    Id ="5",
+                    Description = "test description",
+                    Name = "hello world4",
+                    Html = "<h1>hello world</h1>",
+                    Javascript = "alert('hello world');"
                 },
                 new Project()
                 {
-                    id =6,
-                    description = "Ember JS example",
-                    name = "Ember JS example",
-                    html = @"<script type='text/x-handlebars'>
+                    Id ="6",
+                    Description = "Ember JS example",
+                    Name = "Ember JS example",
+                    Html = @"<script type='text/x-handlebars'>
   {{outlet}}
 </script>
 
@@ -92,7 +93,7 @@ namespace EmberTinkerer.Core.Repo
   {{/each}}
   </ul>
 </script>",
-                    javascript = @"App = Ember.Application.create();
+                    Javascript = @"App = Ember.Application.create();
 
 App.Person = Ember.Object.extend({
   firstName: null,
@@ -122,10 +123,10 @@ App.IndexRoute = Ember.Route.extend({
                 },
                 new Project()
                 {
-                    id =7,
-                    description = "test description",
-                    name = "boot strap example",
-                    html = @"<div class='navbar navbar-inverse navbar-fixed-top bs-docs-nav'>
+                    Id ="7",
+                    Description = "test description",
+                    Name = "boot strap example",
+                    Html = @"<div class='navbar navbar-inverse navbar-fixed-top bs-docs-nav'>
   <div class='container'>
     <button class='navbar-toggle' type='button' data-toggle='collapse' data-target='.bs-navbar-collapse'>
       <span class='icon-bar'></span>
@@ -452,15 +453,15 @@ App.IndexRoute = Ember.Route.extend({
       </div>
 
     </div>",
-                    javascript = "alert('hello world');"
+                    Javascript = "alert('hello world');"
                 },
                 new Project()
                 {
-                    id =8,
-                    description = "test description",
-                    name = "Blink Example",
-                    html = @"<h1><blink>Blinking Text</blink></h1>",
-                    javascript = @"alert('javascript test');
+                    Id ="8",
+                    Description = "test description",
+                    Name = "Blink Example",
+                    Html = @"<h1><blink>Blinking Text</blink></h1>",
+                    Javascript = @"alert('javascript test');
 
  function blink() {
     var blinks = document.getElementsByTagName('blink');
@@ -483,7 +484,7 @@ $('body').append('<blink>jquery test</blink>');;"
         public Project Create()
         {
             var project = new Project();
-            project.id = Projects.Count + 1;
+            project.Id = (Projects.Count + 1).ToString();
             Projects.Add(project);
             return project;
         }
