@@ -10,9 +10,12 @@ namespace EmberTinkerer.Controllers
 {
     public class ProjectController : ApiController
     {
-        //
-        // GET: /Project/
-        public static StubProjectRepo _repo = new StubProjectRepo();
+        private readonly IProjectRepo _repo;
+        
+        public ProjectController(IProjectRepo projectRepo)
+        {
+            _repo = projectRepo;
+        }
 
         public IEnumerable<Project> GetAll()
         {
@@ -39,12 +42,6 @@ namespace EmberTinkerer.Controllers
         public Project Add(Project project)
         {
             return _repo.Add(project);
-        }
-
-        [HttpGet]
-        public Project Create()
-        {
-            return _repo.Create();
         }
     }
 }

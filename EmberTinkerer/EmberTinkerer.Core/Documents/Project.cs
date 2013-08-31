@@ -23,5 +23,9 @@ namespace EmberTinkerer.Core.Documents
         {
             return int.Parse(Id.Substring(Id.IndexOf("/") + 1)); 
         }
+        public void SetId(int id)
+        {
+            Id = "Project/" + id;
+        }
     }
 }

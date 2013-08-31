@@ -1,0 +1,177 @@
+time,logger,level,database,message,exception
+2013-08-30 20:47:03.2264,Raven.Database.Impl.DocumentCacher,Info,<system>,"MemoryCache Settings:
+  PhysicalMemoryLimit = 99
+  CacheMemoryLimit    = 3195011072
+  PollingInterval     = 00:02:00",
+2013-08-30 20:47:03.2964,Raven.Storage.Esent.TransactionalStorage,Info,<system>,"Esent Settings:
+  MaxVerPages      = 16384
+  CacheSizeMax     = 262144
+  DatabasePageSize = 4096",
+2013-08-30 20:47:08.3027,Raven.Database.Indexing.WorkContext,Warn,<system>,"Could not setup performance counters properly because of access permissions, perf counters will not be used","System.Security.SecurityException: Requested registry access is not allowed.
+   at Microsoft.Win32.RegistryKey.OpenSubKey(String name, Boolean writable)
+   at System.Diagnostics.PerformanceCounterLib.CreateRegistryEntry(String categoryName, PerformanceCounterCategoryType categoryType, CounterCreationDataCollection creationData, Boolean& iniRegistered)
+   at System.Diagnostics.PerformanceCounterLib.RegisterCategory(String categoryName, PerformanceCounterCategoryType categoryType, String categoryHelp, CounterCreationDataCollection creationData)
+   at System.Diagnostics.PerformanceCounterCategory.Create(String categoryName, String categoryHelp, PerformanceCounterCategoryType categoryType, CounterCreationDataCollection counterData)
+   at Raven.Database.Indexing.WorkContext.SetupPerformanceCounter(String name) in c:\Builds\RavenDB-Stable\Raven.Database\Indexing\WorkContext.cs:line 337
+   at Raven.Database.Indexing.WorkContext.Init(String name) in c:\Builds\RavenDB-Stable\Raven.Database\Indexing\WorkContext.cs:line 377
+The Zone of the assembly that failed was:
+MyComputer"
+2013-08-30 20:47:08.5547,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,<system>,Document with key 'Raven/Backup/Status' was not found,
+2013-08-30 20:47:08.6337,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-08-30 20:47:08.6407,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2013-08-30 20:47:08.9287,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,,Document with key 'Raven/Authorization/WindowsSettings' was not found,
+2013-08-30 20:47:13.5400,Raven.Database.Storage.IndexDefinitionStorage,Info,<system>,"New index Raven%2fDocumentsByEntityName:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Raven_2fDocumentsByEntityName : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Raven_2fDocumentsByEntityName()
+	{
+		this.ViewText = @""from doc in docs 
+let Tag = doc[""""@metadata""""][""""Raven-Entity-Name""""]
+select new { Tag, LastModified = (DateTime)doc[""""@metadata""""][""""Last-Modified""""] };"";
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			let Tag = doc[""@metadata""][""Raven-Entity-Name""]
+			select new {
+				Tag,
+				LastModified = (DateTime)doc[""@metadata""][""Last-Modified""],
+				__document_id = doc.__document_id
+			});
+		this.AddField(""LastModified"");
+		this.AddField(""__document_id"");
+		this.AddField(""Tag"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Raven_2fDocumentsByEntityName : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Raven_2fDocumentsByEntityName()
+	{
+		this.ViewText = @""from doc in docs 
+let Tag = doc[""""@metadata""""][""""Raven-Entity-Name""""]
+select new { Tag, LastModified = (DateTime)doc[""""@metadata""""][""""Last-Modified""""] };"";
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			let Tag = doc[""@metadata""][""Raven-Entity-Name""]
+			select new {
+				Tag,
+				LastModified = (DateTime)doc[""@metadata""][""Last-Modified""],
+				__document_id = doc.__document_id
+			});
+		this.AddField(""LastModified"");
+		this.AddField(""__document_id"");
+		this.AddField(""Tag"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2013-08-30 20:47:15.5921,Raven.Database.Indexing.IndexStorage,Debug,<system>,Creating index Raven/DocumentsByEntityName with encoded name Raven/DocumentsByEntityName,
+2013-08-30 20:47:16.0491,Raven.Database.Indexing.Index.Indexing,Debug,<system>,Creating index for Raven/DocumentsByEntityName,
+2013-08-30 20:47:16.1382,Raven.Database.Indexing.WorkContext,Debug,<system>,Incremented work counter to 1 because: PUT INDEX Raven/DocumentsByEntityName,
+2013-08-30 20:47:16.2502,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 20:47:16.2792,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 20:47:18.7193,Raven.Database.Server.HttpServer,Debug,,Request #   1: GET     -   113 ms - <system>   - 400 - /silverlight/Assets/Images/transformer_add_delete.png,
+2013-08-30 20:47:18.7193,Raven.Database.Server.HttpServer,Debug,,Request #   2: GET     -    82 ms - <system>   - 400 - /silverlight/Assets/Images/transformer_edit_delete.png,
+2013-08-30 20:47:19.3283,Raven.Database.Server.HttpServer,Debug,,Request #   3: GET     -   104 ms - <system>   - 200 - /docs?pageSize=0&noCache=-528497942,
+2013-08-30 20:47:19.4013,Raven.Database.Server.HttpServer,Debug,,Request #   4: GET     -    10 ms - <system>   - 200 - /databases?pageSize=1024&noCache=-705772186,
+2013-08-30 20:47:19.4013,Raven.Database.Server.HttpServer,Debug,,Request #   5: GET     -     7 ms - <system>   - 200 - /build/version?noCache=-2029752615,
+2013-08-30 20:47:19.4013,Raven.Database.Server.HttpServer,Debug,,Request #   6: GET     -    18 ms - <system>   - 200 - /license/status?noCache=-2105944978,
+2013-08-30 20:47:19.4013,Raven.Database.Server.HttpServer,Debug,,Request #   7: GET     -     1 ms - <system>   - 200 - /silverlight/ensureStartup?noCache=-1379827122,
+2013-08-30 20:47:19.5093,Raven.Database.Server.HttpServer,Debug,<system>,Request #   8: GET     -   114 ms - <system>   - 200 - /changes/events?id=1/11w808,
+2013-08-30 20:47:19.8234,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,,Document with key 'Raven/Databases/%3Csystem%3E' was not found,
+2013-08-30 20:47:19.8234,Raven.Database.Server.HttpServer,Debug,,Request #   9: GET     -     9 ms - <system>   - 404 - /databases/%3Csystem%3E/docs/Raven/Alerts?noCache=-423867111,
+2013-08-30 20:47:20.2034,Raven.Database.Server.HttpServer,Debug,,Request #  10: GET     -   154 ms - <system>   - 200 - /debug/user-info?noCache=-2170396,
+2013-08-30 20:47:20.2284,Raven.Database.Server.HttpServer,Debug,,Request #  11: GET     -   853 ms - <system>   - 200 - /stats?noCache=-1410112962,
+2013-08-30 20:47:21.2014,Raven.Database.Server.HttpServer,Debug,,Request #  12: GET     -     3 ms - <system>   - 200 - /changes/config?id=1/11w808&command=watch-doc&value=Raven/Alerts&noCache=-229977489,
+2013-08-30 20:47:21.2014,Raven.Database.Server.HttpServer,Debug,,Request #  13: GET     -     3 ms - <system>   - 200 - /changes/config?id=1/11w808&command=watch-indexes&noCache=-1555118668,
+2013-08-30 20:47:21.2014,Raven.Database.Server.HttpServer,Debug,,Request #  14: GET     -     4 ms - <system>   - 200 - /changes/config?id=1/11w808&command=watch-docs&noCache=-1399773628,
+2013-08-30 20:47:21.2014,Raven.Database.Server.HttpServer,Debug,,Request #  16: GET     -     0 ms - <system>   - 200 - /changes/config?id=1/11w808&command=watch-doc&value=Raven/Alerts&noCache=-332379534,
+2013-08-30 20:47:21.2014,Raven.Database.Server.HttpServer,Debug,,Request #  15: GET     -     0 ms - <system>   - 200 - /changes/config?id=1/11w808&command=watch-indexes&noCache=1367561311,
+2013-08-30 20:47:21.2284,Raven.Database.Server.HttpServer,Debug,,Request #  17: GET     -     0 ms - <system>   - 200 - /changes/config?id=1/11w808&command=watch-indexes&noCache=1542718449,
+2013-08-30 20:47:21.9775,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,<system>,Document with key 'Raven/StudioConfig' was not found,
+2013-08-30 20:47:21.9775,Raven.Database.Server.HttpServer,Debug,,Request #  18: GET     -    12 ms - <system>   - 404 - /docs/Raven/StudioConfig?noCache=-746195051,
+2013-08-30 20:47:22.0605,Raven.Database.Server.HttpServer,Debug,,Request #  19: GET     -     0 ms - <system>   - 200 - /license/status,
+2013-08-30 20:47:22.0605,Raven.Database.Server.HttpServer,Debug,,Request #  20: GET     -     2 ms - <system>   - 200 - /plugins/status?noCache=-1401533161,
+2013-08-30 20:47:55.5984,Raven.Database.Server.HttpServer,Debug,,Request #  21: GET     -    24 ms - <system>   - 200 - /stats?noCache=1354786343,
+2013-08-30 20:47:55.6474,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,<system>,Document with key 'Raven/Alerts' was not found,
+2013-08-30 20:47:55.6474,Raven.Database.Server.HttpServer,Debug,,Request #  22: GET     -     0 ms - <system>   - 404 - /docs/Raven/Alerts?noCache=-1508820866,
+2013-08-30 20:47:55.6474,Raven.Database.Server.HttpServer,Debug,,Request #  23: GET     -     0 ms - <system>   - 400 - /replication/info?noCache=676634192,
+2013-08-30 20:47:55.6474,Raven.Database.Server.HttpServer,Debug,,Request #  24: GET     -     0 ms - <system>   - 200 - /debug/user-info?noCache=-951092116,
+2013-08-30 20:47:57.4155,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,<system>,Document with key 'Raven/Authorization/WindowsSettings' was not found,
+2013-08-30 20:47:57.4155,Raven.Database.Server.HttpServer,Debug,,Request #  25: GET     -    11 ms - <system>   - 404 - /docs/Raven/Authorization/WindowsSettings?noCache=1026522494,
+2013-08-30 20:47:57.4165,Raven.Database.Server.HttpServer,Debug,,Request #  26: GET     -     1 ms - <system>   - 200 - /docs?startsWith=Raven%2FApiKeys%2F&start=0&pageSize=256&noCache=1667313616,
+2013-08-30 20:47:58.3546,Raven.Database.Server.HttpServer,Debug,,Request #  27: GET     -    33 ms - <system>   - 200 - /stats?noCache=46947525,
+2013-08-30 20:47:58.3726,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,<system>,Document with key 'Raven/Alerts' was not found,
+2013-08-30 20:47:58.3726,Raven.Database.Server.HttpServer,Debug,,Request #  28: GET     -     0 ms - <system>   - 400 - /replication/info?noCache=1471424088,
+2013-08-30 20:47:58.3726,Raven.Database.Server.HttpServer,Debug,,Request #  29: GET     -     0 ms - <system>   - 404 - /docs/Raven/Alerts?noCache=1665083018,
+2013-08-30 20:47:58.3726,Raven.Database.Server.HttpServer,Debug,,Request #  30: GET     -     0 ms - <system>   - 200 - /debug/user-info?noCache=1529112100,
+2013-08-30 20:47:59.2076,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,<system>,Document with key 'Raven/Authorization/WindowsSettings' was not found,
+2013-08-30 20:47:59.2076,Raven.Database.Server.HttpServer,Debug,,Request #  31: GET     -     0 ms - <system>   - 404 - /docs/Raven/Authorization/WindowsSettings?noCache=-1686802796,
+2013-08-30 20:47:59.2076,Raven.Database.Server.HttpServer,Debug,,Request #  32: GET     -     1 ms - <system>   - 200 - /docs?startsWith=Raven%2FApiKeys%2F&start=0&pageSize=256&noCache=-1166325589,
+2013-08-30 20:57:16.2745,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 20:57:16.2745,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 21:07:16.2778,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 21:07:16.2878,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 21:17:16.2791,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 21:17:16.2891,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 21:27:16.2814,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 21:27:16.2934,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 21:37:16.2828,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 21:37:16.2948,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 21:47:16.2841,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 21:47:16.2981,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 21:57:16.2864,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 21:57:16.2974,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 22:07:16.2887,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 22:07:16.3047,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 22:17:16.2910,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 22:17:16.3080,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 22:27:16.2923,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 22:27:16.3113,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 22:37:16.2937,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 22:37:16.3137,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 22:47:16.2960,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 22:47:16.3190,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 22:57:16.3143,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 22:57:16.3143,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 23:07:16.3156,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 23:07:16.3256,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 23:17:16.3169,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 23:17:16.3289,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 23:27:16.3193,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 23:27:16.3313,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 23:37:16.3206,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 23:37:16.3336,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 23:47:16.3219,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 23:47:16.3219,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-08-30 23:57:16.3232,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-08-30 23:57:16.3382,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",

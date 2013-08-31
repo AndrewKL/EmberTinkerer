@@ -11,7 +11,7 @@ using Raven.Client.Indexes;
 
 namespace EmberTinkerer.Core.Repo
 {
-    interface IProjectRepo
+    public interface IProjectRepo
     {
         Project Get(int id);
         IEnumerable<Project> GetAll();
