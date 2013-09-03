@@ -48,6 +48,30 @@ namespace EmberTinkerer.Core.Tests.Repo
         }
 
         [Test]
+        public void AddWithExistingBadId()
+        {
+            var project = new Project()
+            {
+                Id = "not what its supposed to be",
+                Description = "description",
+                Html = "<html></html>",
+                Javascript = "alert('test');",
+                Name = "name"
+            };
+
+            _repo.Add(project);
+            WaitForIndexing(_store);
+
+            var reloadedProject = _repo.Get(project.GetIntId());
+
+            Assert.True(reloadedProject.Id.Contains("project"),"id: "+reloadedProject.Id);
+            Assert.AreEqual(project.Description, reloadedProject.Description);
+            Assert.AreEqual(project.Name, reloadedProject.Name);
+            Assert.AreEqual(project.Javascript, reloadedProject.Javascript);
+            Assert.AreEqual(project.Html, reloadedProject.Html);
+        }
+
+        [Test]
         public void GetAllTest()
         {
             var project1 = new Project()

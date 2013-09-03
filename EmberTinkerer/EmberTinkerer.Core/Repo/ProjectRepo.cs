@@ -47,6 +47,7 @@ namespace EmberTinkerer.Core.Repo
 
         public Project Add(Project project)
         {
+            project.Id = null;
             using (var session = _store.OpenSession())
             {
                 session.Store(project); // in-memory operations are committed asynchronously when calling SaveChangesAsync

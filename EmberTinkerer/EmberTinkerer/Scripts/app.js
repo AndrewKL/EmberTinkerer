@@ -15,13 +15,16 @@ App.ProjectRoute = Ember.Route.extend({
 	model: function(params) {
 		if(params.project_id == undefined){
 			return App.Project.create({
-				id: 0,
-				html: $("#generic-html-body").text(),
-				javascript: $("#generic-javascript").text()
+			    id: 'new',
+			    Name: 'new project',
+			    Description: 'Add a description.',
+				Html: $("#generic-html-body").text(),
+				Javascript: $("#generic-javascript").text()
 			});
 		}
 
 		return $.getJSON(Tinkerer.getURL+"/"+params.project_id).then(function (response) {
+		    console.log(response);
 		    return App.Project.create(response);
 		});
 	}
@@ -30,11 +33,13 @@ App.IndexRoute = Ember.Route.extend({
     model: function (params) {
         return $.getJSON(Tinkerer.getAll).then(function (response) {
             var projects = [];
-
+            
             response.forEach(function (project) {
+                project.id = project.Id.substring(project.Id.indexOf('/') + 1, project.Id.length);
                 projects.push(App.Project.create(project));
             });
 
+            console.log(projects);
             return projects;
         });
     }
@@ -95,16 +100,18 @@ App.Project = Ember.Object.extend({
 	},
 	update: function() {
 	    var data = {
-	        id: this.id,
-	        name: this.name,
-	        description: this.description,
-	        html: this.html,
-	        javascript: this.javascript,
+	        Id: 'project/'+this.id,
+	        Name: this.Name,
+	        Description: this.Description,
+	        Html: this.Html,
+	        Javascript: this.Javascript,
 	    };
-	    if (this.id == 0) {
+	    if (this.id == 'new') {
 	        var project = this;
+	        console.log("adding new project");
+	        console.log(this);
 	        $.post(Tinkerer.addURL, data, function (data) {
-	            project.id = data.id;
+	            project.id =  data.Id.substring(data.Id.indexOf('/') + 1, data.Id.length);;
 	        });
 	    } else {
 	        $.post(Tinkerer.updateURL, data);
@@ -117,9 +124,8 @@ App.Project = Ember.Object.extend({
 	    var source = $("#full-html-template").html();
 	    //console.log("source: " + source);
         var template = Handlebars.compile(source);
-        
         return template( this );
-    }.property("javascript","html")
+    }.property("Javascript","Html")
 });
 
 Handlebars.registerHelper('scriptBlock', function (script) {
