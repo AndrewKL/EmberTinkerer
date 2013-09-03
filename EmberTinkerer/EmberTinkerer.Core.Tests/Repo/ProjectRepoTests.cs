@@ -30,10 +30,10 @@ namespace EmberTinkerer.Core.Tests.Repo
         {
             var project = new Project()
                 {
-                    Description = "description",
-                    Html = "<html></html>",
-                    Javascript = "alert('test');",
-                    Name = "name"
+                    description = "description",
+                    html = "<html></html>",
+                    javascript = "alert('test');",
+                    name = "name"
                 };
 
             _repo.Add(project);
@@ -41,10 +41,10 @@ namespace EmberTinkerer.Core.Tests.Repo
 
             var reloadedProject = _repo.Get(project.GetIntId());
 
-            Assert.AreEqual(project.Description,reloadedProject.Description);
-            Assert.AreEqual(project.Name, reloadedProject.Name);
-            Assert.AreEqual(project.Javascript, reloadedProject.Javascript);
-            Assert.AreEqual(project.Html, reloadedProject.Html);
+            Assert.AreEqual(project.description,reloadedProject.description);
+            Assert.AreEqual(project.name, reloadedProject.name);
+            Assert.AreEqual(project.javascript, reloadedProject.javascript);
+            Assert.AreEqual(project.html, reloadedProject.html);
         }
 
         [Test]
@@ -53,10 +53,10 @@ namespace EmberTinkerer.Core.Tests.Repo
             var project = new Project()
             {
                 Id = "not what its supposed to be",
-                Description = "description",
-                Html = "<html></html>",
-                Javascript = "alert('test');",
-                Name = "name"
+                description = "description",
+                html = "<html></html>",
+                javascript = "alert('test');",
+                name = "name"
             };
 
             _repo.Add(project);
@@ -65,10 +65,10 @@ namespace EmberTinkerer.Core.Tests.Repo
             var reloadedProject = _repo.Get(project.GetIntId());
 
             Assert.True(reloadedProject.Id.Contains("project"),"id: "+reloadedProject.Id);
-            Assert.AreEqual(project.Description, reloadedProject.Description);
-            Assert.AreEqual(project.Name, reloadedProject.Name);
-            Assert.AreEqual(project.Javascript, reloadedProject.Javascript);
-            Assert.AreEqual(project.Html, reloadedProject.Html);
+            Assert.AreEqual(project.description, reloadedProject.description);
+            Assert.AreEqual(project.name, reloadedProject.name);
+            Assert.AreEqual(project.javascript, reloadedProject.javascript);
+            Assert.AreEqual(project.html, reloadedProject.html);
         }
 
         [Test]
@@ -76,39 +76,39 @@ namespace EmberTinkerer.Core.Tests.Repo
         {
             var project1 = new Project()
             {
-                Name = "name 1",
-                Tags = new Collection<string>() { "a", "b", "c" },
-                Description = "test description 1",
-                Author = "author",
-                Rating = 1,
-                Upvotes = 1,
-                Downvotes = 0,
-                Html = "<html></html>",
-                Javascript = "alert('test');",
+                name = "name 1",
+                tags = new Collection<string>() { "a", "b", "c" },
+                description = "test description 1",
+                author = "author",
+                rating = 1,
+                upvotes = 1,
+                downvotes = 0,
+                html = "<html></html>",
+                javascript = "alert('test');",
             };
             var project2 = new Project()
             {
-                Name = "name 2",
-                Tags = new Collection<string>() { "a", "b", "c" },
-                Description = "test description 2",
-                Author = "author",
-                Rating = 1,
-                Upvotes = 1,
-                Downvotes = 0,
-                Html = "<html></html>",
-                Javascript = "alert('test');",
+                name = "name 2",
+                tags = new Collection<string>() { "a", "b", "c" },
+                description = "test description 2",
+                author = "author",
+                rating = 1,
+                upvotes = 1,
+                downvotes = 0,
+                html = "<html></html>",
+                javascript = "alert('test');",
             };
             var project3 = new Project()
             {
-                Name = "name 3",
-                Tags = new Collection<string>() { "a", "b", "c" },
-                Description = "test description 3",
-                Author = "author",
-                Rating = 1,
-                Upvotes = 1,
-                Downvotes = 0,
-                Html = "<html></html>",
-                Javascript = "alert('test');",
+                name = "name 3",
+                tags = new Collection<string>() { "a", "b", "c" },
+                description = "test description 3",
+                author = "author",
+                rating = 1,
+                upvotes = 1,
+                downvotes = 0,
+                html = "<html></html>",
+                javascript = "alert('test');",
             };
 
             _repo.Add(project1);
@@ -125,19 +125,19 @@ namespace EmberTinkerer.Core.Tests.Repo
         {
             var project = new Project()
             {
-                Description = "description",
-                Html = "<html></html>",
-                Javascript = "alert('test');",
-                Name = "name"
+                description = "description",
+                html = "<html></html>",
+                javascript = "alert('test');",
+                name = "name"
             };
 
             _repo.Add(project);
             WaitForIndexing(_store);
 
-            project.Description = "updated description";
-            project.Html = "<html> update</html>";
-            project.Javascript = "alert('update');";
-            project.Name = "updated name";
+            project.description = "updated description";
+            project.html = "<html> update</html>";
+            project.javascript = "alert('update');";
+            project.name = "updated name";
 
             _repo.Update(project);
             
@@ -145,10 +145,10 @@ namespace EmberTinkerer.Core.Tests.Repo
 
             var reloadedProject = _repo.Get(project.GetIntId());
 
-            Assert.AreEqual(project.Description, reloadedProject.Description);
-            Assert.AreEqual(project.Name, reloadedProject.Name);
-            Assert.AreEqual(project.Javascript, reloadedProject.Javascript);
-            Assert.AreEqual(project.Html, reloadedProject.Html);
+            Assert.AreEqual(project.description, reloadedProject.description);
+            Assert.AreEqual(project.name, reloadedProject.name);
+            Assert.AreEqual(project.javascript, reloadedProject.javascript);
+            Assert.AreEqual(project.html, reloadedProject.html);
         }
 
         [Test]
@@ -156,24 +156,24 @@ namespace EmberTinkerer.Core.Tests.Repo
         {
             var project1 = new Project()
             {
-                Description = "description 1",
-                Html = "<html></html>",
-                Javascript = "alert('test');",
-                Name = "name"
+                description = "description 1",
+                html = "<html></html>",
+                javascript = "alert('test');",
+                name = "name"
             };
             var project2 = new Project()
             {
-                Description = "description 2",
-                Html = "<html></html>",
-                Javascript = "alert('test');",
-                Name = "name"
+                description = "description 2",
+                html = "<html></html>",
+                javascript = "alert('test');",
+                name = "name"
             };
             var project3 = new Project()
             {
-                Description = "test description 3",
-                Html = "<html></html>",
-                Javascript = "alert('test');",
-                Name = "test name"
+                description = "test description 3",
+                html = "<html></html>",
+                javascript = "alert('test');",
+                name = "test name"
             };
 
             _repo.Add(project1);

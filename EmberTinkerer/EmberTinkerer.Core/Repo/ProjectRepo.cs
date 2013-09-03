@@ -67,7 +67,7 @@ namespace EmberTinkerer.Core.Repo
         {
             using (var session = _store.OpenSession())
             {
-                return session.Query<Project>().Where(x=>x.Name.StartsWith(text));
+                return session.Query<Project>().Where(x=>x.name.StartsWith(text));
             }
         }
 
@@ -99,12 +99,12 @@ namespace EmberTinkerer.Core.Repo
                                  {
                                      Query = new object[]
                                      {
-                                         entry.Author,
-                                         entry.Tags,
-                                         entry.Name,
-                                         entry.Description
+                                         entry.author,
+                                         entry.tags,
+                                         entry.name,
+                                         entry.description
                                      },
-                                     Rating = entry.Rating
+                                     Rating = entry.rating
                                  };
                 Sort(x => x.Rating, SortOptions.Int);
 

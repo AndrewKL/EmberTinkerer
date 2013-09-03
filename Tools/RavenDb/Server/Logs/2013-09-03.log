@@ -1,0 +1,1315 @@
+2013-09-03 14:38:15.3953,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 14:38:15.3953,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 14:38:15.4783,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 14:38:15.4783,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 14:48:15.3957,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 14:48:15.3957,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 14:48:15.4787,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 14:48:15.4787,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 14:49:43.7437,Raven.Database.Server.HttpServer,Debug,,Request #  52: GET     -    29 ms - EmberTinkererDB - 200 - /stats?noCache=361524308,
+2013-09-03 14:49:48.8320,Raven.Database.Server.HttpServer,Debug,,Request #  53: GET     -    32 ms - EmberTinkererDB - 200 - /stats?noCache=-462763142,
+2013-09-03 14:49:53.9743,Raven.Database.Server.HttpServer,Debug,,Request #  54: GET     -    28 ms - EmberTinkererDB - 200 - /stats?noCache=-1171474592,
+2013-09-03 14:51:54.9752,Raven.Database.Server.HttpServer,Debug,,Request #  55: GET     -    32 ms - EmberTinkererDB - 200 - /stats?noCache=-1598787431,
+2013-09-03 14:52:00.0835,Raven.Database.Server.HttpServer,Debug,,Request #  56: GET     -    26 ms - EmberTinkererDB - 200 - /stats?noCache=1406811313,
+2013-09-03 14:56:13.8131,Raven.Database.Server.HttpServer,Debug,,Request #  57: GET     -    26 ms - EmberTinkererDB - 200 - /stats?noCache=-56952623,
+2013-09-03 14:57:22.0742,Raven.Database.Server.HttpServer,Debug,,Request #  58: GET     -    28 ms - EmberTinkererDB - 200 - /stats?noCache=-1407732145,
+2013-09-03 14:58:14.6588,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 14:58:14.6588,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 14:58:14.7416,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 14:58:14.7416,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 15:01:59.9381,Raven.Database.Server.HttpServer,Debug,,Request #  59: GET     -    43 ms - EmberTinkererDB - 200 - /stats?noCache=401341227,
+2013-09-03 15:08:13.8846,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 15:08:13.8846,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 15:08:13.9675,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 15:08:13.9675,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 15:10:54.1365,Raven.Database.Server.HttpServer,Debug,,Request #  60: GET     -    26 ms - EmberTinkererDB - 200 - /stats?noCache=-1710734246,
+2013-09-03 15:18:13.8018,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 15:18:13.8018,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 15:18:13.8848,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 15:18:13.8848,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:14:14.5020,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:14:14.5540,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:14:14.5540,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:14:14.5540,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:14:14.8420,Raven.Database.Indexing.WorkContext,Debug,,Stopping background workers,
+2013-09-03 16:14:23.7495,Raven.Database.Impl.DocumentCacher,Info,EmberTinkererDB,"MemoryCache Settings:
+  PhysicalMemoryLimit = 99
+  CacheMemoryLimit    = 3159359488
+  PollingInterval     = 00:02:00",
+2013-09-03 16:14:23.8005,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:14:23.8005,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:14:24.8785,Raven.Database.Server.HttpServer,Debug,,"Request #  61: GET     - 1,736 ms - EmberTinkererDB - 200 - /stats?noCache=1894708696",
+2013-09-03 16:14:29.7408,Raven.Database.Server.HttpServer,Debug,EmberTinkererDB,Request #  62: GET     -     0 ms - EmberTinkererDB - 200 - /changes/events?id=2/1h3DGq,
+2013-09-03 16:14:29.7618,Raven.Database.Server.HttpServer,Debug,,Request #  63: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-docs&noCache=-1999475458,
+2013-09-03 16:14:29.7618,Raven.Database.Server.HttpServer,Debug,,Request #  64: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-indexes&noCache=-1924404134,
+2013-09-03 16:14:29.7828,Raven.Database.Server.HttpServer,Debug,,Request #  65: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-doc&value=Raven/Alerts&noCache=1405825227,
+2013-09-03 16:17:34.6264,Raven.Database.Server.HttpServer,Debug,,Request #  66: GET     -    41 ms - EmberTinkererDB - 200 - /stats?noCache=1930790856,
+2013-09-03 16:17:45.9190,Raven.Database.Server.HttpServer,Debug,,Request #  67: GET     -    35 ms - EmberTinkererDB - 200 - /stats?noCache=975030651,
+2013-09-03 16:17:50.9823,Raven.Database.Server.HttpServer,Debug,,Request #  68: GET     -    27 ms - EmberTinkererDB - 200 - /stats?noCache=737614238,
+2013-09-03 16:18:17.4038,Raven.Database.Server.HttpServer,Debug,,Request #  69: GET     -    27 ms - EmberTinkererDB - 200 - /stats?noCache=-1601075095,
+2013-09-03 16:18:22.4841,Raven.Database.Server.HttpServer,Debug,,Request #  70: GET     -    34 ms - EmberTinkererDB - 200 - /stats?noCache=1853915243,
+2013-09-03 16:19:14.6851,Raven.Database.Server.HttpServer,Debug,,Request #  71: GET     -    26 ms - EmberTinkererDB - 200 - /stats?noCache=641749999,
+2013-09-03 16:20:50.0466,Raven.Database.Server.HttpServer,Debug,,Error when using events transport,"System.AggregateException: One or more errors occurred. ---> System.Net.HttpListenerException: An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.HttpListenerException (0x80004005): An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130<---
+"
+2013-09-03 16:20:55.1169,Raven.Database.Server.HttpServer,Debug,,Error when using events transport,"System.AggregateException: One or more errors occurred. ---> System.Net.HttpListenerException: An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.HttpListenerException (0x80004005): An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130<---
+"
+2013-09-03 16:20:55.1169,Raven.Database.Server.HttpServer,Debug,,Error when using events transport,"System.AggregateException: One or more errors occurred. ---> System.Net.HttpListenerException: An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.HttpListenerException (0x80004005): An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130<---
+"
+2013-09-03 16:21:03.2553,Raven.Database.Server.HttpServer,Debug,EmberTinkererDB,Request #  72: GET     -     3 ms - EmberTinkererDB - 200 - /changes/events?id=2/1h3DGq,
+2013-09-03 16:21:03.2553,Raven.Database.Server.HttpServer,Debug,EmberTinkererDB,Request #  73: GET     -     4 ms - EmberTinkererDB - 200 - /changes/events?id=2/1h3DGq,
+2013-09-03 16:21:03.2553,Raven.Database.Server.HttpServer,Debug,EmberTinkererDB,Request #  74: GET     -     3 ms - EmberTinkererDB - 200 - /changes/events?id=2/1h3DGq,
+2013-09-03 16:21:03.2833,Raven.Database.Server.HttpServer,Debug,,Request #  75: GET     -     3 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-docs&noCache=-260880631,
+2013-09-03 16:21:03.2833,Raven.Database.Server.HttpServer,Debug,,Request #  76: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-docs&noCache=-1991530330,
+2013-09-03 16:21:03.2953,Raven.Database.Server.HttpServer,Debug,,Request #  77: GET     -     1 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-docs&noCache=1918819503,
+2013-09-03 16:21:03.3103,Raven.Database.Server.HttpServer,Debug,,Request #  78: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-indexes&noCache=-780904967,
+2013-09-03 16:21:03.3103,Raven.Database.Server.HttpServer,Debug,,Request #  79: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-indexes&noCache=1776223273,
+2013-09-03 16:21:03.3103,Raven.Database.Server.HttpServer,Debug,,Request #  80: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-docs&noCache=-890629903,
+2013-09-03 16:21:03.3343,Raven.Database.Server.HttpServer,Debug,,Request #  81: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-docs&noCache=-162823395,
+2013-09-03 16:21:03.3373,Raven.Database.Server.HttpServer,Debug,,Request #  82: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-doc&value=Raven/Alerts&noCache=860027410,
+2013-09-03 16:21:03.3373,Raven.Database.Server.HttpServer,Debug,,Request #  83: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-indexes&noCache=-610891232,
+2013-09-03 16:21:03.3373,Raven.Database.Server.HttpServer,Debug,,Request #  84: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-indexes&noCache=978591040,
+2013-09-03 16:21:03.3693,Raven.Database.Server.HttpServer,Debug,,Request #  85: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-doc&value=Raven/Alerts&noCache=-1127550452,
+2013-09-03 16:21:03.3693,Raven.Database.Server.HttpServer,Debug,,Request #  86: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-docs&noCache=774059268,
+2013-09-03 16:21:03.3693,Raven.Database.Server.HttpServer,Debug,,Request #  87: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-docs&noCache=1823348668,
+2013-09-03 16:21:03.3943,Raven.Database.Server.HttpServer,Debug,,Request #  88: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-indexes&noCache=-530289971,
+2013-09-03 16:21:03.3943,Raven.Database.Server.HttpServer,Debug,,Request #  90: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-doc&value=Raven/Alerts&noCache=-210489704,
+2013-09-03 16:21:03.3943,Raven.Database.Server.HttpServer,Debug,,Request #  89: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=watch-docs&noCache=1704249831,
+2013-09-03 16:24:14.5023,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:24:14.5503,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:24:23.8008,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:24:23.8008,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:25:20.3990,Raven.Database.Server.HttpServer,Debug,,Request #  91: GET     -    29 ms - EmberTinkererDB - 200 - /stats?noCache=1444319987,
+2013-09-03 16:27:30.1955,Raven.Database.Server.HttpServer,Debug,,Request #  92: GET     -    26 ms - EmberTinkererDB - 200 - /stats?noCache=1264888488,
+2013-09-03 16:29:45.4172,Raven.Database.Server.HttpServer,Debug,,Request #  93: GET     -    26 ms - EmberTinkererDB - 200 - /stats?noCache=-1784440037,
+2013-09-03 16:34:00.0768,Raven.Database.Server.HttpServer,Debug,,Request #  94: GET     -    32 ms - EmberTinkererDB - 200 - /stats?noCache=-967140094,
+2013-09-03 16:34:14.5026,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:34:14.5606,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:34:23.8011,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:34:23.8011,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:34:35.7378,Raven.Database.Server.HttpServer,Debug,,Request #  95: GET     -    29 ms - EmberTinkererDB - 200 - /stats?noCache=988145339,
+2013-09-03 16:36:44.5482,Raven.Database.Server.HttpServer,Debug,,Request #  96: GET     -    29 ms - EmberTinkererDB - 200 - /stats?noCache=-105350868,
+2013-09-03 16:38:34.6365,Raven.Database.Server.HttpServer,Debug,,Request #  97: GET     -    26 ms - EmberTinkererDB - 200 - /stats?noCache=2124211920,
+2013-09-03 16:39:15.3078,Raven.Database.Server.HttpServer,Debug,,Request #  98: GET     -    28 ms - EmberTinkererDB - 200 - /stats?noCache=1862293308,
+2013-09-03 16:40:16.7033,Raven.Database.Server.HttpServer,Debug,,Request #  99: GET     -    26 ms - EmberTinkererDB - 200 - /stats?noCache=1312009270,
+2013-09-03 16:41:18.0078,Raven.Database.Server.HttpServer,Debug,,Request # 100: GET     -    36 ms - EmberTinkererDB - 200 - /stats?noCache=-1191969621,
+2013-09-03 16:43:06.0680,Raven.Database.Server.HttpServer,Debug,,Request # 101: GET     -    33 ms - EmberTinkererDB - 200 - /stats?noCache=-759492681,
+2013-09-03 16:44:14.5029,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:44:14.5619,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:44:23.8014,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:44:23.8014,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:44:28.2317,Raven.Database.Server.HttpServer,Debug,,Request # 102: GET     -    32 ms - EmberTinkererDB - 200 - /stats?noCache=1924730610,
+2013-09-03 16:44:34.2870,Raven.Database.Server.HttpServer,Debug,,Request # 103: GET     -    28 ms - EmberTinkererDB - 200 - /stats?noCache=1756440653,
+2013-09-03 16:44:48.6109,Raven.Database.Server.HttpServer,Debug,,Request # 104: GET     -    14 ms - embertinkererDB - 200 - /changes/config?id=2/26VUJK&command=disconnect&noCache=1713477683,
+2013-09-03 16:44:50.2239,Raven.Database.Server.HttpServer,Debug,,Request # 105: GET     -     2 ms - EmberTinkererDB - 200 - /changes/config?id=2/1h3DGq&command=disconnect&noCache=-767575030,
+2013-09-03 16:44:50.2239,Raven.Database.Server.HttpServer,Debug,,Error when using events transport,"System.AggregateException: One or more errors occurred. ---> System.Net.HttpListenerException: An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.HttpListenerException (0x80004005): An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130<---
+"
+2013-09-03 16:44:54.4442,Raven.Database.Server.HttpServer,Debug,,Error when using events transport,"System.AggregateException: One or more errors occurred. ---> System.Net.HttpListenerException: An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.HttpListenerException (0x80004005): An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130<---
+"
+2013-09-03 16:44:54.4442,Raven.Database.Server.HttpServer,Debug,,Error when using events transport,"System.AggregateException: One or more errors occurred. ---> System.Net.HttpListenerException: An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.HttpListenerException (0x80004005): An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130<---
+"
+2013-09-03 16:49:41.6496,Raven.Database.Server.HttpServer,Debug,,Request # 107: GET     -     1 ms - <system>   - 400 - /silverlight/Assets/Images/transformer_add_delete.png,
+2013-09-03 16:49:41.6496,Raven.Database.Server.HttpServer,Debug,,Request # 106: GET     -     1 ms - <system>   - 400 - /silverlight/Assets/Images/transformer_edit_delete.png,
+2013-09-03 16:49:41.9626,Raven.Database.Server.HttpServer,Debug,,Request # 108: GET     -     1 ms - <system>   - 200 - /docs?pageSize=0&noCache=-1677613397,
+2013-09-03 16:49:42.1436,Raven.Database.Server.HttpServer,Debug,<system>,Request # 109: GET     -     0 ms - <system>   - 200 - /changes/events?id=1/1PUCDx,
+2013-09-03 16:49:42.6177,Raven.Database.Server.HttpServer,Debug,,Request # 110: GET     -     1 ms - <system>   - 200 - /silverlight/ensureStartup?noCache=-1500697438,
+2013-09-03 16:49:42.6377,Raven.Database.Server.HttpServer,Debug,,Request # 111: GET     -     0 ms - <system>   - 200 - /build/version?noCache=-1893394032,
+2013-09-03 16:49:42.6377,Raven.Database.Server.HttpServer,Debug,,Request # 112: GET     -    13 ms - <system>   - 200 - /stats?noCache=-522900316,
+2013-09-03 16:49:42.6567,Raven.Database.Server.HttpServer,Debug,,Request # 113: GET     -     1 ms - <system>   - 200 - /license/status?noCache=995746965,
+2013-09-03 16:49:42.6827,Raven.Database.Server.HttpServer,Debug,,Request # 114: GET     -    14 ms - <system>   - 200 - /databases?pageSize=1024&noCache=-446222373,
+2013-09-03 16:49:42.7627,Raven.Database.Server.HttpServer,Debug,,Request # 115: GET     -     0 ms - <system>   - 200 - /debug/user-info?noCache=407830044,
+2013-09-03 16:49:42.7817,Raven.Database.Server.HttpServer,Debug,,Request # 116: GET     -     1 ms - <system>   - 404 - /databases/%3Csystem%3E/docs/Raven/Alerts?noCache=-195944122,
+2013-09-03 16:49:45.8369,Raven.Database.Server.HttpServer,Debug,,Request # 117: GET     -     0 ms - <system>   - 200 - /changes/config?id=1/1PUCDx&command=watch-indexes&noCache=743563743,
+2013-09-03 16:49:45.8369,Raven.Database.Server.HttpServer,Debug,,Request # 118: GET     -     0 ms - <system>   - 200 - /changes/config?id=1/1PUCDx&command=watch-doc&value=Raven/Alerts&noCache=339472412,
+2013-09-03 16:49:45.8509,Raven.Database.Server.HttpServer,Debug,,Request # 119: GET     -     0 ms - <system>   - 200 - /changes/config?id=1/1PUCDx&command=watch-docs&noCache=517399796,
+2013-09-03 16:49:45.8559,Raven.Database.Server.HttpServer,Debug,,Request # 120: GET     -     0 ms - <system>   - 200 - /changes/config?id=1/1PUCDx&command=watch-doc&value=Raven/Alerts&noCache=619591367,
+2013-09-03 16:49:45.8739,Raven.Database.Server.HttpServer,Debug,,Request # 121: GET     -     0 ms - <system>   - 200 - /changes/config?id=1/1PUCDx&command=watch-docs&noCache=119335429,
+2013-09-03 16:50:29.3573,Raven.Database.Server.HttpServer,Debug,,Request # 122: GET     -     1 ms - EmberTinkererDB - 404 - /docs/Raven/Replication/Destinations,
+2013-09-03 16:50:29.7214,Raven.Database.Server.HttpServer,Debug,,Request # 123: GET     -     1 ms - <system>   - 200 - /docs/Raven/Databases/EmberTinkererDB,
+2013-09-03 16:50:35.9947,Raven.Database.Storage.IndexDefinitionStorage,Info,EmberTinkererDB,"New index Auto%2fProjects:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Auto_2fProjects : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Auto_2fProjects()
+	{
+		this.ViewText = @""from doc in docs.Projects
+select new {  }"";
+		this.ForEntityNames.Add(""Projects"");
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			where string.Equals(doc[""@metadata""][""Raven-Entity-Name""], ""Projects"", System.StringComparison.InvariantCultureIgnoreCase)
+			select new {
+				__document_id = doc.__document_id
+			});
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Auto_2fProjects : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Auto_2fProjects()
+	{
+		this.ViewText = @""from doc in docs.Projects
+select new {  }"";
+		this.ForEntityNames.Add(""Projects"");
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			where string.Equals(doc[""@metadata""][""Raven-Entity-Name""], ""Projects"", System.StringComparison.InvariantCultureIgnoreCase)
+			select new {
+				__document_id = doc.__document_id
+			});
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2013-09-03 16:50:35.9947,Raven.Database.Indexing.IndexStorage,Debug,EmberTinkererDB,Creating index Auto/Projects with encoded name Auto/Projects,
+2013-09-03 16:50:35.9947,Raven.Database.Indexing.Index.Indexing,Debug,EmberTinkererDB,Creating index for Auto/Projects,
+2013-09-03 16:50:35.9947,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 1 because: PUT INDEX Auto/Projects,
+2013-09-03 16:50:35.9947,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:50:35.9947,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:50:36.2467,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Auto/Projects for all documents,
+2013-09-03 16:50:36.4367,Raven.Database.Server.HttpServer,Debug,,"Request # 124: GET     - 2,732 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128",
+2013-09-03 16:50:36.4458,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 2,469 ms
+	Index: Auto/Projects
+	Results: 0 returned out of 0 total.
+",
+2013-09-03 16:51:02.7903,Raven.Database.Server.HttpServer,Debug,,Request # 125: GET     -    37 ms - EmberTinkererDB - 200 - /queries/?&id=Raven%2FHilo%2Fprojects&id=Raven%2FServerPrefixForHilo,
+2013-09-03 16:51:02.9293,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 2 because: PUT Raven/Hilo/projects,
+2013-09-03 16:51:02.9293,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document Raven/Hilo/projects with etag 01000000-0000-0001-0000-000000000001,
+2013-09-03 16:51:02.9293,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 2, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:51:02.9293,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0000-0000-000000000000: (Raven/Hilo/projects),
+2013-09-03 16:51:02.9353,Raven.Database.Server.HttpServer,Debug,,Request # 126: PUT     -   104 ms - EmberTinkererDB - 201 - /docs/Raven/Hilo/projects,
+2013-09-03 16:51:02.9563,Raven.Database.Impl.DocumentRetriever,Debug,,Trigger Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/projects,
+2013-09-03 16:51:02.9563,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"After read triggers executed, 1 documents remained",
+2013-09-03 16:51:02.9563,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"All documents have been filtered for Auto/Projects, no indexing will be performed, updating to 01000000-0000-0001-0000-000000000001, 09/03/2013 21:51:02",
+2013-09-03 16:51:02.9563,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 3 because: WORK BY IndexingExecuter,
+2013-09-03 16:51:02.9563,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:51:02.9563,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:51:03.1623,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document projects/1 with etag 01000000-0000-0001-0000-000000000002,
+2013-09-03 16:51:03.1623,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 4 because: PUT projects/1,
+2013-09-03 16:51:03.1623,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 4, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:51:03.1873,Raven.Database.Server.HttpServer,Debug,,Request # 127: POST    -   101 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 16:51:03.1873,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000001: (projects/1),
+2013-09-03 16:51:03.1873,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 16:51:03.1873,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Auto/Projects, LastIndexedEtag: 01000000-0000-0001-0000-000000000001: (projects/1)",
+2013-09-03 16:51:03.1873,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Auto/Projects. (projects/1),
+2013-09-03 16:51:03.2013,Raven.Database.Server.HttpServer,Debug,,"	PUT projects/1
+",
+2013-09-03 16:51:03.4963,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on projects/1 result in index Auto/Projects gave document: 	__document_id IS: projects/1
+",
+2013-09-03 16:51:04.6404,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Auto/Projects,
+2013-09-03 16:51:04.6404,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000002 for Auto/Projects",
+2013-09-03 16:51:04.6404,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 5 because: WORK BY IndexingExecuter,
+2013-09-03 16:51:04.6404,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 5, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:51:04.6404,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 5, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:51:23.3054,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document project/1 with etag 01000000-0000-0001-0000-000000000003,
+2013-09-03 16:51:23.3274,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 6 because: PUT project/1,
+2013-09-03 16:51:23.3274,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 6, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:51:23.3274,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000002: (project/1),
+2013-09-03 16:51:23.3274,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 16:51:23.3274,Raven.Database.Server.HttpServer,Debug,,Request # 128: POST    -    24 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 16:51:23.3544,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Auto/Projects, LastIndexedEtag: 01000000-0000-0001-0000-000000000002: (project/1)",
+2013-09-03 16:51:23.3544,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Auto/Projects. (project/1),
+2013-09-03 16:51:23.3544,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on project/1 result in index Auto/Projects gave document: 	__document_id IS: project/1
+",
+2013-09-03 16:51:23.3504,Raven.Database.Server.HttpServer,Debug,,"	PUT project/1
+",
+2013-09-03 16:51:23.3814,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Auto/Projects,
+2013-09-03 16:51:23.3814,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000003 for Auto/Projects",
+2013-09-03 16:51:23.3814,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 7 because: WORK BY IndexingExecuter,
+2013-09-03 16:51:23.3814,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 7, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:51:23.3814,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 7, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:51:34.2231,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Auto/Projects for all documents,
+2013-09-03 16:51:34.3641,Raven.Database.Server.HttpServer,Debug,,Request # 129: GET     -   253 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 16:51:34.3641,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 244 ms
+	Index: Auto/Projects
+	Results: 2 returned out of 2 total.
+",
+2013-09-03 16:54:14.5032,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:54:14.5622,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:54:22.5827,Raven.Database.Server.HttpServer,Debug,,Request # 130: GET     -     2 ms - EmberTinkererDB - 304 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 16:54:22.5847,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 0 ms
+",
+2013-09-03 16:54:29.4581,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document projects/2 with etag 01000000-0000-0001-0000-000000000004,
+2013-09-03 16:54:29.4581,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 8 because: PUT projects/2,
+2013-09-03 16:54:29.4581,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 8, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:54:29.4581,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000003: (projects/2),
+2013-09-03 16:54:29.4581,Raven.Database.Server.HttpServer,Debug,,Request # 131: POST    -     4 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 16:54:29.4581,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 16:54:29.4581,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Auto/Projects, LastIndexedEtag: 01000000-0000-0001-0000-000000000003: (projects/2)",
+2013-09-03 16:54:29.4641,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Auto/Projects. (projects/2),
+2013-09-03 16:54:29.4641,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on projects/2 result in index Auto/Projects gave document: 	__document_id IS: projects/2
+",
+2013-09-03 16:54:29.4641,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Auto/Projects,
+2013-09-03 16:54:29.4641,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000004 for Auto/Projects",
+2013-09-03 16:54:29.4641,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 9 because: WORK BY IndexingExecuter,
+2013-09-03 16:54:29.4641,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 9, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:54:29.4641,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 9, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:54:29.4581,Raven.Database.Server.HttpServer,Debug,,"	PUT projects/2
+",
+2013-09-03 16:55:45.9415,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Auto/Projects for all documents,
+2013-09-03 16:55:45.9415,Raven.Database.Server.HttpServer,Debug,,Request # 132: GET     -     0 ms - EmberTinkererDB - 404 - /docs/Raven/Replication/Destinations,
+2013-09-03 16:55:45.9415,Raven.Database.Server.HttpServer,Debug,,Request # 133: GET     -     5 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 16:55:45.9415,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 3 ms
+	Index: Auto/Projects
+	Results: 3 returned out of 3 total.
+",
+2013-09-03 16:55:48.3826,Raven.Database.Server.HttpServer,Debug,,Request # 134: GET     -     1 ms - EmberTinkererDB - 304 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 16:55:48.3836,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 0 ms
+",
+2013-09-03 16:55:55.6990,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document projects/3 with etag 01000000-0000-0001-0000-000000000005,
+2013-09-03 16:55:55.6990,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 10 because: PUT projects/3,
+2013-09-03 16:55:55.7010,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000004: (projects/3),
+2013-09-03 16:55:55.7010,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 16:55:55.7010,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Auto/Projects, LastIndexedEtag: 01000000-0000-0001-0000-000000000004: (projects/3)",
+2013-09-03 16:55:55.7010,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Auto/Projects. (projects/3),
+2013-09-03 16:55:55.7010,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on projects/3 result in index Auto/Projects gave document: 	__document_id IS: projects/3
+",
+2013-09-03 16:55:55.7010,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 10, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:55:55.7010,Raven.Database.Server.HttpServer,Debug,,Request # 135: POST    -    11 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 16:55:55.7010,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Auto/Projects,
+2013-09-03 16:55:55.7010,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000005 for Auto/Projects",
+2013-09-03 16:55:55.7170,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 11 because: WORK BY IndexingExecuter,
+2013-09-03 16:55:55.7170,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 11, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:55:55.7170,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 11, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:55:55.7010,Raven.Database.Server.HttpServer,Debug,,"	PUT projects/3
+",
+2013-09-03 16:57:07.3461,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Auto/Projects for all documents,
+2013-09-03 16:57:07.3461,Raven.Database.Server.HttpServer,Debug,,Request # 136: GET     -     6 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 16:57:07.3461,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 3 ms
+	Index: Auto/Projects
+	Results: 4 returned out of 4 total.
+",
+2013-09-03 16:57:12.7874,Raven.Database.Server.HttpServer,Debug,,Request # 137: GET     -     1 ms - EmberTinkererDB - 304 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 16:57:12.7874,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 0 ms
+",
+2013-09-03 16:57:17.7007,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document projects/4 with etag 01000000-0000-0001-0000-000000000006,
+2013-09-03 16:57:17.7007,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 12 because: PUT projects/4,
+2013-09-03 16:57:17.7007,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 12, for: ReducingExecuter, will wait for additional work",
+2013-09-03 16:57:17.7007,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000005: (projects/4),
+2013-09-03 16:57:17.7007,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 16:57:17.7007,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Auto/Projects, LastIndexedEtag: 01000000-0000-0001-0000-000000000005: (projects/4)",
+2013-09-03 16:57:17.7007,Raven.Database.Server.HttpServer,Debug,,Request # 138: POST    -     4 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 16:57:17.7007,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Auto/Projects. (projects/4),
+2013-09-03 16:57:17.7007,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on projects/4 result in index Auto/Projects gave document: 	__document_id IS: projects/4
+",
+2013-09-03 16:57:17.7007,Raven.Database.Server.HttpServer,Debug,,"	PUT projects/4
+",
+2013-09-03 16:57:17.7007,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Auto/Projects,
+2013-09-03 16:57:17.7007,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000006 for Auto/Projects",
+2013-09-03 16:57:17.7007,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 13 because: WORK BY IndexingExecuter,
+2013-09-03 16:57:17.7007,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 13, for: IndexingExecuter, will wait for additional work",
+2013-09-03 16:57:17.7097,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 13, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:02:04.5811,Raven.Database.Server.HttpServer,Debug,,Request # 139: GET     -     1 ms - EmberTinkererDB - 404 - /docs/Raven/Replication/Destinations,
+2013-09-03 17:02:04.5811,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Auto/Projects for all documents,
+2013-09-03 17:02:04.5811,Raven.Database.Server.HttpServer,Debug,,Request # 140: GET     -     6 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:02:04.5811,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 4 ms
+	Index: Auto/Projects
+	Results: 5 returned out of 5 total.
+",
+2013-09-03 17:02:12.5146,Raven.Database.Server.HttpServer,Debug,,Request # 141: GET     -     1 ms - EmberTinkererDB - 304 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:02:12.5146,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 0 ms
+",
+2013-09-03 17:02:14.7427,Raven.Database.Server.HttpServer,Debug,,Request # 142: GET     -     2 ms - EmberTinkererDB - 304 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:02:14.7427,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 1 ms
+",
+2013-09-03 17:03:36.3974,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document project/1 with etag 01000000-0000-0001-0000-000000000007,
+2013-09-03 17:03:36.3974,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 14 because: PUT project/1,
+2013-09-03 17:03:36.3974,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 14, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:03:36.3974,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000006: (project/1),
+2013-09-03 17:03:36.3974,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 17:03:36.3974,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Auto/Projects, LastIndexedEtag: 01000000-0000-0001-0000-000000000006: (project/1)",
+2013-09-03 17:03:36.3974,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Auto/Projects. (project/1),
+2013-09-03 17:03:36.3974,Raven.Database.Server.HttpServer,Debug,,Request # 143: POST    -    13 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 17:03:36.4024,Raven.Database.Server.HttpServer,Debug,,"	PUT project/1
+",
+2013-09-03 17:03:36.4274,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on project/1 result in index Auto/Projects gave document: 	__document_id IS: project/1
+",
+2013-09-03 17:03:36.5974,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Auto/Projects,
+2013-09-03 17:03:36.5974,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000007 for Auto/Projects",
+2013-09-03 17:03:36.5974,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 15 because: WORK BY IndexingExecuter,
+2013-09-03 17:03:36.5974,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 15, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:03:36.5974,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 15, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:04:14.5035,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:04:14.5625,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:05:02.9153,Raven.Database.Server.HttpServer,Debug,,Request # 144: GET     -     2 ms - EmberTinkererDB - 200 - /docs/projects/1,
+time,logger,level,database,message,exception
+2013-09-03 17:07:24.2294,Raven.Database.Impl.DocumentCacher,Info,<system>,"MemoryCache Settings:
+  PhysicalMemoryLimit = 99
+  CacheMemoryLimit    = 3159359488
+  PollingInterval     = 00:02:00",
+2013-09-03 17:07:25.7715,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:07:25.7715,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:07:28.8547,Raven.Database.Server.HttpServer,Debug,,Request #   1: GET     -   748 ms - <system>   - 200 - /databases?pageSize=1024&noCache=2074100111,
+2013-09-03 17:07:30.9828,Raven.Database.Server.HttpServer,Debug,<system>,Request #   2: GET     -   458 ms - <system>   - 200 - /changes/events?id=1/1PUCDx,
+2013-09-03 17:07:30.9968,Raven.Database.Server.HttpServer,Debug,,Request #   3: GET     -    16 ms - <system>   - 200 - /changes/config?id=1/1PUCDx&command=watch-docs&noCache=-1312872174,
+2013-09-03 17:07:31.0158,Raven.Database.Server.HttpServer,Debug,,Request #   4: GET     -     2 ms - <system>   - 200 - /changes/config?id=1/1PUCDx&command=watch-indexes&noCache=30157673,
+2013-09-03 17:07:31.0338,Raven.Database.Server.HttpServer,Debug,,Request #   5: GET     -     2 ms - <system>   - 200 - /changes/config?id=1/1PUCDx&command=watch-doc&value=Raven/Alerts&noCache=573158499,
+2013-09-03 17:07:32.8559,Raven.Database.Storage.IndexDefinitionStorage,Info,<system>,"New index Raven%2fDocumentsByEntityName:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Raven_2fDocumentsByEntityName : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Raven_2fDocumentsByEntityName()
+	{
+		this.ViewText = @""from doc in docs 
+let Tag = doc[""""@metadata""""][""""Raven-Entity-Name""""]
+select new { Tag, LastModified = (DateTime)doc[""""@metadata""""][""""Last-Modified""""] };"";
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			let Tag = doc[""@metadata""][""Raven-Entity-Name""]
+			select new {
+				Tag,
+				LastModified = (DateTime)doc[""@metadata""][""Last-Modified""],
+				__document_id = doc.__document_id
+			});
+		this.AddField(""LastModified"");
+		this.AddField(""__document_id"");
+		this.AddField(""Tag"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Raven_2fDocumentsByEntityName : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Raven_2fDocumentsByEntityName()
+	{
+		this.ViewText = @""from doc in docs 
+let Tag = doc[""""@metadata""""][""""Raven-Entity-Name""""]
+select new { Tag, LastModified = (DateTime)doc[""""@metadata""""][""""Last-Modified""""] };"";
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			let Tag = doc[""@metadata""][""Raven-Entity-Name""]
+			select new {
+				Tag,
+				LastModified = (DateTime)doc[""@metadata""][""Last-Modified""],
+				__document_id = doc.__document_id
+			});
+		this.AddField(""LastModified"");
+		this.AddField(""__document_id"");
+		this.AddField(""Tag"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2013-09-03 17:07:32.8799,Raven.Database.Indexing.IndexStorage,Debug,<system>,Creating index Raven/DocumentsByEntityName with encoded name Raven/DocumentsByEntityName,
+2013-09-03 17:07:33.6259,Raven.Database.Indexing.Index.Indexing,Debug,<system>,Creating index for Raven/DocumentsByEntityName,
+2013-09-03 17:07:33.7159,Raven.Database.Indexing.WorkContext,Debug,<system>,Incremented work counter to 1 because: PUT INDEX Raven/DocumentsByEntityName,
+2013-09-03 17:07:33.8989,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:07:33.9950,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:07:34.4890,Raven.Database.Server.HttpServer,Debug,,Request #   6: GET     -   599 ms - <system>   - 200 - /stats?noCache=-690083142,
+2013-09-03 17:07:35.7751,Raven.Database.Server.HttpServer,Debug,,Request #   7: GET     -    76 ms - <system>   - 400 - /silverlight/Assets/Images/transformer_edit_delete.png,
+2013-09-03 17:07:35.7751,Raven.Database.Server.HttpServer,Debug,,Request #   8: GET     -    77 ms - <system>   - 400 - /silverlight/Assets/Images/transformer_add_delete.png,
+2013-09-03 17:07:35.9501,Raven.Database.Server.HttpServer,Debug,,Request #   9: GET     -    56 ms - <system>   - 200 - /docs?pageSize=0&noCache=64948909,
+2013-09-03 17:07:36.0491,Raven.Database.Server.HttpServer,Debug,<system>,Request #  10: GET     -     1 ms - <system>   - 200 - /changes/events?id=1/25rZLI,
+2013-09-03 17:07:36.3921,Raven.Database.Server.HttpServer,Debug,,Request #  11: GET     -     9 ms - <system>   - 200 - /build/version?noCache=395268044,
+2013-09-03 17:07:36.3921,Raven.Database.Server.HttpServer,Debug,,Request #  12: GET     -    14 ms - <system>   - 200 - /silverlight/ensureStartup?noCache=1565705275,
+2013-09-03 17:07:36.3951,Raven.Database.Server.HttpServer,Debug,,Request #  14: GET     -    22 ms - <system>   - 200 - /stats?noCache=2018643129,
+2013-09-03 17:07:36.3951,Raven.Database.Server.HttpServer,Debug,,Request #  13: GET     -    11 ms - <system>   - 200 - /databases?pageSize=1024&noCache=1458694908,
+2013-09-03 17:07:36.4501,Raven.Database.Server.HttpServer,Debug,,Request #  15: GET     -    67 ms - <system>   - 200 - /license/status?noCache=-1373574572,
+2013-09-03 17:07:36.4721,Raven.Database.Server.HttpServer,Debug,,Request #  16: GET     -    58 ms - <system>   - 404 - /databases/%3Csystem%3E/docs/Raven/Alerts?noCache=1346402691,
+2013-09-03 17:07:36.5521,Raven.Database.Server.HttpServer,Debug,,Request #  17: GET     -    54 ms - <system>   - 200 - /debug/user-info?noCache=353709998,
+2013-09-03 17:07:38.4532,Raven.Database.Server.HttpServer,Debug,,Request #  18: GET     -     3 ms - <system>   - 200 - /changes/config?id=1/25rZLI&command=watch-docs&noCache=1008873595,
+2013-09-03 17:07:38.4572,Raven.Database.Server.HttpServer,Debug,,Request #  19: GET     -     1 ms - <system>   - 200 - /changes/config?id=1/25rZLI&command=watch-doc&value=Raven/Alerts&noCache=1736062217,
+2013-09-03 17:07:38.4572,Raven.Database.Server.HttpServer,Debug,,Request #  20: GET     -     1 ms - <system>   - 200 - /changes/config?id=1/25rZLI&command=watch-indexes&noCache=-1139043427,
+2013-09-03 17:07:38.4882,Raven.Database.Server.HttpServer,Debug,,Request #  21: GET     -     7 ms - <system>   - 200 - /changes/config?id=1/25rZLI&command=watch-indexes&noCache=2130092475,
+2013-09-03 17:07:38.5002,Raven.Database.Server.HttpServer,Debug,,Request #  22: GET     -     0 ms - <system>   - 200 - /changes/config?id=1/25rZLI&command=watch-doc&value=Raven/Alerts&noCache=-1746285276,
+2013-09-03 17:07:38.5542,Raven.Database.Server.HttpServer,Debug,,Request #  23: GET     -    52 ms - <system>   - 404 - /docs/Raven/StudioConfig?noCache=-709107645,
+2013-09-03 17:07:38.8632,Raven.Database.Server.HttpServer,Debug,,Request #  24: GET     -    14 ms - <system>   - 200 - /plugins/status?noCache=1318948865,
+2013-09-03 17:16:48.9337,Raven.Database.Server.HttpServer,Debug,,Request #  25: GET     -     0 ms - <system>   - 404 - /databases/EmberTinkererDB/docs/Raven/Replication/Destinations,
+2013-09-03 17:16:49.2137,Raven.Database.Server.HttpServer,Debug,,Request #  26: GET     -     1 ms - <system>   - 404 - /docs/Raven/Databases/EmberTinkererDB,
+2013-09-03 17:16:50.0458,Raven.Database.Indexing.WorkContext,Debug,<system>,Incremented work counter to 2 because: PUT Raven/Databases/EmberTinkererDB,
+2013-09-03 17:16:50.0458,Raven.Database.DocumentDatabase,Debug,<system>,Put document Raven/Databases/EmberTinkererDB with etag 01000000-0000-0001-0000-000000000001,
+2013-09-03 17:16:50.0458,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 2, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:16:50.0458,Raven.Database.Server.HttpServer,Debug,,Request #  27: PUT     -   671 ms - <system>   - 200 - /admin/databases/EmberTinkererDB,
+2013-09-03 17:16:50.1158,Raven.Database.Server.HttpServer,Debug,,Request #  28: GET     -    31 ms - <system>   - 200 - /stats?noCache=2088191972,
+2013-09-03 17:16:50.1228,Raven.Database.Server.HttpServer,Debug,,Request #  29: GET     -    38 ms - <system>   - 200 - /stats?noCache=-266595496,
+2013-09-03 17:16:50.3548,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,<system>,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0000-0000-000000000000: (Raven/Databases/EmberTinkererDB),
+2013-09-03 17:16:50.5458,Raven.Database.Impl.DocumentRetriever,Debug,,Trigger Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Databases/EmberTinkererDB,
+2013-09-03 17:16:50.5458,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,<system>,"After read triggers executed, 1 documents remained",
+2013-09-03 17:16:50.6088,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,<system>,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 00000000-0000-0000-0000-000000000000: (Raven/Databases/EmberTinkererDB)",
+2013-09-03 17:16:50.6088,Raven.Database.Impl.DocumentCacher,Info,EmberTinkererDB,"MemoryCache Settings:
+  PhysicalMemoryLimit = 99
+  CacheMemoryLimit    = 3159359488
+  PollingInterval     = 00:02:00",
+2013-09-03 17:16:50.6698,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Raven/DocumentsByEntityName. (Raven/Databases/EmberTinkererDB),
+2013-09-03 17:16:50.6838,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:16:50.6838,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:16:51.2068,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 0 documents for Raven/DocumentsByEntityName,
+2013-09-03 17:16:51.2268,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000001 for Raven/DocumentsByEntityName",
+2013-09-03 17:16:51.3138,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 3 because: WORK BY IndexingExecuter,
+2013-09-03 17:16:51.3138,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:16:51.3138,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:16:51.5708,Raven.Database.Server.HttpServer,Debug,,"Request #  30: HEAD    - 1,424 ms - EmberTinkererDB - 404 - /indexes/Raven/DocumentsByEntityName",
+2013-09-03 17:16:51.8109,Raven.Database.Server.HttpServer,Debug,,Request #  31: GET     -    45 ms - <system>   - 200 - /databases?pageSize=1024&noCache=1612393608,
+2013-09-03 17:16:52.0529,Raven.Database.Storage.IndexDefinitionStorage,Info,EmberTinkererDB,"New index Raven%2fDocumentsByEntityName:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Raven_2fDocumentsByEntityName : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Raven_2fDocumentsByEntityName()
+	{
+		this.ViewText = @""from doc in docs 
+let Tag = doc[""""@metadata""""][""""Raven-Entity-Name""""]
+select new { Tag, LastModified = (DateTime)doc[""""@metadata""""][""""Last-Modified""""] };"";
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			let Tag = doc[""@metadata""][""Raven-Entity-Name""]
+			select new {
+				Tag,
+				LastModified = (DateTime)doc[""@metadata""][""Last-Modified""],
+				__document_id = doc.__document_id
+			});
+		this.AddField(""LastModified"");
+		this.AddField(""__document_id"");
+		this.AddField(""Tag"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Raven_2fDocumentsByEntityName : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Raven_2fDocumentsByEntityName()
+	{
+		this.ViewText = @""from doc in docs 
+let Tag = doc[""""@metadata""""][""""Raven-Entity-Name""""]
+select new { Tag, LastModified = (DateTime)doc[""""@metadata""""][""""Last-Modified""""] };"";
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			let Tag = doc[""@metadata""][""Raven-Entity-Name""]
+			select new {
+				Tag,
+				LastModified = (DateTime)doc[""@metadata""][""Last-Modified""],
+				__document_id = doc.__document_id
+			});
+		this.AddField(""LastModified"");
+		this.AddField(""__document_id"");
+		this.AddField(""Tag"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2013-09-03 17:16:52.0529,Raven.Database.Indexing.IndexStorage,Debug,EmberTinkererDB,Creating index Raven/DocumentsByEntityName with encoded name Raven/DocumentsByEntityName,
+2013-09-03 17:16:52.0549,Raven.Database.Indexing.Index.Indexing,Debug,EmberTinkererDB,Creating index for Raven/DocumentsByEntityName,
+2013-09-03 17:16:52.0549,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 1 because: PUT INDEX Raven/DocumentsByEntityName,
+2013-09-03 17:16:52.0549,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:16:52.0549,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:16:52.0549,Raven.Database.Server.HttpServer,Debug,,Request #  32: PUT     -   221 ms - EmberTinkererDB - 201 - /indexes/Raven/DocumentsByEntityName,
+2013-09-03 17:16:52.0939,Raven.Database.Server.HttpServer,Debug,,Request #  33: GET     -    33 ms - <system>   - 200 - /stats?noCache=1884324402,
+2013-09-03 17:16:52.0939,Raven.Database.Server.HttpServer,Debug,,Request #  34: GET     -     1 ms - EmberTinkererDB - 404 - /docs/Raven/Replication/Destinations,
+2013-09-03 17:16:52.0939,Raven.Database.Server.HttpServer,Debug,,Request #  35: GET     -    14 ms - <system>   - 200 - /stats?noCache=1278315245,
+2013-09-03 17:16:58.9843,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:16:59.1893,Raven.Database.Server.HttpServer,Debug,,"Request #  36: GET     - 1,307 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128",
+2013-09-03 17:16:59.2163,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 1,143 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 0 returned out of 0 total.
+",
+2013-09-03 17:17:09.2189,Raven.Database.Server.HttpServer,Debug,,Request #  37: GET     -    82 ms - EmberTinkererDB - 200 - /queries/?&id=Raven%2FHilo%2Fprojects&id=Raven%2FServerPrefixForHilo,
+2013-09-03 17:17:09.3139,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 2 because: PUT Raven/Hilo/projects,
+2013-09-03 17:17:09.3139,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document Raven/Hilo/projects with etag 01000000-0000-0001-0000-000000000001,
+2013-09-03 17:17:09.3139,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 2, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:17:09.3139,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0000-0000-000000000000: (Raven/Hilo/projects),
+2013-09-03 17:17:09.3139,Raven.Database.Impl.DocumentRetriever,Debug,,Trigger Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/projects,
+2013-09-03 17:17:09.3139,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"After read triggers executed, 1 documents remained",
+2013-09-03 17:17:09.3139,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 00000000-0000-0000-0000-000000000000: (Raven/Hilo/projects)",
+2013-09-03 17:17:09.3139,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Raven/DocumentsByEntityName. (Raven/Hilo/projects),
+2013-09-03 17:17:09.3139,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 0 documents for Raven/DocumentsByEntityName,
+2013-09-03 17:17:09.3139,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000001 for Raven/DocumentsByEntityName",
+2013-09-03 17:17:09.3139,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 3 because: WORK BY IndexingExecuter,
+2013-09-03 17:17:09.3139,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:17:09.3139,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:17:09.3139,Raven.Database.Server.HttpServer,Debug,,Request #  38: PUT     -    66 ms - EmberTinkererDB - 201 - /docs/Raven/Hilo/projects,
+2013-09-03 17:17:09.5239,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document projects/1 with etag 01000000-0000-0001-0000-000000000002,
+2013-09-03 17:17:09.5239,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 4 because: PUT projects/1,
+2013-09-03 17:17:09.5239,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 4, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:17:09.5449,Raven.Database.Server.HttpServer,Debug,,Request #  39: POST    -    91 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 17:17:09.5449,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000001: (projects/1),
+2013-09-03 17:17:09.5449,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 17:17:09.5449,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 01000000-0000-0001-0000-000000000001: (projects/1)",
+2013-09-03 17:17:09.5449,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Raven/DocumentsByEntityName. (projects/1),
+2013-09-03 17:17:09.5449,Raven.Database.Server.HttpServer,Debug,,"	PUT projects/1
+",
+2013-09-03 17:17:09.8759,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on projects/1 result in index Raven/DocumentsByEntityName gave document: 	__document_id IS: projects/1
+	Tag I-: Projects
+	LastModified I-: 2013-09-03T22:17:09.5189188Z
+",
+2013-09-03 17:17:10.8589,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Raven/DocumentsByEntityName,
+2013-09-03 17:17:10.8589,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000002 for Raven/DocumentsByEntityName",
+2013-09-03 17:17:10.8589,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 5 because: WORK BY IndexingExecuter,
+2013-09-03 17:17:10.8589,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 5, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:17:10.8589,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 5, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:17:11.1660,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document project/1 with etag 01000000-0000-0001-0000-000000000003,
+2013-09-03 17:17:11.1820,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 6 because: PUT project/1,
+2013-09-03 17:17:11.1820,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 6, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:17:11.1820,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000002: (project/1),
+2013-09-03 17:17:11.1820,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 17:17:11.1820,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 01000000-0000-0001-0000-000000000002: (project/1)",
+2013-09-03 17:17:11.1820,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Raven/DocumentsByEntityName. (project/1),
+2013-09-03 17:17:11.1820,Raven.Database.Server.HttpServer,Debug,,Request #  40: POST    -    20 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 17:17:11.1820,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on project/1 result in index Raven/DocumentsByEntityName gave document: 	__document_id IS: project/1
+	Tag I-: Projects
+	LastModified I-: 2013-09-03T22:17:11.1650129Z
+",
+2013-09-03 17:17:11.1820,Raven.Database.Server.HttpServer,Debug,,"	PUT project/1
+",
+2013-09-03 17:17:11.2100,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Raven/DocumentsByEntityName,
+2013-09-03 17:17:11.2100,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000003 for Raven/DocumentsByEntityName",
+2013-09-03 17:17:11.2110,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 7 because: WORK BY IndexingExecuter,
+2013-09-03 17:17:11.2110,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 7, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:17:11.2110,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 7, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:17:20.9495,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document project/1 with etag 01000000-0000-0001-0000-000000000004,
+2013-09-03 17:17:20.9665,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 8 because: PUT project/1,
+2013-09-03 17:17:20.9665,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 8, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:17:20.9665,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000003: (project/1),
+2013-09-03 17:17:20.9665,Raven.Database.Server.HttpServer,Debug,,Request #  41: POST    -    28 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 17:17:20.9665,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 17:17:20.9665,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 01000000-0000-0001-0000-000000000003: (project/1)",
+2013-09-03 17:17:20.9665,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Raven/DocumentsByEntityName. (project/1),
+2013-09-03 17:17:20.9665,Raven.Database.Server.HttpServer,Debug,,"	PUT project/1
+",
+2013-09-03 17:17:20.9985,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on project/1 result in index Raven/DocumentsByEntityName gave document: 	__document_id IS: project/1
+	Tag I-: Projects
+	LastModified I-: 2013-09-03T22:17:20.9415721Z
+",
+2013-09-03 17:17:21.1435,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Raven/DocumentsByEntityName,
+2013-09-03 17:17:21.1435,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000004 for Raven/DocumentsByEntityName",
+2013-09-03 17:17:21.1435,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 9 because: WORK BY IndexingExecuter,
+2013-09-03 17:17:21.1435,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 9, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:17:21.1435,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 9, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:17:22.7396,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:17:22.8906,Raven.Database.Server.HttpServer,Debug,,Request #  42: GET     -   155 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:17:22.8906,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 146 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 2 returned out of 2 total.
+",
+2013-09-03 17:18:29.4704,Raven.Database.Server.HttpServer,Debug,,Request #  43: GET     -     2 ms - EmberTinkererDB - 304 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:18:29.4704,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 0 ms
+",
+2013-09-03 17:19:53.8783,Raven.Database.Server.HttpServer,Debug,,Request #  44: GET     -     1 ms - EmberTinkererDB - 404 - /docs/Raven/Replication/Destinations,
+2013-09-03 17:19:54.2013,Raven.Database.Server.HttpServer,Debug,,Request #  45: GET     -    21 ms - <system>   - 200 - /docs/Raven/Databases/EmberTinkererDB,
+2013-09-03 17:19:59.7776,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:19:59.7776,Raven.Database.Server.HttpServer,Debug,,Request #  46: GET     -     8 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:19:59.7776,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 6 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 2 returned out of 2 total.
+",
+2013-09-03 17:20:10.1352,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document project/1 with etag 01000000-0000-0001-0000-000000000005,
+2013-09-03 17:20:10.1352,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 10 because: PUT project/1,
+2013-09-03 17:20:10.1352,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 10, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:20:10.1352,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000004: (project/1),
+2013-09-03 17:20:10.1352,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 17:20:10.1352,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 01000000-0000-0001-0000-000000000004: (project/1)",
+2013-09-03 17:20:10.1352,Raven.Database.Server.HttpServer,Debug,,Request #  47: POST    -     7 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 17:20:10.1352,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Raven/DocumentsByEntityName. (project/1),
+2013-09-03 17:20:10.1352,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on project/1 result in index Raven/DocumentsByEntityName gave document: 	__document_id IS: project/1
+	Tag I-: Projects
+	LastModified I-: 2013-09-03T22:20:10.1342494Z
+",
+2013-09-03 17:20:10.1352,Raven.Database.Server.HttpServer,Debug,,"	PUT project/1
+",
+2013-09-03 17:20:10.1482,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Raven/DocumentsByEntityName,
+2013-09-03 17:20:10.1482,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000005 for Raven/DocumentsByEntityName",
+2013-09-03 17:20:10.1482,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 11 because: WORK BY IndexingExecuter,
+2013-09-03 17:20:10.1482,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 11, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:20:10.1482,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 11, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:20:17.6016,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:20:17.6016,Raven.Database.Server.HttpServer,Debug,,Request #  48: GET     -     6 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:20:17.6016,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 4 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 2 returned out of 2 total.
+",
+2013-09-03 17:20:23.4030,Raven.Database.Server.HttpServer,Debug,,Request #  49: GET     -     3 ms - EmberTinkererDB - 200 - /queries/?&id=Raven%2FHilo%2Fprojects&id=Raven%2FServerPrefixForHilo,
+2013-09-03 17:20:23.4380,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 12 because: PUT Raven/Hilo/projects,
+2013-09-03 17:20:23.4380,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document Raven/Hilo/projects with etag 01000000-0000-0001-0000-000000000006,
+2013-09-03 17:20:23.4380,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 12, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:20:23.4380,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000005: (Raven/Hilo/projects),
+2013-09-03 17:20:23.4380,Raven.Database.Impl.DocumentRetriever,Debug,,Trigger Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/projects,
+2013-09-03 17:20:23.4380,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 17:20:23.4380,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 01000000-0000-0001-0000-000000000005: (Raven/Hilo/projects)",
+2013-09-03 17:20:23.4380,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Raven/DocumentsByEntityName. (Raven/Hilo/projects),
+2013-09-03 17:20:23.4380,Raven.Database.Server.HttpServer,Debug,,Request #  50: PUT     -     2 ms - EmberTinkererDB - 201 - /docs/Raven/Hilo/projects,
+2013-09-03 17:20:23.4380,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 0 documents for Raven/DocumentsByEntityName,
+2013-09-03 17:20:23.4380,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000006 for Raven/DocumentsByEntityName",
+2013-09-03 17:20:23.4380,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 13 because: WORK BY IndexingExecuter,
+2013-09-03 17:20:23.4380,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 13, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:20:23.4380,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 13, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:20:23.4550,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document projects/33 with etag 01000000-0000-0001-0000-000000000007,
+2013-09-03 17:20:23.4550,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 14 because: PUT projects/33,
+2013-09-03 17:20:23.4550,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 14, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:20:23.4550,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000006: (projects/33),
+2013-09-03 17:20:23.4550,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 17:20:23.4550,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 01000000-0000-0001-0000-000000000006: (projects/33)",
+2013-09-03 17:20:23.4550,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Raven/DocumentsByEntityName. (projects/33),
+2013-09-03 17:20:23.4550,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on projects/33 result in index Raven/DocumentsByEntityName gave document: 	__document_id IS: projects/33
+	Tag I-: Projects
+	LastModified I-: 2013-09-03T22:20:23.4550113Z
+",
+2013-09-03 17:20:23.4550,Raven.Database.Server.HttpServer,Debug,,Request #  51: POST    -     2 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 17:20:23.4550,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Raven/DocumentsByEntityName,
+2013-09-03 17:20:23.4550,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000007 for Raven/DocumentsByEntityName",
+2013-09-03 17:20:23.4550,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 15 because: WORK BY IndexingExecuter,
+2013-09-03 17:20:23.4550,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 15, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:20:23.4550,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 15, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:20:23.4550,Raven.Database.Server.HttpServer,Debug,,"	PUT projects/33
+",
+2013-09-03 17:21:09.7896,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:21:09.8036,Raven.Database.Server.HttpServer,Debug,,Request #  52: GET     -    17 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:21:09.8036,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 14 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 3 returned out of 3 total.
+",
+2013-09-03 17:21:31.7369,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document projects/34 with etag 01000000-0000-0001-0000-000000000008,
+2013-09-03 17:21:31.7369,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 16 because: PUT projects/34,
+2013-09-03 17:21:31.7369,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 16, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:21:31.7369,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000007: (projects/34),
+2013-09-03 17:21:31.7369,Raven.Database.Server.HttpServer,Debug,,Request #  53: POST    -     3 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 17:21:31.7369,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 17:21:31.7369,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 01000000-0000-0001-0000-000000000007: (projects/34)",
+2013-09-03 17:21:31.7369,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Raven/DocumentsByEntityName. (projects/34),
+2013-09-03 17:21:31.7369,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on projects/34 result in index Raven/DocumentsByEntityName gave document: 	__document_id IS: projects/34
+	Tag I-: Projects
+	LastModified I-: 2013-09-03T22:21:31.7369168Z
+",
+2013-09-03 17:21:31.7369,Raven.Database.Server.HttpServer,Debug,,"	PUT projects/34
+",
+2013-09-03 17:21:31.7519,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Raven/DocumentsByEntityName,
+2013-09-03 17:21:31.7519,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000008 for Raven/DocumentsByEntityName",
+2013-09-03 17:21:31.7519,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 17 because: WORK BY IndexingExecuter,
+2013-09-03 17:21:31.7519,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 17, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:21:31.7519,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 17, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:21:35.4471,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:21:35.4471,Raven.Database.Server.HttpServer,Debug,,Request #  54: GET     -     8 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:21:35.4471,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 5 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 4 returned out of 4 total.
+",
+2013-09-03 17:21:46.8487,Raven.Database.Server.HttpServer,Debug,,Error when using events transport,"System.AggregateException: One or more errors occurred. ---> System.Net.HttpListenerException: An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.HttpListenerException (0x80004005): An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130<---
+"
+time,logger,level,database,message,exception
+2013-09-03 17:23:33.7158,Raven.Database.Impl.DocumentCacher,Info,<system>,"MemoryCache Settings:
+  PhysicalMemoryLimit = 99
+  CacheMemoryLimit    = 3159359488
+  PollingInterval     = 00:02:00",
+2013-09-03 17:23:35.2859,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:23:35.2859,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:23:37.2130,Raven.Database.Server.HttpServer,Debug,,"Request #   1: GET     - 1,652 ms - <system>   - 200 - /databases?pageSize=1024&noCache=1626458473",
+2013-09-03 17:23:37.2130,Raven.Database.Server.HttpServer,Debug,,"Request #   2: GET     - 1,653 ms - <system>   - 200 - /databases?pageSize=1024&noCache=607719599",
+2013-09-03 17:23:42.1373,Raven.Database.Storage.IndexDefinitionStorage,Info,<system>,"New index Raven%2fDocumentsByEntityName:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Raven_2fDocumentsByEntityName : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Raven_2fDocumentsByEntityName()
+	{
+		this.ViewText = @""from doc in docs 
+let Tag = doc[""""@metadata""""][""""Raven-Entity-Name""""]
+select new { Tag, LastModified = (DateTime)doc[""""@metadata""""][""""Last-Modified""""] };"";
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			let Tag = doc[""@metadata""][""Raven-Entity-Name""]
+			select new {
+				Tag,
+				LastModified = (DateTime)doc[""@metadata""][""Last-Modified""],
+				__document_id = doc.__document_id
+			});
+		this.AddField(""LastModified"");
+		this.AddField(""__document_id"");
+		this.AddField(""Tag"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Raven_2fDocumentsByEntityName : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Raven_2fDocumentsByEntityName()
+	{
+		this.ViewText = @""from doc in docs 
+let Tag = doc[""""@metadata""""][""""Raven-Entity-Name""""]
+select new { Tag, LastModified = (DateTime)doc[""""@metadata""""][""""Last-Modified""""] };"";
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			let Tag = doc[""@metadata""][""Raven-Entity-Name""]
+			select new {
+				Tag,
+				LastModified = (DateTime)doc[""@metadata""][""Last-Modified""],
+				__document_id = doc.__document_id
+			});
+		this.AddField(""LastModified"");
+		this.AddField(""__document_id"");
+		this.AddField(""Tag"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2013-09-03 17:23:42.1563,Raven.Database.Indexing.IndexStorage,Debug,<system>,Creating index Raven/DocumentsByEntityName with encoded name Raven/DocumentsByEntityName,
+2013-09-03 17:23:42.9344,Raven.Database.Indexing.Index.Indexing,Debug,<system>,Creating index for Raven/DocumentsByEntityName,
+2013-09-03 17:23:43.0284,Raven.Database.Indexing.WorkContext,Debug,<system>,Incremented work counter to 1 because: PUT INDEX Raven/DocumentsByEntityName,
+2013-09-03 17:23:43.2334,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:23:43.2904,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:23:45.2315,Raven.Database.Server.HttpServer,Debug,,Request #   3: GET     -    61 ms - <system>   - 200 - /docs?pageSize=0&noCache=-1525601456,
+2013-09-03 17:23:45.2895,Raven.Database.Server.HttpServer,Debug,,Request #   4: GET     -   341 ms - <system>   - 400 - /silverlight/Assets/Images/transformer_add_delete.png,
+2013-09-03 17:23:45.2895,Raven.Database.Server.HttpServer,Debug,,Request #   5: GET     -   342 ms - <system>   - 400 - /silverlight/Assets/Images/transformer_edit_delete.png,
+2013-09-03 17:23:45.6885,Raven.Database.Server.HttpServer,Debug,,Request #   6: GET     -     1 ms - <system>   - 200 - /databases?pageSize=1024&noCache=-1053024540,
+2013-09-03 17:23:45.7765,Raven.Database.Server.HttpServer,Debug,,Request #   7: GET     -    63 ms - <system>   - 200 - /build/version?noCache=1427883338,
+2013-09-03 17:23:45.8045,Raven.Database.Server.HttpServer,Debug,,Request #   8: GET     -   119 ms - <system>   - 200 - /license/status?noCache=-2021050328,
+2013-09-03 17:23:45.8045,Raven.Database.Server.HttpServer,Debug,,Request #   9: GET     -   131 ms - <system>   - 200 - /silverlight/ensureStartup?noCache=-1857959104,
+2013-09-03 17:23:45.8365,Raven.Database.Server.HttpServer,Debug,<system>,Request #  10: GET     -   486 ms - <system>   - 200 - /changes/events?id=1/1vpUyu,
+2013-09-03 17:23:45.8475,Raven.Database.Server.HttpServer,Debug,,Request #  11: GET     -   106 ms - <system>   - 404 - /databases/%3Csystem%3E/docs/Raven/Alerts?noCache=302753050,
+2013-09-03 17:23:45.9025,Raven.Database.Server.HttpServer,Debug,,Request #  12: GET     -    69 ms - <system>   - 200 - /debug/user-info?noCache=458236681,
+2013-09-03 17:23:46.0605,Raven.Database.Server.HttpServer,Debug,,Request #  13: GET     -   380 ms - <system>   - 200 - /stats?noCache=-1371748076,
+2013-09-03 17:23:47.8907,Raven.Database.Server.HttpServer,Debug,,Request #  14: GET     -    21 ms - <system>   - 200 - /changes/config?id=1/1vpUyu&command=watch-doc&value=Raven/Alerts&noCache=1681828874,
+2013-09-03 17:23:47.8907,Raven.Database.Server.HttpServer,Debug,,Request #  15: GET     -    17 ms - <system>   - 200 - /changes/config?id=1/1vpUyu&command=watch-docs&noCache=-613878284,
+2013-09-03 17:23:47.8907,Raven.Database.Server.HttpServer,Debug,,Request #  16: GET     -    22 ms - <system>   - 200 - /changes/config?id=1/1vpUyu&command=watch-indexes&noCache=1099265810,
+2013-09-03 17:23:47.9117,Raven.Database.Server.HttpServer,Debug,,Request #  17: GET     -     1 ms - <system>   - 200 - /changes/config?id=1/1vpUyu&command=watch-indexes&noCache=1313463576,
+2013-09-03 17:23:47.9117,Raven.Database.Server.HttpServer,Debug,,Request #  18: GET     -     0 ms - <system>   - 200 - /changes/config?id=1/1vpUyu&command=watch-docs&noCache=88231315,
+2013-09-03 17:23:47.9557,Raven.Database.Server.HttpServer,Debug,,Request #  19: GET     -    31 ms - <system>   - 404 - /docs/Raven/StudioConfig?noCache=-1594898664,
+2013-09-03 17:23:48.3107,Raven.Database.Server.HttpServer,Debug,,Request #  20: GET     -    11 ms - <system>   - 200 - /plugins/status?noCache=162700505,
+2013-09-03 17:24:00.6864,Raven.Database.Indexing.WorkContext,Debug,<system>,Incremented work counter to 2 because: PUT Raven/Databases/EmberTinkererDB,
+2013-09-03 17:24:00.6864,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 2, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:24:00.6864,Raven.Database.DocumentDatabase,Debug,<system>,Put document Raven/Databases/EmberTinkererDB with etag 01000000-0000-0001-0000-000000000001,
+2013-09-03 17:24:00.6864,Raven.Database.Server.HttpServer,Debug,,Request #  21: PUT     -   671 ms - <system>   - 200 - /admin/databases/EmberTinkererDB,
+2013-09-03 17:24:00.7654,Raven.Database.Server.HttpServer,Debug,,Request #  22: GET     -    41 ms - <system>   - 200 - /stats?noCache=-1102664540,
+2013-09-03 17:24:00.9854,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,<system>,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0000-0000-000000000000: (Raven/Databases/EmberTinkererDB),
+2013-09-03 17:24:01.1064,Raven.Database.Impl.DocumentRetriever,Debug,,Trigger Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Databases/EmberTinkererDB,
+2013-09-03 17:24:01.1064,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,<system>,"After read triggers executed, 1 documents remained",
+2013-09-03 17:24:01.1704,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,<system>,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 00000000-0000-0000-0000-000000000000: (Raven/Databases/EmberTinkererDB)",
+2013-09-03 17:24:01.1704,Raven.Database.Impl.DocumentCacher,Info,EmberTinkererDB,"MemoryCache Settings:
+  PhysicalMemoryLimit = 99
+  CacheMemoryLimit    = 3159359488
+  PollingInterval     = 00:02:00",
+2013-09-03 17:24:01.2304,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Raven/DocumentsByEntityName. (Raven/Databases/EmberTinkererDB),
+2013-09-03 17:24:01.2784,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:24:01.2784,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:24:01.7684,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 0 documents for Raven/DocumentsByEntityName,
+2013-09-03 17:24:01.8195,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000001 for Raven/DocumentsByEntityName",
+2013-09-03 17:24:01.9185,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 3 because: WORK BY IndexingExecuter,
+2013-09-03 17:24:01.9185,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:24:01.9185,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:24:02.3055,Raven.Database.Storage.IndexDefinitionStorage,Info,EmberTinkererDB,"New index Raven%2fDocumentsByEntityName:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Raven_2fDocumentsByEntityName : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Raven_2fDocumentsByEntityName()
+	{
+		this.ViewText = @""from doc in docs 
+let Tag = doc[""""@metadata""""][""""Raven-Entity-Name""""]
+select new { Tag, LastModified = (DateTime)doc[""""@metadata""""][""""Last-Modified""""] };"";
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			let Tag = doc[""@metadata""][""Raven-Entity-Name""]
+			select new {
+				Tag,
+				LastModified = (DateTime)doc[""@metadata""][""Last-Modified""],
+				__document_id = doc.__document_id
+			});
+		this.AddField(""LastModified"");
+		this.AddField(""__document_id"");
+		this.AddField(""Tag"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Raven_2fDocumentsByEntityName : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Raven_2fDocumentsByEntityName()
+	{
+		this.ViewText = @""from doc in docs 
+let Tag = doc[""""@metadata""""][""""Raven-Entity-Name""""]
+select new { Tag, LastModified = (DateTime)doc[""""@metadata""""][""""Last-Modified""""] };"";
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			let Tag = doc[""@metadata""][""Raven-Entity-Name""]
+			select new {
+				Tag,
+				LastModified = (DateTime)doc[""@metadata""][""Last-Modified""],
+				__document_id = doc.__document_id
+			});
+		this.AddField(""LastModified"");
+		this.AddField(""__document_id"");
+		this.AddField(""Tag"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2013-09-03 17:24:02.3055,Raven.Database.Indexing.IndexStorage,Debug,EmberTinkererDB,Creating index Raven/DocumentsByEntityName with encoded name Raven/DocumentsByEntityName,
+2013-09-03 17:24:02.3055,Raven.Database.Indexing.Index.Indexing,Debug,EmberTinkererDB,Creating index for Raven/DocumentsByEntityName,
+2013-09-03 17:24:02.3055,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 1 because: PUT INDEX Raven/DocumentsByEntityName,
+2013-09-03 17:24:02.3055,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:24:02.3055,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:24:02.3055,Raven.Database.Server.HttpServer,Debug,,"Request #  23: GET     - 1,619 ms - EmberTinkererDB - 200 - /silverlight/ensureStartup?noCache=-429135439",
+2013-09-03 17:24:02.4275,Raven.Database.Server.HttpServer,Debug,,Request #  24: GET     -     2 ms - <system>   - 200 - /changes/config?id=1/1vpUyu&command=unwatch-docs&noCache=-960574865,
+2013-09-03 17:24:02.4395,Raven.Database.Server.HttpServer,Debug,,Request #  25: GET     -     1 ms - <system>   - 200 - /changes/config?id=1/1vpUyu&command=unwatch-indexes&noCache=548686823,
+2013-09-03 17:24:02.4395,Raven.Database.Server.HttpServer,Debug,EmberTinkererDB,Request #  26: GET     -     3 ms - EmberTinkererDB - 200 - /changes/events?id=2/1tDPhg,
+2013-09-03 17:24:02.4505,Raven.Database.Server.HttpServer,Debug,,Request #  27: GET     -    57 ms - <system>   - 200 - /databases?pageSize=1024&noCache=2118100912,
+2013-09-03 17:24:02.4645,Raven.Database.Server.HttpServer,Debug,,Request #  28: GET     -    13 ms - <system>   - 200 - /changes/config?id=1/1vpUyu&command=disconnect&noCache=273038519,
+2013-09-03 17:24:02.4765,Raven.Database.Server.HttpServer,Debug,,Request #  29: GET     -     1 ms - EmberTinkererDB - 404 - /docs/Raven/Alerts?noCache=-1339919290,
+2013-09-03 17:24:02.4765,Raven.Database.Server.HttpServer,Debug,,Request #  30: GET     -    11 ms - <system>   - 200 - /changes/config?id=1/1vpUyu&command=unwatch-indexes&noCache=1411651743,
+2013-09-03 17:24:02.5315,Raven.Database.Server.HttpServer,Debug,,Request #  31: GET     -    26 ms - <system>   - 200 - /docs/Raven/Databases/EmberTinkererDB?noCache=-124470957,
+2013-09-03 17:24:02.5715,Raven.Database.Server.HttpServer,Debug,,Request #  32: GET     -     0 ms - <system>   - 200 - /changes/config?id=1/1vpUyu&command=disconnect&noCache=-489162936,
+2013-09-03 17:24:02.5715,Raven.Database.Server.HttpServer,Debug,,Request #  33: GET     -    95 ms - EmberTinkererDB - 200 - /stats?noCache=-947731413,
+2013-09-03 17:24:02.5865,Raven.Database.Server.HttpServer,Debug,,Request #  35: GET     -   110 ms - EmberTinkererDB - 200 - /stats?noCache=-1798905630,
+2013-09-03 17:24:02.5715,Raven.Database.Server.HttpServer,Debug,,Request #  34: GET     -     1 ms - EmberTinkererDB - 200 - /silverlight/ensureStartup?noCache=1453318280,
+2013-09-03 17:24:02.6805,Raven.Database.Server.HttpServer,Debug,,Request #  36: GET     -     1 ms - EmberTinkererDB - 200 - /changes/config?id=2/1tDPhg&command=watch-docs&noCache=-695551325,
+2013-09-03 17:24:02.6805,Raven.Database.Server.HttpServer,Debug,,Request #  37: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1tDPhg&command=watch-doc&value=Raven/Alerts&noCache=81463017,
+2013-09-03 17:24:02.6805,Raven.Database.Server.HttpServer,Debug,,Request #  38: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1tDPhg&command=watch-indexes&noCache=-253164680,
+2013-09-03 17:24:02.7005,Raven.Database.Server.HttpServer,Debug,,Request #  39: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1tDPhg&command=watch-indexes&noCache=-1180004151,
+2013-09-03 17:24:02.7005,Raven.Database.Server.HttpServer,Debug,,Request #  40: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1tDPhg&command=watch-doc&value=Raven/Alerts&noCache=1330906724,
+2013-09-03 17:24:02.7495,Raven.Database.Server.HttpServer,Debug,,Request #  41: GET     -    40 ms - <system>   - 200 - /stats?noCache=-2033363089,
+2013-09-03 17:24:05.8977,Raven.Database.Server.HttpServer,Debug,,Error when using events transport,"System.AggregateException: One or more errors occurred. ---> System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'System.Net.HttpListenerResponse'.
+   at System.Net.HttpListenerResponse.CheckDisposed()
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'System.Net.HttpListenerResponse'.
+   at System.Net.HttpListenerResponse.CheckDisposed()
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130<---
+"
+2013-09-03 17:24:16.4303,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:24:16.5713,Raven.Database.Server.HttpServer,Debug,,"Request #  42: GET     - 1,212 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128",
+2013-09-03 17:24:16.5813,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 1,087 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 0 returned out of 0 total.
+",
+2013-09-03 17:25:33.4487,Raven.Database.Server.HttpServer,Debug,,Request #  43: GET     -     1 ms - EmberTinkererDB - 404 - /docs/Raven/Replication/Destinations,
+2013-09-03 17:25:33.5857,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document projects/35 with etag 01000000-0000-0001-0000-000000000001,
+2013-09-03 17:25:33.5857,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 2 because: PUT projects/35,
+2013-09-03 17:25:33.5857,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 2, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:25:33.5857,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0000-0000-000000000000: (projects/35),
+2013-09-03 17:25:33.5857,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"After read triggers executed, 1 documents remained",
+2013-09-03 17:25:33.5857,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 00000000-0000-0000-0000-000000000000: (projects/35)",
+2013-09-03 17:25:33.5857,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Raven/DocumentsByEntityName. (projects/35),
+2013-09-03 17:25:33.6037,Raven.Database.Server.HttpServer,Debug,,Request #  44: GET     -    11 ms - EmberTinkererDB - 200 - /stats?noCache=1979855875,
+2013-09-03 17:25:33.6167,Raven.Database.Server.HttpServer,Debug,,Request #  45: POST    -   167 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 17:25:33.6307,Raven.Database.Server.HttpServer,Debug,,"	PUT projects/35
+",
+2013-09-03 17:25:33.9867,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on projects/35 result in index Raven/DocumentsByEntityName gave document: 	__document_id IS: projects/35
+	Tag I-: Projects
+	LastModified I-: 2013-09-03T22:25:33.5857497Z
+",
+2013-09-03 17:25:34.4738,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:25:34.4738,Raven.Database.Server.HttpServer,Debug,,Request #  46: GET     -     5 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:25:34.4738,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 3 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 0 returned out of 0 total.
+",
+2013-09-03 17:25:35.1108,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Raven/DocumentsByEntityName,
+2013-09-03 17:25:35.1108,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000001 for Raven/DocumentsByEntityName",
+2013-09-03 17:25:35.1108,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 3 because: WORK BY IndexingExecuter,
+2013-09-03 17:25:35.1108,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:25:35.1108,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:25:35.6078,Raven.Database.Server.HttpServer,Debug,,Request #  47: GET     -    10 ms - EmberTinkererDB - 200 - /stats?noCache=1758150868,
+2013-09-03 17:25:38.5670,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document projects/36 with etag 01000000-0000-0001-0000-000000000002,
+2013-09-03 17:25:38.5670,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 4 because: PUT projects/36,
+2013-09-03 17:25:38.5670,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 4, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:25:38.5670,Raven.Database.Server.HttpServer,Debug,,Request #  48: POST    -    12 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 17:25:38.5770,Raven.Database.Server.HttpServer,Debug,,"	PUT projects/36
+",
+2013-09-03 17:25:38.5970,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000001: (projects/36),
+2013-09-03 17:25:38.5970,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 17:25:38.5970,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 01000000-0000-0001-0000-000000000001: (projects/36)",
+2013-09-03 17:25:38.5970,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Raven/DocumentsByEntityName. (projects/36),
+2013-09-03 17:25:38.5970,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on projects/36 result in index Raven/DocumentsByEntityName gave document: 	__document_id IS: projects/36
+	Tag I-: Projects
+	LastModified I-: 2013-09-03T22:25:38.5620344Z
+",
+2013-09-03 17:25:38.6190,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Raven/DocumentsByEntityName,
+2013-09-03 17:25:38.6200,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000002 for Raven/DocumentsByEntityName",
+2013-09-03 17:25:38.6200,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 5 because: WORK BY IndexingExecuter,
+2013-09-03 17:25:38.6200,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 5, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:25:38.6200,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 5, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:25:38.6200,Raven.Database.Server.HttpServer,Debug,,Request #  49: GET     -    39 ms - EmberTinkererDB - 200 - /stats?noCache=-599159913,
+2013-09-03 17:25:40.5891,Raven.Database.Server.HttpServer,Debug,,Request #  50: GET     -    10 ms - EmberTinkererDB - 200 - /stats?noCache=631327946,
+2013-09-03 17:25:44.1773,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document project/36 with etag 01000000-0000-0001-0000-000000000003,
+2013-09-03 17:25:44.1773,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 6 because: PUT project/36,
+2013-09-03 17:25:44.1773,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 6, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:25:44.1773,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000002: (project/36),
+2013-09-03 17:25:44.1773,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 17:25:44.1893,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 01000000-0000-0001-0000-000000000002: (project/36)",
+2013-09-03 17:25:44.1893,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Raven/DocumentsByEntityName. (project/36),
+2013-09-03 17:25:44.1773,Raven.Database.Server.HttpServer,Debug,,Request #  51: POST    -    13 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 17:25:44.1893,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on project/36 result in index Raven/DocumentsByEntityName gave document: 	__document_id IS: project/36
+	Tag I-: Projects
+	LastModified I-: 2013-09-03T22:25:44.1763555Z
+",
+2013-09-03 17:25:44.1893,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Raven/DocumentsByEntityName,
+2013-09-03 17:25:44.1893,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000003 for Raven/DocumentsByEntityName",
+2013-09-03 17:25:44.1893,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 7 because: WORK BY IndexingExecuter,
+2013-09-03 17:25:44.1893,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 7, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:25:44.1893,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 7, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:25:44.1893,Raven.Database.Server.HttpServer,Debug,,"	PUT project/36
+",
+2013-09-03 17:25:44.2263,Raven.Database.Server.HttpServer,Debug,,Request #  52: GET     -    22 ms - EmberTinkererDB - 200 - /stats?noCache=-1509671262,
+2013-09-03 17:25:45.1034,Raven.Database.Server.HttpServer,Debug,,Request #  53: GET     -    27 ms - EmberTinkererDB - 200 - /stats?noCache=-615680941,
+2013-09-03 17:25:45.7774,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:25:46.0084,Raven.Database.Server.HttpServer,Debug,,Request #  54: GET     -   233 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:25:46.0084,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 224 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 3 returned out of 3 total.
+",
+2013-09-03 17:25:52.5188,Raven.Database.Server.HttpServer,Debug,,Request #  55: GET     -    10 ms - EmberTinkererDB - 200 - /stats?noCache=506416222,
+2013-09-03 17:25:56.2260,Raven.Database.Server.HttpServer,Debug,,Request #  56: GET     -    26 ms - EmberTinkererDB - 200 - /stats?noCache=-300523429,
+2013-09-03 17:26:49.6160,Raven.Database.Server.HttpServer,Debug,,Request #  57: GET     -     2 ms - EmberTinkererDB - 304 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:26:49.6160,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 0 ms
+",
+2013-09-03 17:28:11.1157,Raven.Database.Server.HttpServer,Debug,,Request #  58: GET     -    39 ms - <system>   - 200 - /databases?pageSize=1024&noCache=829039306,
+2013-09-03 17:30:02.3901,Raven.Database.Server.HttpServer,Debug,,Request #  59: GET     -    26 ms - EmberTinkererDB - 200 - /stats?noCache=92557473,
+2013-09-03 17:30:24.4583,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document projects/37 with etag 01000000-0000-0001-0000-000000000004,
+2013-09-03 17:30:24.4583,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 8 because: PUT projects/37,
+2013-09-03 17:30:24.4583,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 8, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:30:24.4583,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000003: (projects/37),
+2013-09-03 17:30:24.4613,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 17:30:24.4613,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 01000000-0000-0001-0000-000000000003: (projects/37)",
+2013-09-03 17:30:24.4613,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Raven/DocumentsByEntityName. (projects/37),
+2013-09-03 17:30:24.4583,Raven.Database.Server.HttpServer,Debug,,Request #  60: POST    -     4 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 17:30:24.4613,Raven.Database.Server.HttpServer,Debug,,"	PUT projects/37
+",
+2013-09-03 17:30:24.4613,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on projects/37 result in index Raven/DocumentsByEntityName gave document: 	__document_id IS: projects/37
+	Tag I-: Projects
+	LastModified I-: 2013-09-03T22:30:24.4573866Z
+",
+2013-09-03 17:30:24.4793,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Raven/DocumentsByEntityName,
+2013-09-03 17:30:24.4793,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000004 for Raven/DocumentsByEntityName",
+2013-09-03 17:30:24.4793,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 9 because: WORK BY IndexingExecuter,
+2013-09-03 17:30:24.4793,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 9, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:30:24.4793,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 9, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:30:24.4973,Raven.Database.Server.HttpServer,Debug,,Request #  61: GET     -    25 ms - EmberTinkererDB - 200 - /stats?noCache=-551860739,
+2013-09-03 17:30:25.5604,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:30:25.5604,Raven.Database.Server.HttpServer,Debug,,Request #  62: GET     -     7 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:30:25.5604,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 5 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 4 returned out of 4 total.
+",
+2013-09-03 17:30:26.5295,Raven.Database.Server.HttpServer,Debug,,Request #  63: GET     -    10 ms - EmberTinkererDB - 200 - /stats?noCache=2045583774,
+2013-09-03 17:30:45.1935,Raven.Database.Server.HttpServer,Debug,,Request #  64: GET     -   108 ms - EmberTinkererDB - 200 - /terms/Raven/DocumentsByEntityName?field=Tag&fromValue=&pageSize=100&noCache=-1430979178,
+2013-09-03 17:30:45.4535,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:30:45.4585,Raven.Database.Server.HttpServer,Debug,,Request #  65: GET     -    38 ms - EmberTinkererDB - 0 - /indexes/Raven/DocumentsByEntityName?&query=Tag%3AProjects&pageSize=0,
+2013-09-03 17:30:45.4585,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 10 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 0 returned out of 4 total.
+",
+2013-09-03 17:30:45.5075,Raven.Database.Server.HttpServer,Debug,,Request #  66: POST    -   199 ms - EmberTinkererDB - 200 - /multi_get?parallel=yes&noCache=-1399872379,
+2013-09-03 17:30:46.0936,Raven.Database.Server.HttpServer,Debug,,Request #  67: GET     -     1 ms - EmberTinkererDB - 404 - /docs/Raven/Studio/Columns/AllDocuments?noCache=141162254,
+2013-09-03 17:30:46.0936,Raven.Database.Server.HttpServer,Debug,,Request #  68: GET     -     0 ms - EmberTinkererDB - 404 - /docs/Raven/Studio/PriorityColumns?noCache=-331306947,
+2013-09-03 17:30:46.5046,Raven.Database.Server.HttpServer,Debug,,Request #  69: GET     -     4 ms - EmberTinkererDB - 200 - /docs/?start=0&pageSize=30&noCache=-1688274903,
+2013-09-03 17:30:46.5046,Raven.Database.Server.HttpServer,Debug,,Request #  70: GET     -    15 ms - EmberTinkererDB - 200 - /stats?noCache=382674702,
+2013-09-03 17:30:47.5807,Raven.Database.Server.HttpServer,Debug,,Request #  71: GET     -     1 ms - EmberTinkererDB - 404 - /docs/Raven/Studio/Columns/Collection/Projects?noCache=-830797775,
+2013-09-03 17:30:47.5807,Raven.Database.Server.HttpServer,Debug,,Request #  72: GET     -     1 ms - EmberTinkererDB - 404 - /docs/Raven/Studio/PriorityColumns?noCache=-654200841,
+2013-09-03 17:30:47.7877,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:30:47.7877,Raven.Database.Server.HttpServer,Debug,,Request #  73: GET     -     3 ms - EmberTinkererDB - 200 - /terms/Raven/DocumentsByEntityName?field=Tag&fromValue=&pageSize=100&noCache=943475810,
+2013-09-03 17:30:47.8037,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:30:47.8037,Raven.Database.Server.HttpServer,Debug,,Request #  74: GET     -    21 ms - EmberTinkererDB - 200 - /indexes/Raven/DocumentsByEntityName?&query=Tag%3AProjects&pageSize=30&noCache=538371955,
+2013-09-03 17:30:47.8037,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 19 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 4 returned out of 4 total.
+",
+2013-09-03 17:30:47.8037,Raven.Database.Server.HttpServer,Debug,,Request #  75: GET     -    23 ms - EmberTinkererDB - 200 - /indexes/Raven/DocumentsByEntityName?&query=Tag%3AProjects&pageSize=30&noCache=277889846,
+2013-09-03 17:30:47.8767,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 21 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 4 returned out of 4 total.
+",
+2013-09-03 17:30:48.3717,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:30:48.3717,Raven.Database.Server.HttpServer,Debug,,Request #  76: GET     -     4 ms - EmberTinkererDB - 0 - /indexes/Raven/DocumentsByEntityName?&query=Tag%3AProjects&pageSize=0,
+2013-09-03 17:30:48.3807,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 3 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 0 returned out of 4 total.
+",
+2013-09-03 17:30:48.4037,Raven.Database.Server.HttpServer,Debug,,Request #  77: POST    -    36 ms - EmberTinkererDB - 200 - /multi_get?parallel=yes&noCache=1227953056,
+2013-09-03 17:30:57.4872,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:30:57.4852,Raven.Database.Server.HttpServer,Debug,,Request #  78: GET     -     2 ms - EmberTinkererDB - 200 - /docs/projects/35?noCache=45568161,
+2013-09-03 17:30:57.4872,Raven.Database.Server.HttpServer,Debug,,Request #  79: GET     -    13 ms - EmberTinkererDB - 200 - /indexes/Raven/DocumentsByEntityName?&query=Tag%3AProjects&pageSize=1&noCache=1904963800,
+2013-09-03 17:30:57.5342,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 5 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 1 returned out of 4 total.
+",
+2013-09-03 17:30:58.4733,Raven.Database.Server.HttpServer,Debug,,Request #  80: GET     -    46 ms - EmberTinkererDB - 200 - /queries/?metadata-only=true&&id=0001-01-01T00%3A00%3A00.0000000%2B00%3A00&noCache=-1015647690,
+2013-09-03 17:30:58.5583,Raven.Database.Server.HttpServer,Debug,,Request #  81: GET     -     1 ms - EmberTinkererDB - 200 - /queries/?metadata-only=true&&id=projects&noCache=-1255545644,
+2013-09-03 17:30:58.5583,Raven.Database.Server.HttpServer,Debug,,Request #  82: GET     -     4 ms - EmberTinkererDB - 200 - /docs?startsWith=projects%2F35%2F&start=0&pageSize=15&noCache=-859521415,
+2013-09-03 17:34:01.9198,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:34:01.9198,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:34:39.5609,Raven.Database.Server.HttpServer,Debug,,Request #  83: GET     -     1 ms - EmberTinkererDB - 404 - /docs/Raven/Replication/Destinations,
+2013-09-03 17:34:39.5609,Raven.Database.Server.HttpServer,Debug,,Request #  84: GET     -     1 ms - EmberTinkererDB - 304 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:34:39.5699,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 0 ms
+",
+2013-09-03 17:34:42.9051,Raven.Database.Server.HttpServer,Debug,,Request #  85: GET     -     2 ms - EmberTinkererDB - 304 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:34:42.9051,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 0 ms
+",
+2013-09-03 17:34:47.9474,Raven.Database.DocumentDatabase,Debug,EmberTinkererDB,Put document projects/38 with etag 01000000-0000-0001-0000-000000000005,
+2013-09-03 17:34:47.9474,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 10 because: PUT projects/38,
+2013-09-03 17:34:47.9474,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 10, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:34:47.9474,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Found a total of 1 documents that requires indexing since etag: 01000000-0000-0001-0000-000000000004: (projects/38),
+2013-09-03 17:34:47.9474,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After read triggers executed, 1 documents remained",
+2013-09-03 17:34:47.9474,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,EmberTinkererDB,"Going to index 1 documents in IndexName: Raven/DocumentsByEntityName, LastIndexedEtag: 01000000-0000-0001-0000-000000000004: (projects/38)",
+2013-09-03 17:34:47.9474,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,Indexing 1 documents for index: Raven/DocumentsByEntityName. (projects/38),
+2013-09-03 17:34:47.9474,Raven.Database.Server.HttpServer,Debug,,Request #  86: POST    -     7 ms - EmberTinkererDB - 200 - /bulk_docs,
+2013-09-03 17:34:47.9474,Raven.Database.Indexing.Index.Indexing,Debug,,"Indexing on projects/38 result in index Raven/DocumentsByEntityName gave document: 	__document_id IS: projects/38
+	Tag I-: Projects
+	LastModified I-: 2013-09-03T22:34:47.9474574Z
+",
+2013-09-03 17:34:47.9474,Raven.Database.Indexing.Index.Indexing,Debug,,Indexed 1 documents for Raven/DocumentsByEntityName,
+2013-09-03 17:34:47.9474,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,,"After indexing 1 documents, the new last etag for is: 01000000-0000-0001-0000-000000000005 for Raven/DocumentsByEntityName",
+2013-09-03 17:34:47.9474,Raven.Database.Indexing.WorkContext,Debug,,Incremented work counter to 11 because: WORK BY IndexingExecuter,
+2013-09-03 17:34:47.9474,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 11, for: IndexingExecuter, will wait for additional work",
+2013-09-03 17:34:47.9474,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 11, for: ReducingExecuter, will wait for additional work",
+2013-09-03 17:34:47.9474,Raven.Database.Server.HttpServer,Debug,,"	PUT projects/38
+",
+2013-09-03 17:34:47.9904,Raven.Database.Server.HttpServer,Debug,,Request #  87: GET     -    19 ms - EmberTinkererDB - 200 - /stats?noCache=-1547944358,
+2013-09-03 17:34:53.0767,Raven.Database.Server.HttpServer,Debug,,Request #  88: GET     -    30 ms - EmberTinkererDB - 200 - /stats?noCache=-829896601,
+2013-09-03 17:34:53.6457,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Raven/DocumentsByEntityName for: Tag:Projects,
+2013-09-03 17:34:53.6457,Raven.Database.Server.HttpServer,Debug,,Request #  89: GET     -    11 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 17:34:53.6457,Raven.Database.Server.HttpServer,Debug,,"	Query: Tag:Projects
+	Time: 7 ms
+	Index: Raven/DocumentsByEntityName
+	Results: 5 returned out of 5 total.
+",

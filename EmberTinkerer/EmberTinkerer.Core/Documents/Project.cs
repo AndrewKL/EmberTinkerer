@@ -6,17 +6,17 @@ namespace EmberTinkerer.Core.Documents
     public class Project
     {
         public string Id { get; set; }
-        public string Name { get; set; }
-        public ICollection<string> Tags { get; set; }
-        public string Description { get; set; }
-        public string Author { get; set; }
-        public int Rating { get; set; }
-        public int Upvotes { get; set; }
-        public int Downvotes { get; set; }
-        public DateTimeOffset DateAdded { get; set; }
+        public string name { get; set; }
+        public ICollection<string> tags { get; set; }
+        public string description { get; set; }
+        public string author { get; set; }
+        public int rating { get; set; }
+        public int upvotes { get; set; }
+        public int downvotes { get; set; }
+        public DateTimeOffset dateAdded { get; set; }
 
-        public string Html { get; set; }
-        public string Javascript { get; set; }
+        public string html { get; set; }
+        public string javascript { get; set; }
         
 
         public int GetIntId()
