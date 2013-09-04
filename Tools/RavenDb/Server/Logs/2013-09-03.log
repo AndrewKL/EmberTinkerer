@@ -1313,3 +1313,328 @@ Object name: 'System.Net.HttpListenerResponse'.
 	Index: Raven/DocumentsByEntityName
 	Results: 5 returned out of 5 total.
 ",
+2013-09-03 20:46:56.1108,Raven.Database.Indexing.WorkContext,Debug,,Stopping background workers,
+2013-09-03 20:51:55.5199,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 20:51:55.5699,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 21:01:55.5212,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 21:01:55.5702,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 21:02:53.2685,Raven.Database.Impl.DocumentCacher,Info,EmberTinkererDB,"MemoryCache Settings:
+  PhysicalMemoryLimit = 99
+  CacheMemoryLimit    = 3159359488
+  PollingInterval     = 00:02:00",
+2013-09-03 21:02:53.3245,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2013-09-03 21:02:53.3245,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-09-03 21:02:54.0956,Raven.Database.Server.HttpServer,Debug,,"Request # 197: GET     - 1,211 ms - EmberTinkererDB - 404 - /docs/Raven/Replication/Destinations",
+2013-09-03 21:02:54.1626,Raven.Database.Storage.IndexDefinitionStorage,Info,EmberTinkererDB,"New index Auto%2fProjects:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Auto_2fProjects : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Auto_2fProjects()
+	{
+		this.ViewText = @""from doc in docs.Projects
+select new {  }"";
+		this.ForEntityNames.Add(""Projects"");
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			where string.Equals(doc[""@metadata""][""Raven-Entity-Name""], ""Projects"", System.StringComparison.InvariantCultureIgnoreCase)
+			select new {
+				__document_id = doc.__document_id
+			});
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Auto_2fProjects : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Auto_2fProjects()
+	{
+		this.ViewText = @""from doc in docs.Projects
+select new {  }"";
+		this.ForEntityNames.Add(""Projects"");
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			where string.Equals(doc[""@metadata""][""Raven-Entity-Name""], ""Projects"", System.StringComparison.InvariantCultureIgnoreCase)
+			select new {
+				__document_id = doc.__document_id
+			});
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2013-09-03 21:02:54.1626,Raven.Database.Indexing.IndexStorage,Debug,EmberTinkererDB,Creating index Auto/Projects with encoded name Auto/Projects,
+2013-09-03 21:02:54.1626,Raven.Database.Indexing.Index.Indexing,Debug,EmberTinkererDB,Creating index for Auto/Projects,
+2013-09-03 21:02:54.1626,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 1 because: PUT INDEX Auto/Projects,
+2013-09-03 21:02:54.1626,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 21:02:54.1626,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 21:02:54.1626,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Auto/Projects for all documents,
+2013-09-03 21:02:54.1626,Raven.Database.Server.HttpServer,Debug,,"Request # 198: GET     - 1,294 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128",
+2013-09-03 21:02:54.1626,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 7 ms
+	Index: Auto/Projects
+	Results: 0 returned out of 0 total.
+",
+2013-09-03 21:02:54.3226,Raven.Database.Server.HttpServer,Debug,,Request # 199: GET     -   152 ms - EmberTinkererDB - 200 - /stats?noCache=1792035022,
+2013-09-03 21:04:32.4772,Raven.Database.Server.HttpServer,Debug,,Request # 200: GET     -     1 ms - EmberTinkererDB - 304 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 21:04:32.4772,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 0 ms
+",
+2013-09-03 21:04:36.6574,Raven.Database.Server.HttpServer,Debug,,Request # 201: GET     -     2 ms - EmberTinkererDB - 304 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 21:04:36.6574,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 0 ms
+",
+2013-09-03 21:11:55.5215,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 21:11:55.5705,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 21:12:54.1669,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 21:12:54.1669,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 21:14:15.7736,Raven.Database.Server.HttpServer,Debug,,Request # 202: GET     -     0 ms - EmberTinkererDB - 404 - /docs/Raven/Replication/Destinations,
+2013-09-03 21:14:15.7736,Raven.Database.Server.HttpServer,Debug,,Request # 203: GET     -     0 ms - EmberTinkererDB - 304 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 21:14:15.7736,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 0 ms
+",
+2013-09-03 21:14:19.1168,Raven.Database.Server.HttpServer,Debug,,Request # 204: GET     -     0 ms - EmberTinkererDB - 304 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 21:14:19.1168,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 0 ms
+",
+2013-09-03 21:21:55.5219,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 21:21:55.5709,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 21:22:54.1672,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 21:22:54.1672,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 21:29:56.6934,Raven.Database.Indexing.WorkContext,Debug,,Stopping background workers,
+2013-09-03 21:31:55.5222,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 21:31:55.5712,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 21:33:11.9445,Raven.Database.Impl.DocumentCacher,Info,EmberTinkererDB,"MemoryCache Settings:
+  PhysicalMemoryLimit = 99
+  CacheMemoryLimit    = 3159359488
+  PollingInterval     = 00:02:00",
+2013-09-03 21:33:11.9445,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2013-09-03 21:33:11.9445,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-09-03 21:33:12.1486,Raven.Database.Server.HttpServer,Debug,,Request # 205: GET     -   294 ms - EmberTinkererDB - 404 - /docs/Raven/Replication/Destinations,
+2013-09-03 21:33:12.1656,Raven.Database.Storage.IndexDefinitionStorage,Info,EmberTinkererDB,"New index Auto%2fProjects:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Auto_2fProjects : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Auto_2fProjects()
+	{
+		this.ViewText = @""from doc in docs.Projects
+select new {  }"";
+		this.ForEntityNames.Add(""Projects"");
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			where string.Equals(doc[""@metadata""][""Raven-Entity-Name""], ""Projects"", System.StringComparison.InvariantCultureIgnoreCase)
+			select new {
+				__document_id = doc.__document_id
+			});
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using System.Text.RegularExpressions;
+using Raven.Database.Indexing;
+
+
+public class Index_Auto_2fProjects : Raven.Database.Linq.AbstractViewGenerator
+{
+	public Index_Auto_2fProjects()
+	{
+		this.ViewText = @""from doc in docs.Projects
+select new {  }"";
+		this.ForEntityNames.Add(""Projects"");
+		this.AddMapDefinition(docs => 
+			from doc in docs
+			where string.Equals(doc[""@metadata""][""Raven-Entity-Name""], ""Projects"", System.StringComparison.InvariantCultureIgnoreCase)
+			select new {
+				__document_id = doc.__document_id
+			});
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2013-09-03 21:33:12.1656,Raven.Database.Indexing.IndexStorage,Debug,EmberTinkererDB,Creating index Auto/Projects with encoded name Auto/Projects,
+2013-09-03 21:33:12.1656,Raven.Database.Indexing.Index.Indexing,Debug,EmberTinkererDB,Creating index for Auto/Projects,
+2013-09-03 21:33:12.1656,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,Incremented work counter to 1 because: PUT INDEX Auto/Projects,
+2013-09-03 21:33:12.1656,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 21:33:12.1656,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 21:33:12.1656,Raven.Database.Indexing.Index.Querying,Debug,EmberTinkererDB,Issuing query on index Auto/Projects for all documents,
+2013-09-03 21:33:12.1656,Raven.Database.Server.HttpServer,Debug,,Request # 206: GET     -   313 ms - EmberTinkererDB - 200 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 21:33:12.1656,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 2 ms
+	Index: Auto/Projects
+	Results: 0 returned out of 0 total.
+",
+2013-09-03 21:33:12.2076,Raven.Database.Server.HttpServer,Debug,,Request # 207: GET     -    39 ms - EmberTinkererDB - 200 - /stats?noCache=-191702619,
+2013-09-03 21:33:17.1928,Raven.Database.Server.HttpServer,Debug,,Request # 208: GET     -     0 ms - EmberTinkererDB - 304 - /indexes/dynamic/Projects?&pageSize=128,
+2013-09-03 21:33:17.1928,Raven.Database.Server.HttpServer,Debug,,"	Query: 
+	Time: 0 ms
+",
+2013-09-03 21:41:55.5225,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 21:41:55.5715,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 21:43:12.1669,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2013-09-03 21:43:12.1669,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2013-09-03 21:48:56.9536,Raven.Database.Indexing.WorkContext,Debug,,Stopping background workers,
+2013-09-03 21:51:55.5228,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 21:51:55.5718,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 22:01:55.5231,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 22:01:55.5721,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 22:11:55.5234,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 22:11:55.5725,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 22:21:55.5238,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 22:21:55.5598,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 22:31:55.5241,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 22:31:55.5731,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 22:41:55.5244,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 22:41:55.5734,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 22:51:55.5247,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 22:51:55.5627,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 23:01:55.5250,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 23:01:55.5740,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 23:06:08.5978,Raven.Database.Impl.DocumentCacher,Info,EmberTinkererDB,"MemoryCache Settings:
+  PhysicalMemoryLimit = 99
+  CacheMemoryLimit    = 3159359488
+  PollingInterval     = 00:02:00",
+2013-09-03 23:06:08.6118,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2013-09-03 23:06:08.6118,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-09-03 23:06:08.6118,Raven.Database.Server.HttpServer,Debug,EmberTinkererDB,Request # 209: GET     -    94 ms - EmberTinkererDB - 200 - /changes/events?id=2/1GLVse,
+2013-09-03 23:06:08.6678,Raven.Database.Server.HttpServer,Debug,,Request # 210: GET     -    49 ms - EmberTinkererDB - 200 - /changes/config?id=2/1GLVse&command=watch-docs&noCache=-1401242202,
+2013-09-03 23:06:08.6678,Raven.Database.Server.HttpServer,Debug,,Request # 211: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1GLVse&command=watch-indexes&noCache=1097494055,
+2013-09-03 23:06:08.6678,Raven.Database.Server.HttpServer,Debug,,Request # 212: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1GLVse&command=watch-doc&value=Raven/Alerts&noCache=1236175360,
+2013-09-03 23:16:00.5030,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 23:16:00.5220,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 23:16:08.6124,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-09-03 23:16:08.6124,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2013-09-03 23:16:15.5448,Raven.Database.Server.HttpServer,Debug,EmberTinkererDB,Request # 213: GET     -     0 ms - EmberTinkererDB - 200 - /changes/events?id=2/1GLVse,
+2013-09-03 23:16:15.5598,Raven.Database.Server.HttpServer,Debug,,Request # 214: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1GLVse&command=watch-docs&noCache=-1007766469,
+2013-09-03 23:16:15.5598,Raven.Database.Server.HttpServer,Debug,,Request # 215: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1GLVse&command=watch-indexes&noCache=135713275,
+2013-09-03 23:16:15.5598,Raven.Database.Server.HttpServer,Debug,,Request # 216: GET     -     0 ms - EmberTinkererDB - 200 - /changes/config?id=2/1GLVse&command=watch-doc&value=Raven/Alerts&noCache=-1629012660,
+2013-09-03 23:26:00.5043,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 23:26:00.5173,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 23:26:08.6127,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-09-03 23:26:08.6127,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2013-09-03 23:32:00.7679,Raven.Database.Indexing.WorkContext,Debug,,Stopping background workers,
+2013-09-03 23:36:00.5046,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 23:36:00.5236,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 23:46:00.5049,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 23:46:00.5219,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 23:46:33.9658,Raven.Database.Server.HttpServer,Debug,,Request # 217: GET     -     0 ms - <system>   - 200 - /changes/config?id=1/25rZLI&command=disconnect&noCache=-583802530,
+2013-09-03 23:46:38.6691,Raven.Database.Impl.DocumentCacher,Info,EmberTinkererDB,"MemoryCache Settings:
+  PhysicalMemoryLimit = 99
+  CacheMemoryLimit    = 3159359488
+  PollingInterval     = 00:02:00",
+2013-09-03 23:46:38.6871,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2013-09-03 23:46:38.6871,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-09-03 23:46:38.7371,Raven.Database.Server.HttpServer,Debug,,Error when using events transport,"System.AggregateException: One or more errors occurred. ---> System.Net.HttpListenerException: An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.HttpListenerException (0x80004005): An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130<---
+"
+2013-09-03 23:46:38.7451,Raven.Database.Server.Abstractions.HttpListenerContextAdpater,Info,,Failed to close response,"System.AggregateException: One or more errors occurred. ---> System.Net.HttpListenerException: An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at Raven.Database.Util.Streams.BufferPoolStream.Dispose(Boolean disposing) in c:\Builds\RavenDB-Stable\Raven.Database\Util\Streams\BufferPoolStream.cs:line 144
+   at System.IO.Stream.Close()
+   at Raven.Database.Impl.ExceptionAggregator.Execute(Action action) in c:\Builds\RavenDB-Stable\Raven.Database\Impl\ExceptionAggregator.cs:line 25
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.HttpListenerException (0x80004005): An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at Raven.Database.Util.Streams.BufferPoolStream.Dispose(Boolean disposing) in c:\Builds\RavenDB-Stable\Raven.Database\Util\Streams\BufferPoolStream.cs:line 144
+   at System.IO.Stream.Close()
+   at Raven.Database.Impl.ExceptionAggregator.Execute(Action action) in c:\Builds\RavenDB-Stable\Raven.Database\Impl\ExceptionAggregator.cs:line 25<---
+"
+2013-09-03 23:46:38.7451,Raven.Database.Server.HttpServer,Debug,,Request # 218: GET     -   233 ms - EmberTinkererDB - 200 - /changes/config?id=2/1GLVse&command=disconnect&noCache=-413775032,
+2013-09-03 23:46:42.0953,Raven.Database.Server.HttpServer,Debug,,Error when using events transport,"System.AggregateException: One or more errors occurred. ---> System.Net.HttpListenerException: An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.HttpListenerException (0x80004005): An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130<---
+"
+2013-09-03 23:46:42.0953,Raven.Database.Server.HttpServer,Debug,,Error when using events transport,"System.AggregateException: One or more errors occurred. ---> System.Net.HttpListenerException: An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130
+   --- End of inner exception stack trace ---
+---> (Inner Exception #0) System.Net.HttpListenerException (0x80004005): An operation was attempted on a nonexistent network connection
+   at System.Net.HttpResponseStream.BeginWrite(Byte[] buffer, Int32 offset, Int32 size, AsyncCallback callback, Object state)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.<>c__DisplayClass4.<WriteAsync>b__2(AsyncCallback callback, Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 131
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncImpl(Func`3 beginMethod, Func`2 endFunction, Action`1 endAction, Object state, TaskCreationOptions creationOptions)
+   at System.Threading.Tasks.TaskFactory.FromAsync(Func`3 beginMethod, Action`1 endMethod, Object state, TaskCreationOptions creationOptions)
+   at Raven.Database.Server.Abstractions.HttpListenerResponseAdapter.WriteAsync(String data) in c:\Builds\RavenDB-Stable\Raven.Database\Server\Abstractions\HttpListenerResponseAdapter.cs:line 130<---
+"
+2013-09-03 23:56:00.5052,Raven.Database.Indexing.WorkContext,Debug,,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2013-09-03 23:56:00.5252,Raven.Database.Indexing.WorkContext,Debug,<system>,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2013-09-03 23:56:38.6874,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2013-09-03 23:56:38.6874,Raven.Database.Indexing.WorkContext,Debug,EmberTinkererDB,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
