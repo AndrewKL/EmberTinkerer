@@ -128,9 +128,11 @@ App.Project = Ember.Object.extend({
 	    //console.log("generating html");
 	    var source = $("#full-html-template").html();
 	    //console.log("source: " + source);
-        var template = Handlebars.compile(source);
+	    var template = Handlebars.compile(source);
+	    console.log(this);
+	    console.log(template(this));
         return template( this );
-    }.property("Javascript","Html")
+    }.property("Javascript","html")
 });
 
 Handlebars.registerHelper('scriptBlock', function (script) {
