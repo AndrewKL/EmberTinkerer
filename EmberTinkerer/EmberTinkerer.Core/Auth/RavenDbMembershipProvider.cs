@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Configuration;
 using System.Linq;
 using System.Text;
@@ -29,6 +30,11 @@ namespace EmberTinkerer.Core.Auth
         {
             _userRepo = userRepo;
             _machineKey = machineKey ?? GetMachineKey();
+        }
+
+        public override void Initialize(string name, NameValueCollection config)
+        {
+            //TODO:test this
         }
 
         private string GetMachineKey()
