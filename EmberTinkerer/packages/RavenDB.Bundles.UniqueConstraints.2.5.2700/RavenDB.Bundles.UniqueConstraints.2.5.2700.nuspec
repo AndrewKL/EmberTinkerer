@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>RavenDB.Bundles.UniqueConstraints</id>
+    <version>2.5.2700</version>
+    <title>RavenDB Unique Constraints Bundle</title>
+    <authors>Hibernating Rhinos</authors>
+    <owners>Hibernating Rhinos</owners>
+    <licenseUrl>http://www.ravendb.net/licensing</licenseUrl>
+    <projectUrl>http://www.ravendb.net/</projectUrl>
+    <iconUrl>http://static.ravendb.net/logo-for-nuget.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>This bundle aims to allow the user to implement unique constraints in the objects (usefull for properties like email or social security number).</description>
+    <releaseNotes />
+    <copyright />
+    <language>en-US</language>
+    <tags>nosql ravendb raven document database bundles</tags>
+    <dependencies>
+      <dependency id="RavenDB.Database" version="[2.5.2700]" />
+    </dependencies>
+  </metadata>
+</package>
