@@ -12,6 +12,22 @@ namespace EmberTinkerer.Core.Tests.Documents
     class UserTests
     {
         [Test]
+        public void GenerateHashAndSaltAndCanVerify()
+        {
+            var password = "somearbitrarypw";
+            var machinekey = "D44CF7F89CCA6D97D0648415EE68D3ED88C82805119CAA2C2F197906F40ED8FD";
+            var user = new User();
+
+            user.GeneratePasswordHash(password, machinekey);
+            Assert.True(user.PasswordSalt!=null);
+            Assert.True(user.PasswordHash != null);
+
+            Assert.True(user.CheckPassword(password,machinekey));
+            Assert.False(user.CheckPassword("not the password", machinekey));
+        }
+
+
+        [Test]
         [TestCase("abc@google.com",Result = true)]
         [TestCase("aBc@Google.com", Result = true)]
         [TestCase("a.b.c@google.com", Result = true)]

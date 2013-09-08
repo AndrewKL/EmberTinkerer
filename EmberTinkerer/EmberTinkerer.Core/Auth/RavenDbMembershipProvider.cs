@@ -16,14 +16,14 @@ using Raven.Client.Document;
 
 namespace EmberTinkerer.Core.Auth
 {
-    class RavenDbMembershipProvider : MembershipProvider
+    public class RavenDbMembershipProvider : MembershipProvider
     {
         private IUserRepo _userRepo;
         private readonly string _machineKey;
         public override string ApplicationName { get; set; }
-        public override int MinRequiredPasswordLength { get { throw new NotImplementedException(); } }
-        public override int MinRequiredNonAlphanumericCharacters { get { throw new NotImplementedException(); } }
-        public override string PasswordStrengthRegularExpression { get { throw new NotImplementedException(); } }
+        public override int MinRequiredPasswordLength { get { return User.MinPasswordLength; } }
+        public override int MinRequiredNonAlphanumericCharacters { get { return 0; } }
+        public override string PasswordStrengthRegularExpression { get { return @"^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$"; } }
 
         public RavenDbMembershipProvider(IUserRepo userRepo = null, string machineKey = null)
         {
@@ -35,7 +35,9 @@ namespace EmberTinkerer.Core.Auth
         {
             var cfg = WebConfigurationManager.OpenWebConfiguration(HostingEnvironment.ApplicationVirtualPath);
             var machineKeySection = cfg.GetSection("system.web/machineKey") as MachineKeySection;
-            return machineKeySection.ValidationKey;
+            var validationKey =  machineKeySection.ValidationKey;
+            if(String.IsNullOrEmpty(validationKey)) throw new ArgumentException("no validation key");
+            return validationKey;
         }
 
         public void SetUserRepo(IUserRepo repo)
@@ -46,6 +48,7 @@ namespace EmberTinkerer.Core.Auth
         public override MembershipUser CreateUser(string username, string password, string email, string passwordQuestion, string passwordAnswer,
                                                   bool isApproved, object providerUserKey, out MembershipCreateStatus status)
         {
+            //todo: test this
             
             var newUser = new User()
                 {
@@ -57,7 +60,6 @@ namespace EmberTinkerer.Core.Auth
                     DateCreated = DateTime.UtcNow,
                     IsLockedOut = false,
                     IsOnline = false,
-                    PasswordSalt = GeneratePasswordSalt(),
                 };
             if (!newUser.ValidUsername())
             {
@@ -75,37 +77,43 @@ namespace EmberTinkerer.Core.Auth
                 return newUser;
             }
 
-            newUser.PasswordHash = GeneratePasswordHash(password,newUser.PasswordSalt);
+            newUser.GeneratePasswordHash(password,_machineKey);
 
-            status = _userRepo.AddUser(newUser) ? MembershipCreateStatus.Success : MembershipCreateStatus.InvalidUserName;
+            status = _userRepo.AddUser(newUser) ? MembershipCreateStatus.Success : MembershipCreateStatus.DuplicateUserName;
 
             return newUser;
         }
 
-        private string GeneratePasswordSalt()
+        public override bool ChangePasswordQuestionAndAnswer(string username, string password, string newPasswordQuestion, string newPasswordAnswer)
         {
-            return Crypto.GenerateSalt();
-        }
+            //todo: test this
+            var user = _userRepo.GetByUsername(username);
 
-        private string GeneratePasswordHash(string password, string salt)
-        {
-            return Crypto.HashPassword(password+":"+salt+":"+_machineKey);
-        }
+            if (user == null) return false;
+            if (!user.CheckPassword(password, _machineKey)) return false;
 
-        public override bool ChangePasswordQuestionAndAnswer(string username, string password, string newPasswordQuestion,
-                                                             string newPasswordAnswer)
-        {
-            throw new NotImplementedException();
+            user.PasswordQuestion = newPasswordQuestion;
+            user.PasswordAnswer = newPasswordAnswer;
+            _userRepo.Update(user);
+            return true;
         }
 
         public override string GetPassword(string username, string answer)
         {
-            throw new NotImplementedException();
+            throw new NotSupportedException();
         }
 
         public override bool ChangePassword(string username, string oldPassword, string newPassword)
         {
-            throw new NotImplementedException();
+            //todo: test this
+            var user = _userRepo.GetByUsername(username);
+
+            if (user == null) return false;
+            if (!user.CheckPassword(oldPassword, _machineKey)) return false;
+
+            user.GeneratePasswordHash(newPassword, _machineKey);
+            _userRepo.Update(user);
+            return true;
         }
 
         public override string ResetPassword(string username, string answer)
@@ -120,12 +128,20 @@ namespace EmberTinkerer.Core.Auth
 
         public override bool ValidateUser(string username, string password)
         {
-            throw new NotImplementedException();
+            //todo: test this
+            var user = _userRepo.GetByUsername(username);
+            if (user == null) return false;
+            return user.CheckPassword(password, _machineKey);
         }
 
         public override bool UnlockUser(string userName)
         {
-            throw new NotImplementedException();
+            //todo: test this
+            var user = _userRepo.GetByUsername(userName);
+            if (user == null) return false;
+            user.IsLockedOut = false;
+            _userRepo.Update(user);
+            return true;
         }
 
         public override MembershipUser GetUser(object providerUserKey, bool userIsOnline)
@@ -140,7 +156,7 @@ namespace EmberTinkerer.Core.Auth
 
         public override string GetUserNameByEmail(string email)
         {
-            throw new NotImplementedException();
+            return _userRepo.GetByEmail(email).UserName;
         }
 
         public override bool DeleteUser(string username, bool deleteAllRelatedData)
@@ -197,12 +213,12 @@ namespace EmberTinkerer.Core.Auth
 
         public override bool RequiresUniqueEmail
         {
-            get { throw new NotImplementedException(); }
+            get { return true; }
         }
 
         public override MembershipPasswordFormat PasswordFormat
         {
-            get { throw new NotImplementedException(); }
+            get { return MembershipPasswordFormat.Hashed; }
         }
     }
 }

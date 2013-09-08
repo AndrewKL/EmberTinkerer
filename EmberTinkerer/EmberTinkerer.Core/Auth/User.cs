@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Web.Helpers;
 using System.Web.Security;
 using Raven.Client.UniqueConstraints;
 
@@ -57,7 +58,26 @@ namespace EmberTinkerer.Core.Documents
 
         public static bool ValidPassword(string password)
         {
-            return password.Length >= 8;
+            return password.Length >= User.MinPasswordLength;
+        }
+
+        public const int MinPasswordLength = 8;
+
+        public void GeneratePasswordSalt()
+        {
+            PasswordSalt =  Crypto.GenerateSalt();
+        }
+
+        public void GeneratePasswordHash(string password, string machineKey)
+        {
+            if (this.PasswordSalt == null) GeneratePasswordSalt();
+            this.PasswordHash = Crypto.HashPassword(password + ":" + PasswordSalt + ":" + machineKey);
+        }
+
+        public bool CheckPassword(string unverifiedPassword, string machineKey)
+        {
+            var saltedpw = unverifiedPassword + ":" + PasswordSalt + ":" + machineKey;
+            return Crypto.VerifyHashedPassword(this.PasswordHash, saltedpw);
         }
     }
 }
