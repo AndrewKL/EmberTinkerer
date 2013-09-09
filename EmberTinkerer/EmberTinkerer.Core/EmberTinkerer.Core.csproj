@@ -86,8 +86,6 @@
     <Compile Include="Auth\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repo\ProjectRepo.cs" />
-    <Compile Include="Repo\StubProjectRepo.cs" />
-    <Compile Include="Repo\UniqueInserter.cs" />
     <Compile Include="Repo\UserRepo.cs" />
   </ItemGroup>
   <ItemGroup>

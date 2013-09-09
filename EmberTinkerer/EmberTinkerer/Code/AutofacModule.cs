@@ -4,11 +4,14 @@ using System.Configuration;
 using System.Linq;
 using System.Reflection;
 using System.Web;
+using System.Web.Security;
 using Autofac.Integration.Mvc;
 using Autofac;
 using Autofac.Integration.WebApi;
 using EmberTinkerer.Controllers;
+using EmberTinkerer.Core.Auth;
 using EmberTinkerer.Core.Repo;
+using Raven.Client;
 using Raven.Client.Document;
 
 namespace EmberTinkerer.Code
@@ -20,16 +23,26 @@ namespace EmberTinkerer.Code
             var builder = new Autofac.ContainerBuilder();
 
             //ravenDB stuff
-            var store = new DocumentStore()
+            
+
+            //MembershipProvider.UserRepo = new UserRepo(store);
+
+            builder.Register(x =>
             {
-                ConnectionStringName = "RavenDB"
-            }.Initialize();
-            builder.RegisterInstance(store).As<DocumentStore>().SingleInstance();
+                var store = new DocumentStore()
+                {
+                    ConnectionStringName = "RavenDB"
+                }.Initialize();
+                return store;
+            })
+           .As<IDocumentStore>()
+           .SingleInstance();
+
+            //builder.RegisterInstance(store).As<IDocumentStore>().SingleInstance();
             
             //controllers
-            builder.RegisterControllers(Assembly.GetExecutingAssembly());
-            builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
-            //builder.RegisterType<ProjectController>().SingleInstance();
+            builder.RegisterControllers(Assembly.GetExecutingAssembly());//.InjectActionInvoker();
+            builder.RegisterApiControllers(Assembly.GetExecutingAssembly());//.InjectActionInvoker();
 
             //repos
             builder.RegisterType<ProjectRepo>().As<IProjectRepo>().SingleInstance();

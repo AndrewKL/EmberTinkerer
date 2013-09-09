@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EmberTinkerer.Core.Documents;
+﻿using EmberTinkerer.Core.Documents;
 using Raven.Abstractions.Exceptions;
-using Raven.Client.Document;
+using Raven.Client;
 using Raven.Client.UniqueConstraints;
 
 namespace EmberTinkerer.Core.Repo
@@ -22,9 +17,9 @@ namespace EmberTinkerer.Core.Repo
 
     public class UserRepo : IUserRepo
     {
-        private readonly DocumentStore _store;
+        private readonly IDocumentStore _store;
 
-        public UserRepo(DocumentStore store)
+        public UserRepo(IDocumentStore store)
         {
             _store = store;
         }

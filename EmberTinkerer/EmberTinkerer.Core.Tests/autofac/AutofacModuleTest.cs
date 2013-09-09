@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmberTinkerer.Core.Repo
+namespace EmberTinkerer.Core.autofac
 {
-    class UniqueInserter
+    class AutofacModuleTest
     {
+
     }
 }

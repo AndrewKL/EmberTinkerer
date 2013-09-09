@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using EmberTinkerer.Core.Documents;
 using Raven.Abstractions.Indexing;
 using Raven.Client;
@@ -50,8 +47,8 @@ namespace EmberTinkerer.Core.Repo
             project.Id = null;
             using (var session = _store.OpenSession())
             {
-                session.Store(project); // in-memory operations are committed asynchronously when calling SaveChangesAsync
-                session.SaveChanges(); // returns a task that completes asynchronously
+                session.Store(project);
+                session.SaveChanges(); 
             }
             return project;
         }
@@ -59,8 +56,8 @@ namespace EmberTinkerer.Core.Repo
         {
             using (var session = _store.OpenSession())
             {
-                session.Store(project); // in-memory operations are committed asynchronously when calling SaveChangesAsync
-                session.SaveChanges(); // returns a task that completes asynchronously
+                session.Store(project); 
+                session.SaveChanges(); 
             }
         }
         public IEnumerable<Project> SearchByName(string text)

@@ -1,18 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web.Configuration;
-using System.Web.Helpers;
 using System.Web.Hosting;
 using System.Web.Security;
 using EmberTinkerer.Core.Documents;
 using EmberTinkerer.Core.Repo;
-using Raven.Abstractions.Exceptions;
-using Raven.Client;
 using Raven.Client.Document;
 
 namespace EmberTinkerer.Core.Auth
@@ -20,16 +12,33 @@ namespace EmberTinkerer.Core.Auth
     public class RavenDbMembershipProvider : MembershipProvider
     {
         private IUserRepo _userRepo;
+        public IUserRepo UserRepo {set{_userRepo = value;}}
         private readonly string _machineKey;
         public override string ApplicationName { get; set; }
         public override int MinRequiredPasswordLength { get { return User.MinPasswordLength; } }
         public override int MinRequiredNonAlphanumericCharacters { get { return 0; } }
         public override string PasswordStrengthRegularExpression { get { return @"^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$"; } }
 
+        public RavenDbMembershipProvider()
+        {
+            _userRepo = CreateRepo();
+            _machineKey = GetMachineKey();
+        }
+
         public RavenDbMembershipProvider(IUserRepo userRepo = null, string machineKey = null)
         {
-            _userRepo = userRepo;
+            _userRepo = userRepo ?? CreateRepo();
             _machineKey = machineKey ?? GetMachineKey();
+        }
+
+        private IUserRepo CreateRepo()
+        {
+            var store = new DocumentStore()
+            {
+                ConnectionStringName = "RavenDB"
+            }.Initialize();
+
+            return new UserRepo(store);
         }
 
         public override void Initialize(string name, NameValueCollection config)

@@ -10,6 +10,7 @@ namespace EmberTinkerer.Core.Documents
         public ICollection<string> tags { get; set; }
         public string description { get; set; }
         public string author { get; set; }
+        public string authorId { get; set; }
         public int rating { get; set; }
         public int upvotes { get; set; }
         public int downvotes { get; set; }
@@ -17,7 +18,6 @@ namespace EmberTinkerer.Core.Documents
 
         public string html { get; set; }
         public string javascript { get; set; }
-        
 
         public int GetIntId()
         {
