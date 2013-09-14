@@ -19,9 +19,9 @@ namespace EmberTinkerer.Core.Repo
 
     public class ProjectRepo : IProjectRepo
     {
-        private readonly DocumentStore _store;
+        private readonly IDocumentStore _store;
 
-        public ProjectRepo(DocumentStore store)
+        public ProjectRepo(IDocumentStore store)
         {
             _store = store;
         }
