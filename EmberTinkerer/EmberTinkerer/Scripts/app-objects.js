@@ -35,15 +35,15 @@ App.Project = Ember.Object.extend({
             var project = this;
             console.log("adding new project");
             console.log(this);
-            $.post(Tinkerer.addURL, data, function (data) {
+            return $.post(Tinkerer.addURL, data, function (data) {
                 project.id = data.Id.substring(data.Id.indexOf('/') + 1, data.Id.length);
                 console.log('new id: ' + project.id);
             });
         } else {
-            this.Id = 'project/' + this.id;
+            this.Id = 'projects/' + this.id;
             console.log('updating');
             console.log(this);
-            $.post(Tinkerer.updateURL, data);
+            return $.post(Tinkerer.updateURL, data);
         }
     },
 

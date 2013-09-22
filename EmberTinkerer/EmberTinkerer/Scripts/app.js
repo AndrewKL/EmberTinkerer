@@ -55,9 +55,17 @@ App.ProjectIndexRoute = Ember.Route.extend({
 App.ProjectIndexController = Ember.ObjectController.extend({
     editMode: false,
     
-    save: function() {
-        this.get('model').update();
-        this.set("editMode", false);
+    save: function () {
+        var controller = this;
+        var project = this.get('model');
+        var oldId = project.id;
+        project.update().then(function () {
+            if (oldId === 'new') {
+                controller.transitionToRoute('project');
+            }else {
+                controller.set("editMode", false);
+            }
+        });
     },
     editDescription: function(){
         this.set("editMode", true);
