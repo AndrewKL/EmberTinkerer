@@ -33,7 +33,7 @@ namespace EmberTinkerer.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Project> SearchByName(string text)
+        public IEnumerable<Project> Search(string text)
         {
             return _repo.SearchByName(text);
         }

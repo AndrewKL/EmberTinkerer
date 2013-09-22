@@ -45,6 +45,25 @@ App.IndexRoute = Ember.Route.extend({
         });
     }
 });
+App.IndexController = Ember.ObjectController.extend({
+    searchText: "",
+    
+    searchForProjects: function () {
+        console.log("search: " + this.get('searchText'));
+        var controller = this;
+        $.getJSON(Tinkerer.searchURL, { text: this.get('searchText') }).then(function (response) {
+            var projects = [];
+
+            response.forEach(function (project) {
+                project.id = project.Id.substring(project.Id.indexOf('/') + 1, project.Id.length);
+                projects.push(App.Project.create(project));
+            });
+            console.log("searchComplete");
+            console.log(projects);
+            controller.set('model', projects);
+        });
+    }.observes("searchText")
+});
 
 App.ProjectIndexRoute = Ember.Route.extend({
     model: function(params) {

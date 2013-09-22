@@ -21,7 +21,7 @@
 
         Tinkerer.getURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "Get"})';
         Tinkerer.getAll = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "GetAll"})';
-        Tinkerer.searchURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "SearchByName"})';
+        Tinkerer.searchURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "Search"})';
         Tinkerer.updateURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "Update"})';
         Tinkerer.addURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "Add"})';
     </script>
@@ -58,11 +58,12 @@
         </div>
         <div class="container search-area">
             <div class="input-group span12">
-                <input type="text" class="form-control">
+                {{input type="text" value=searchText placeholder="Search users..." class="form-control"}}
                 <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Go!</button>
+                    <button class="btn btn-default" {{action 'searchForProjects'}} type="button">Go!</button>
                 </span>
             </div>
+            searchText: {{searchText}}
             {{#linkTo 'new'}}Start a new EmberJS project{{/linkTo}}
             <ul>
                 {{#each project in model}}
