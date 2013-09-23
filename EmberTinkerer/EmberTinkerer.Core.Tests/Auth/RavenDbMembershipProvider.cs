@@ -13,7 +13,7 @@ using NUnit.Framework;
 namespace EmberTinkerer.Core.Tests.Auth
 {
     [TestFixture]
-    class RavenDbMembershipProviderTests
+    public class RavenDbMembershipProviderTests
     {
         public RavenDbMembershipProvider MembershipProvider;
         public string MachineKey = "D44CF7F89CCA6D97D0648415EE68D3ED88C82805119CAA2C2F197906F40ED8FD";
@@ -35,7 +35,7 @@ namespace EmberTinkerer.Core.Tests.Auth
             UserRepo.Setup(x => x.AddUser(It.IsAny<User>())).Returns(true).Callback((User value) => user = value);
 
             MembershipProvider.CreateUser("username", "password", "email@abc.com", "question", "answer", true,
-                                          null,out status);
+                                          out status);
 
             Assert.AreEqual("username",user.Username);
             Assert.True(user.CheckPassword("password",MachineKey));
@@ -54,7 +54,7 @@ namespace EmberTinkerer.Core.Tests.Auth
             MembershipCreateStatus status;
 
             MembershipProvider.CreateUser("u", "password", "email@abc.com", "question", "answer", true,
-                                          null, out status);
+                                          out status);
 
             UserRepo.Verify(x => x.AddUser(It.IsAny<User>()), Times.Never);
             Assert.AreEqual(MembershipCreateStatus.InvalidUserName, status);
@@ -66,7 +66,7 @@ namespace EmberTinkerer.Core.Tests.Auth
             MembershipCreateStatus status;
 
             MembershipProvider.CreateUser("username", "", "email@abc.com", "question", "answer", true,
-                                          null, out status);
+                                          out status);
 
             UserRepo.Verify(x => x.AddUser(It.IsAny<User>()), Times.Never);
             Assert.AreEqual(MembershipCreateStatus.InvalidPassword, status);
@@ -78,7 +78,7 @@ namespace EmberTinkerer.Core.Tests.Auth
             MembershipCreateStatus status;
 
             MembershipProvider.CreateUser("username", "password", "", "question", "answer", true,
-                                          null, out status);
+                                          out status);
 
             UserRepo.Verify(x => x.AddUser(It.IsAny<User>()), Times.Never);
             Assert.AreEqual(MembershipCreateStatus.InvalidEmail, status);
@@ -92,7 +92,7 @@ namespace EmberTinkerer.Core.Tests.Auth
             UserRepo.Setup(x => x.AddUser(It.IsAny<User>())).Returns(false).Callback((User value) => user = value);
 
             MembershipProvider.CreateUser("username", "password", "email@abc.com", "question", "answer", true,
-                                          null, out status);
+                                          out status);
 
             Assert.AreEqual(MembershipCreateStatus.DuplicateUserName, status);
         }

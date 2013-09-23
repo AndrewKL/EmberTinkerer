@@ -1,18 +1,30 @@
-﻿using System.Web;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Net.Http;
+using System.Web;
 using System.Web.Http;
+using System.Web.Mvc;
 using System.Web.Security;
 using EmberTinkerer.Core.Auth;
 
 namespace EmberTinkerer.Controllers
 {
-    public class UserController : ApiController
+    public class AccountController : Controller
     {
         private IRavenDbMembershipProvider _membershipProvider;
 
-        public UserController(IRavenDbMembershipProvider membershipProvider)
+        public AccountController(IRavenDbMembershipProvider membershipProvider)
         {
             _membershipProvider = membershipProvider;
         }
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+
 
         public void Login(UserModel user)
         {
@@ -27,7 +39,7 @@ namespace EmberTinkerer.Controllers
             }
         }
 
-        public void Regsiter(UserModel user)
+        public void Register(UserModel user)
         {
             MembershipCreateStatus createStatus;
             _membershipProvider.CreateUser(user.Username, user.Password, user.Email, passwordQuestion: null, passwordAnswer: null, isApproved: true, status: out createStatus);
@@ -38,13 +50,5 @@ namespace EmberTinkerer.Controllers
         {
             FormsAuthentication.SignOut();
         }
-    }
-
-    public class UserModel
-    {
-        public string Username { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public bool RememberMe { get; set; }
     }
 }

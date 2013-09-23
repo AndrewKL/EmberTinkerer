@@ -1,0 +1,33 @@
+﻿@model EmberTinkerer.Controllers.UserModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Account</title>
+</head>
+<body>
+    <div>
+        <h1>Account</h1>
+        <h2>create</h2>
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+        {
+            @Html.TextBoxFor(x => x.Email)
+            @Html.TextBoxFor(x => x.Password)
+            @Html.TextBoxFor(x => x.Username)
+            <input type="submit" value="submit" />
+        }
+        <h2>login</h2>
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+        {
+            @Html.TextBoxFor(x => x.Username)
+            @Html.TextBoxFor(x => x.Password)
+            <input type="submit" value="submit" />
+        }
+    </div>
+</body>
+</html>
