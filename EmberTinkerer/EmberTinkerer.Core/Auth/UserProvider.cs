@@ -9,7 +9,7 @@ using Raven.Client.Document;
 
 namespace EmberTinkerer.Core.Auth
 {
-    public interface IRavenDbMembershipProvider
+    public interface IUserProvider
     {
         User CreateUser(string username, string password, string email, string passwordQuestion, string passwordAnswer,
                                         bool isApproved, out MembershipCreateStatus status);
@@ -19,7 +19,7 @@ namespace EmberTinkerer.Core.Auth
         bool ValidateUser(string username, string password);
     }
 
-    public class UserProvider : IRavenDbMembershipProvider
+    public class UserProvider : IUserProvider
     {
         private IUserRepo _userRepo;
         private readonly string _machineKey;

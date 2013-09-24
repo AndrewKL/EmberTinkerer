@@ -47,7 +47,7 @@ namespace EmberTinkerer.Code
             //repos
             builder.RegisterType<ProjectRepo>().As<IProjectRepo>().SingleInstance();
             builder.RegisterType<UserRepo>().As<IUserRepo>().SingleInstance();
-            builder.RegisterType<UserProvider>().As<IRavenDbMembershipProvider>().SingleInstance();
+            builder.RegisterType<UserProvider>().As<IUserProvider>().SingleInstance();
 
             return builder.Build();
         }

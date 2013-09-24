@@ -13,9 +13,9 @@ namespace EmberTinkerer.Controllers
 {
     public class AccountController : Controller
     {
-        private IRavenDbMembershipProvider _membershipProvider;
+        private IUserProvider _membershipProvider;
 
-        public AccountController(IRavenDbMembershipProvider membershipProvider)
+        public AccountController(IUserProvider membershipProvider)
         {
             _membershipProvider = membershipProvider;
         }
