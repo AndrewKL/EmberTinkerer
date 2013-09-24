@@ -19,14 +19,14 @@ namespace EmberTinkerer.Core.Auth
         bool ValidateUser(string username, string password);
     }
 
-    public class RavenDbMembershipProvider : IRavenDbMembershipProvider
+    public class UserProvider : IRavenDbMembershipProvider
     {
         private IUserRepo _userRepo;
         private readonly string _machineKey;
         public string ApplicationName { get; set; }
         public string PasswordStrengthRegularExpression { get { return @"^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8}$"; } }
         
-        public RavenDbMembershipProvider(IUserRepo userRepo = null, string machineKey = null)
+        public UserProvider(IUserRepo userRepo = null, string machineKey = null)
         {
             _userRepo = userRepo ?? CreateRepo();
             _machineKey = machineKey ?? GetMachineKey();
@@ -68,10 +68,8 @@ namespace EmberTinkerer.Core.Auth
                     Email = email,
                     PasswordQuestion = passwordQuestion,
                     PasswordAnswer = passwordAnswer,
-                    IsApproved = isApproved,
                     DateCreated = DateTime.UtcNow,
                     IsLockedOut = false,
-                    IsOnline = false,
                 };
             if (!newUser.ValidUsername())
             {

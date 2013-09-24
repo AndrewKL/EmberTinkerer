@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Web.Helpers;
-using System.Web.Security;
 using Raven.Client.UniqueConstraints;
 
 namespace EmberTinkerer.Core.Documents
 {
-    public class User : MembershipUser
+    public class User
     {
         public string Id { get; set; }
         
@@ -15,7 +14,6 @@ namespace EmberTinkerer.Core.Documents
         public string Username { get; set; }
         [UniqueConstraint(CaseInsensitive = true)]
         public string Email { get; set; }
-        public string ApplicationName { get; set; }
         public IList<string> Roles { get; set; }
 
         public string PasswordHash { get; set; }
@@ -27,18 +25,15 @@ namespace EmberTinkerer.Core.Documents
         public string PasswordQuestion { get; set; }
         public string PasswordAnswer { get; set; }
         public bool IsLockedOut { get; set; }
-        public bool IsOnline { get; set; }
 
-        public DateTimeOffset DateLastLogin { get; set; }
         public int FailedPasswordAttempts { get; set; }
         public int FailedPasswordAnswerAttempts { get; set; }
         public DateTimeOffset LastFailedPasswordAttempt { get; set; }
-        public string Comment { get; set; }
-        public bool IsApproved { get; set; }
 
         public bool ValidUsername()
         {
-            return Regex.Match(Username, "^[a-zA-Z0-9_]+$").Success
+            return !String.IsNullOrWhiteSpace(Username) 
+                   && Regex.Match(Username, "^[a-zA-Z0-9_]+$").Success
                    && Username.Length >= 5;
         }
 

@@ -27,7 +27,7 @@ namespace EmberTinkerer.Controllers
             }
         }
 
-        public void Regsiter(UserModel user)
+        public void Register(UserModel user)
         {
             MembershipCreateStatus createStatus;
             _membershipProvider.CreateUser(user.Username, user.Password, user.Email, passwordQuestion: null, passwordAnswer: null, isApproved: true, status: out createStatus);
@@ -46,5 +46,8 @@ namespace EmberTinkerer.Controllers
         public string Email { get; set; }
         public string Password { get; set; }
         public bool RememberMe { get; set; }
+        public bool LoginFailed { get; set; }
+        public bool RegistrationFailed { get; set; }
+        public string ErrorMessage { get; set; }
     }
 }

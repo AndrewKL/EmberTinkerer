@@ -13,9 +13,9 @@ using NUnit.Framework;
 namespace EmberTinkerer.Core.Tests.Auth
 {
     [TestFixture]
-    public class RavenDbMembershipProviderTests
+    public class UserProviderTests
     {
-        public RavenDbMembershipProvider MembershipProvider;
+        public UserProvider MembershipProvider;
         public string MachineKey = "D44CF7F89CCA6D97D0648415EE68D3ED88C82805119CAA2C2F197906F40ED8FD";
         public Mock<IUserRepo> UserRepo;
 
@@ -24,7 +24,7 @@ namespace EmberTinkerer.Core.Tests.Auth
         {
             UserRepo = new Mock<IUserRepo>();
 
-            MembershipProvider = new RavenDbMembershipProvider(UserRepo.Object,MachineKey);
+            MembershipProvider = new UserProvider(UserRepo.Object,MachineKey);
         }
 
         [Test]
@@ -40,8 +40,6 @@ namespace EmberTinkerer.Core.Tests.Auth
             Assert.AreEqual("username",user.Username);
             Assert.True(user.CheckPassword("password",MachineKey));
             Assert.AreEqual("email@abc.com",user.Email);
-            Assert.AreEqual(true,user.IsApproved);
-            Assert.AreEqual(false,user.IsLockedOut);
             Assert.AreEqual("question",user.PasswordQuestion);
             Assert.AreEqual("answer",user.PasswordAnswer);
 
@@ -100,7 +98,7 @@ namespace EmberTinkerer.Core.Tests.Auth
         [Test]
         public void AutoGetMachineKey()
         {
-            MembershipProvider = new RavenDbMembershipProvider(UserRepo.Object);
+            MembershipProvider = new UserProvider(UserRepo.Object);
         }
 
         [Test]

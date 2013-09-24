@@ -81,7 +81,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Auth\RavenDbMembershipProvider.cs" />
+    <Compile Include="Auth\UserProvider.cs" />
     <Compile Include="Documents\Project.cs" />
     <Compile Include="Auth\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

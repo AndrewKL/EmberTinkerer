@@ -45,22 +45,17 @@ namespace EmberTinkerer.Core.Tests.Repo
             var user = new User
             {
                 Username = "userA",
-                ApplicationName = "ember",
-                Comment = "comment",
                 DateCreated = new DateTimeOffset(new DateTime(2001, 1, 1)),
-                DateLastLogin = new DateTimeOffset(new DateTime(2002, 1, 1)),
                 Email = "user@gmail.com",
                 FailedPasswordAnswerAttempts = 12,
                 FailedPasswordAttempts = 10,
                 LastFailedPasswordAttempt = new DateTime(2001, 1, 1),
                 FullName = "asmithee",
                 IsLockedOut = false,
-                IsApproved = true,
                 PasswordSalt = "asdf1234",
                 PasswordAnswer = "some answer",
                 PasswordHash = "asdfaqwer12341341234",
                 PasswordQuestion = "some question",
-                IsOnline = true,
                 Id = "nonsense id",
             };
 
@@ -77,22 +72,17 @@ namespace EmberTinkerer.Core.Tests.Repo
             var user = new User
             {
                 Username = "userA",
-                ApplicationName = "ember",
-                Comment = "comment",
                 DateCreated = new DateTimeOffset(new DateTime(2001, 1, 1)),
-                DateLastLogin = new DateTimeOffset(new DateTime(2002, 1, 1)),
                 Email = "user@gmail.com",
                 FailedPasswordAnswerAttempts = 12,
                 FailedPasswordAttempts = 10,
                 LastFailedPasswordAttempt = new DateTime(2001, 1, 1),
                 FullName = "asmithee",
                 IsLockedOut = false,
-                IsApproved = true,
                 PasswordSalt = "asdf1234",
                 PasswordAnswer = "some answer",
                 PasswordHash = "asdfaqwer12341341234",
                 PasswordQuestion = "some question",
-                IsOnline = true,
                 Id = "nonsense id",
             };
 
@@ -109,22 +99,17 @@ namespace EmberTinkerer.Core.Tests.Repo
             var user = new User
             {
                 Username = "usera",
-                ApplicationName = "ember",
-                Comment = "comment",
                 DateCreated = new DateTimeOffset(new DateTime(2001, 1, 1)),
-                DateLastLogin = new DateTimeOffset(new DateTime(2002, 1, 1)),
                 Email = "user@gmail.com",
                 FailedPasswordAnswerAttempts = 12,
                 FailedPasswordAttempts = 10,
                 LastFailedPasswordAttempt = new DateTime(2001, 1, 1),
                 FullName = "asmithee",
                 IsLockedOut = false,
-                IsApproved = true,
                 PasswordSalt = "asdf1234",
                 PasswordAnswer = "some answer",
                 PasswordHash = "asdfaqwer12341341234",
                 PasswordQuestion = "some question",
-                IsOnline = true,
                 Id = "nonsense id",
             };
 
@@ -141,44 +126,34 @@ namespace EmberTinkerer.Core.Tests.Repo
             var usera = new User
             {
                 Username = "userA",
-                ApplicationName = "ember",
-                Comment = "comment",
                 DateCreated = new DateTimeOffset(new DateTime(2001, 1, 1)),
-                DateLastLogin = new DateTimeOffset(new DateTime(2002, 1, 1)),
                 Email = "user@gmail.com",
                 FailedPasswordAnswerAttempts = 12,
                 FailedPasswordAttempts = 10,
                 LastFailedPasswordAttempt = new DateTime(2001, 1, 1),
                 FullName = "asmithee",
                 IsLockedOut = false,
-                IsApproved = true,
                 PasswordSalt = "asdf1234",
                 PasswordAnswer = "some answer",
                 PasswordHash = "asdfaqwer12341341234",
                 PasswordQuestion = "some question",
-                IsOnline = true,
                 Id = "nonsense id",
             };
 
             var userb = new User
             {
                 Username = "userA",
-                ApplicationName = "ember",
-                Comment = "comment b",
                 DateCreated = new DateTimeOffset(new DateTime(2001, 1, 1)),
-                DateLastLogin = new DateTimeOffset(new DateTime(2002, 1, 1)),
                 Email = "userb@gmail.com",
                 FailedPasswordAnswerAttempts = 12,
                 FailedPasswordAttempts = 10,
                 LastFailedPasswordAttempt = new DateTime(2001, 1, 1),
                 FullName = "bsmithee",
                 IsLockedOut = false,
-                IsApproved = true,
                 PasswordSalt = "asdfb1234",
                 PasswordAnswer = "some answebr",
                 PasswordHash = "asdfaqwer12341341234b",
                 PasswordQuestion = "some question",
-                IsOnline = true,
                 Id = "nonsense id",
             };
 
