@@ -2,6 +2,11 @@ App = Ember.Application.create({
 	LOG_TRANSITIONS: true,
 });
 
+var console = window.console || {
+    log: function() {
+    }
+};
+
 App.Router.map(function() {
 	this.resource('index', { path: '/' });
 	this.resource('project', { path: '/project/:project_id' }, function() {
@@ -11,17 +16,44 @@ App.Router.map(function() {
 	this.resource('about');
 	this.resource('loginregister');
 });
+
 App.ApplicationRoute = Ember.Route.extend({
     renderTemplate: function () {
-        // Render default outlet   
         this.render();
-        // render extra outlets
         this.render("user", {
             outlet: "user",
-            into: "application" // important when using at root level
+            into: "application"
         });
     },
 });
+App.UserRoute = Ember.Route.extend({
+    model: function(params) {
+        return App.User.create();
+    }
+});
+
+App.IndexRoute = Ember.Route.extend({
+    model: function (params) {
+        return $.getJSON(Tinkerer.getAll).then(function (response) {
+            var projects = [];
+
+            response.forEach(function (project) {
+                project.id = project.Id.substring(project.Id.indexOf('/') + 1, project.Id.length);
+                projects.push(App.Project.create(project));
+            });
+
+            console.log(projects);
+            return projects;
+        });
+    }
+});
+
+App.NewRoute = Ember.Route.extend({
+    redirect: function () {
+        this.transitionTo('project');
+    }
+});
+
 App.ProjectRoute = Ember.Route.extend({
 	model: function(params) {
 	    if (params.project_id == undefined || params.project_id=='new') {
@@ -40,20 +72,16 @@ App.ProjectRoute = Ember.Route.extend({
 		});
 	}
 });
-App.IndexRoute = Ember.Route.extend({
-    
-    model: function (params) {
-        return $.getJSON(Tinkerer.getAll).then(function (response) {
-            var projects = [];
-            
-            response.forEach(function (project) {
-                project.id = project.Id.substring(project.Id.indexOf('/') + 1, project.Id.length);
-                projects.push(App.Project.create(project));
-            });
 
-            console.log(projects);
-            return projects;
-        });
+App.ProjectIndexRoute = Ember.Route.extend({
+    model: function (params) {
+        return this.modelFor('project');
+    }
+});
+
+App.RunRoute = Ember.Route.extend({
+    model: function(params) {
+        return this.modelFor('project');
     }
 });
 
@@ -73,12 +101,6 @@ App.IndexController = Ember.ObjectController.extend({
             });
         },400)();//runs the function return by debounce
     }.observes("searchText"),
-});
-
-App.ProjectIndexRoute = Ember.Route.extend({
-    model: function(params) {
-        return this.modelFor ('project');
-    }
 });
 
 App.ProjectIndexController = Ember.ObjectController.extend({
@@ -101,32 +123,19 @@ App.ProjectIndexController = Ember.ObjectController.extend({
     }
 });
 
-App.RunRoute = Ember.Route.extend({
-    model: function(params) {
-        return this.modelFor ('project');
-    }
-});
+
 App.RunView = Ember.View.extend({
     didInsertElement: function () {//after iframe is inserted
         var model = this.get('controller').get('model');
         Ember.run.next(this, function () {
-            //console.log(model);
             var iFrame = document.getElementById('run-frame');
             iFrame.contentWindow.document.write(model.get('generateFullHtml'));
-            //console.log(model.get('generateFullHtml'));
-			// more code
 		});
     }
 });
 
-App.NewRoute = Ember.Route.extend({
-	redirect: function() {
-		this.transitionTo('project');
-	}
-});
-
 App.ApplicationView = Ember.View.extend({
-	classNames: ['full']
+    classNames: ['full']
 });
 
 Handlebars.registerHelper('scriptBlock', function (script) {

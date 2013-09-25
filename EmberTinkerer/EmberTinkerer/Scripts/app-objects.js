@@ -16,14 +16,11 @@ App.User = Ember.Object.extend({
 App.Project = Ember.Object.extend({
     find: function (id) {
         $.getJSON(Tinkerer.getURL + "/" + id).then(function (response) {
-            //console.log("project w/ id: " + id);
             return App.Project.create(response);
         });
     },
     
     update: function () {
-        //console.log("updating");
-        //console.log(this);
         var data = {
             Id: 'projects/' + this.id,
             name: this.name,
