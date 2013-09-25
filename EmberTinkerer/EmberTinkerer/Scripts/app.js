@@ -123,6 +123,12 @@ App.ProjectIndexController = Ember.ObjectController.extend({
     }
 });
 
+App.UserController = Ember.ObjectController.extend({
+    setupController: function (controller, song) {
+        console.log("settingup usercontroller");
+        controller.set('model', App.User.create());
+    }
+});
 
 App.RunView = Ember.View.extend({
     didInsertElement: function () {//after iframe is inserted

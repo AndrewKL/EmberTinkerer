@@ -4,7 +4,10 @@
 
 App.User = Ember.Object.extend({
     loginFailed: false,
+    loginSucceeded: false,
     registrationFailed: false,
+    registrationSucceeded: false,
+    test: true,
     login: function () {
         $().post(Tinkerer.loginUrl, this).then(function (response) {
             console.log("login recieved");
