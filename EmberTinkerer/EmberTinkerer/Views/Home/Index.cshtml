@@ -32,106 +32,7 @@
 </head>
 <body>
     <script type="text/x-handlebars">
-        <!-- Modal -->
-        <div class="modal" id="loginRegisterModal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Login And Register</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-            	<div class="col-12">
-                	<div class="col-6">
-                    	<div class="area">
-                            <form class="form-horizontal">
-                                <div class="heading">
-                                    <h4 class="form-heading">Sign In</h4>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="inputUsername">Username or Email</label>
-                                    <div class="controls">
-                                        <input type="text" id="inputUsername" placeholder="E.g. user1234">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="inputPassword">Password</label>
-                                    <div class="controls">
-                                        <input type="password" id="inputPassword" placeholder="Min. 8 Characters">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="controls">
-                                        <label class="checkbox">
-                                            <input type="checkbox"> Keep me signed in   ¦
-                                            <a href="#" class="btn btn-link">Forgot my password</a>
-                                        </label>
-                                        <button type="submit" class="btn btn-success">Sign In</button>
-                                        <button type="button" class="btn">Help</button>
-                                    </div>
-                                </div>	
-                                <div class="alert alert-error">
-                                    <button type="button" class="close" data-dismiss="alert">×</button>
-                                    <strong>Access Denied!</strong> Please provide valid authorization.
-                                </div>
-                            </form>	
-						</div>                           
-                    </div>
-                    <div class="col-6">
-                    	<div class="area">
-                            <form class="form-horizontal">
-                                <div class="heading">
-                                    <h4 class="form-heading">Sign Up</h4>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="inputEmail">Email</label>
-                                    <div class="controls">
-                                        <input type="text" id="inputEmail" placeholder="E.g. ashwinh@cybage.com">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="inputUser">Username</label>
-                                    <div class="controls">
-                                        <input type="text" id="inputUser" placeholder="E.g. ashwinhegde">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="inputPassword">Password</label>
-                                    <div class="controls">
-                                        <input type="password" id="inputPassword" placeholder="Min. 8 Characters">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="controls">
-                                        <label class="checkbox">
-                                            <input type="checkbox"> I agree all your <a href="#">Terms of Services</a>
-                                        </label>
-                                        <button type="submit" class="btn btn-success">Sign Up</button>
-                                        <button type="button" class="btn">Help</button>
-                                    </div>
-                                </div>	
-                                <div class="alert alert-info">
-                                    <button type="button" class="close" data-dismiss="alert">×</button>
-                                    <strong>Confirmation: </strong> A confirmation email has been sent to your email.<br>
-                                    Thank you for your registration.
-                                </div>
-                            </form>	
-                            <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
-						</div>                            
-                    </div>
-                </div>
-            	
-            </div>
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#" class="btn">Close</a>
-                        <a href="#" class="btn btn-primary">Save changes</a>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div>
-        <!-- /.modal -->
+        {{outlet user}}
         <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
                 <span class="icon-bar"></span>
@@ -146,10 +47,115 @@
                     <li><a data-toggle="modal" href="#loginRegisterModal" >Login and Register</a></li>
                 </ul>
             </div>
-            
         </div>
         {{outlet}}
-    
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="user">
+        <!-- Modal -->
+        <div class="modal" id="loginRegisterModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Login And Register</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="col-6">
+                                    <div class="area">
+                                        <form class="form-horizontal">
+                                            <div class="heading">
+                                                <h4 class="form-heading">Sign In</h4>
+                                            </div>
+                                            <div class="control-group">
+                                                <label class="control-label" for="inputUsername">Username or Email</label>
+                                                <div class="controls">
+                                                    <input type="text" id="inputUsername" placeholder="E.g. user1234">
+                                                </div>
+                                            </div>
+                                            <div class="control-group">
+                                                <label class="control-label" for="inputPassword">Password</label>
+                                                <div class="controls">
+                                                    <input type="password" id="inputPassword" placeholder="Min. 8 Characters">
+                                                </div>
+                                            </div>
+                                            <div class="control-group">
+                                                <div class="controls">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox">
+                                                        Keep me signed in   ¦
+                                            <a href="#" class="btn btn-link">Forgot my password</a>
+                                                    </label>
+                                                    <button type="submit" class="btn btn-success">Sign In</button>
+                                                    <button type="button" class="btn">Help</button>
+                                                </div>
+                                            </div>
+                                            <div class="alert alert-error">
+                                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                                <strong>Access Denied!</strong> Please provide valid authorization.
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="area">
+                                        <form class="form-horizontal">
+                                            <div class="heading">
+                                                <h4 class="form-heading">Sign Up</h4>
+                                            </div>
+                                            <div class="control-group">
+                                                <label class="control-label" for="inputEmail">Email</label>
+                                                <div class="controls">
+                                                    <input type="text" id="inputEmail" placeholder="E.g. ashwinh@cybage.com">
+                                                </div>
+                                            </div>
+                                            <div class="control-group">
+                                                <label class="control-label" for="inputUser">Username</label>
+                                                <div class="controls">
+                                                    <input type="text" id="inputUser" placeholder="E.g. ashwinhegde">
+                                                </div>
+                                            </div>
+                                            <div class="control-group">
+                                                <label class="control-label" for="inputPassword">Password</label>
+                                                <div class="controls">
+                                                    <input type="password" id="inputPassword" placeholder="Min. 8 Characters">
+                                                </div>
+                                            </div>
+                                            <div class="control-group">
+                                                <div class="controls">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox">
+                                                        I agree all your <a href="#">Terms of Services</a>
+                                                    </label>
+                                                    <button type="submit" class="btn btn-success">Sign Up</button>
+                                                    <button type="button" class="btn">Help</button>
+                                                </div>
+                                            </div>
+                                            <div class="alert alert-info">
+                                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                                <strong>Confirmation: </strong>A confirmation email has been sent to your email.<br>
+                                                Thank you for your registration.
+                                            </div>
+                                        </form>
+                                        <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="btn">Close</a>
+                        <a href="#" class="btn btn-primary">Save changes</a>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
     </script>
 
     <script type="text/x-handlebars" data-template-name="index">
@@ -179,6 +185,7 @@
                 {{/each}}
             </ul>
         </div>
+    
     </script>
     <script type="text/template" datatemplate-name="userMenu">
         <ul class="nav pull-right">
@@ -197,94 +204,6 @@
         {{outlet}}
     </script>
     
-    <script type="text/x-handlebars" data-template-name="loginregister">
-        <div class="container login">
-        	<div class="row">
-            	<div class="col-12">
-                	<div class="col-6">
-                    	<div class="area">
-                            <form class="form-horizontal">
-                                <div class="heading">
-                                    <h4 class="form-heading">Sign In</h4>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="inputUsername">Username or Email</label>
-                                    <div class="controls">
-                                        <input type="text" id="inputUsername" placeholder="E.g. user1234">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="inputPassword">Password</label>
-                                    <div class="controls">
-                                        <input type="password" id="inputPassword" placeholder="Min. 8 Characters">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="controls">
-                                        <label class="checkbox">
-                                            <input type="checkbox"> Keep me signed in   ¦
-                                            <a href="#" class="btn btn-link">Forgot my password</a>
-                                        </label>
-                                        <button type="submit" class="btn btn-success">Sign In</button>
-                                        <button type="button" class="btn">Help</button>
-                                    </div>
-                                </div>	
-                                <div class="alert alert-error">
-                                    <button type="button" class="close" data-dismiss="alert">×</button>
-                                    <strong>Access Denied!</strong> Please provide valid authorization.
-                                </div>
-                            </form>	
-						</div>                           
-                    </div>
-                    <div class="col-6">
-                    	<div class="area">
-                            <form class="form-horizontal">
-                                <div class="heading">
-                                    <h4 class="form-heading">Sign Up</h4>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="inputEmail">Email</label>
-                                    <div class="controls">
-                                        <input type="text" id="inputEmail" placeholder="E.g. ashwinh@cybage.com">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="inputUser">Username</label>
-                                    <div class="controls">
-                                        <input type="text" id="inputUser" placeholder="E.g. ashwinhegde">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <label class="control-label" for="inputPassword">Password</label>
-                                    <div class="controls">
-                                        <input type="password" id="inputPassword" placeholder="Min. 8 Characters">
-                                    </div>
-                                </div>
-                                <div class="control-group">
-                                    <div class="controls">
-                                        <label class="checkbox">
-                                            <input type="checkbox"> I agree all your <a href="#">Terms of Services</a>
-                                        </label>
-                                        <button type="submit" class="btn btn-success">Sign Up</button>
-                                        <button type="button" class="btn">Help</button>
-                                    </div>
-                                </div>	
-                                <div class="alert alert-info">
-                                    <button type="button" class="close" data-dismiss="alert">×</button>
-                                    <strong>Confirmation: </strong> A confirmation email has been sent to your email.<br>
-                                    Thank you for your registration.
-                                </div>
-                            </form>	
-                            <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
-						</div>                            
-                    </div>
-                </div>
-            	
-            </div>
-        </div>
-        
-    </script>
-
     <script type="text/x-handlebars" data-template-name="project/index">
         <div class="main-container row">
             <div class="col-2">

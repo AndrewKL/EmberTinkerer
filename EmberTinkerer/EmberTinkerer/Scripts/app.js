@@ -11,7 +11,17 @@ App.Router.map(function() {
 	this.resource('about');
 	this.resource('loginregister');
 });
-
+App.ApplicationRoute = Ember.Route.extend({
+    renderTemplate: function () {
+        // Render default outlet   
+        this.render();
+        // render extra outlets
+        this.render("user", {
+            outlet: "user",
+            into: "application" // important when using at root level
+        });
+    },
+});
 App.ProjectRoute = Ember.Route.extend({
 	model: function(params) {
 	    if (params.project_id == undefined || params.project_id=='new') {
@@ -31,6 +41,7 @@ App.ProjectRoute = Ember.Route.extend({
 	}
 });
 App.IndexRoute = Ember.Route.extend({
+    
     model: function (params) {
         return $.getJSON(Tinkerer.getAll).then(function (response) {
             var projects = [];
@@ -45,6 +56,7 @@ App.IndexRoute = Ember.Route.extend({
         });
     }
 });
+
 App.IndexController = Ember.ObjectController.extend({
     searchText: "",
     
