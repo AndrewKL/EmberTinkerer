@@ -79,7 +79,7 @@
                                             <div class="control-group">
                                                 <div class="controls">
                                                     <label class="checkbox"><input type="checkbox">Keep me signed in</label>
-                                                    <button type="submit" class="btn btn-success">Sign In</button>
+                                                    <button type="submit" class="btn btn-success" {{action "signIn"}}>Sign In</button>
                                                 </div>
                                             </div>
                                             {{#if loginFailed}}
@@ -87,9 +87,6 @@
                                                 <button type="button" class="close" data-dismiss="alert">×</button>
                                                 <strong>Access Denied!</strong> Please provide valid authorization.
                                             </div>
-                                            {{/if}}
-                                            {{#if test}}
-                                            TESTESETSETSETSETSEtset
                                             {{/if}}
                                         </form>
                                     </div>
@@ -119,13 +116,19 @@
                                                 </div>
                                             </div>
                                             <div class="control-group">
-                                                <div class="controls"><button type="submit" class="btn btn-success">Sign Up</button></div>
+                                                <div class="controls"><button type="submit" {{action "register"}} class="btn btn-success">Sign Up</button></div>
                                             </div>
                                             {{#if registrationSucceeded}}
                                             <div class="alert alert-info">
                                                 <button type="button" class="close" data-dismiss="alert">×</button>
                                                 <strong>Confirmation: </strong>A confirmation email has been sent to your email.<br>
                                                 Thank you for your registration.
+                                            </div>
+                                            {{/if}}
+                                            {{#if registrationFailed}}
+                                            <div class="alert alert-error">
+                                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                                <strong>Access Denied!</strong> Please provide valid authorization.
                                             </div>
                                             {{/if}}
                                         </form>

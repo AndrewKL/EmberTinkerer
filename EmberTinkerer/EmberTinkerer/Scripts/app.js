@@ -1,5 +1,6 @@
 App = Ember.Application.create({
-	LOG_TRANSITIONS: true,
+    LOG_TRANSITIONS: true,
+    LOG_TRANSITIONS_INTERNAL: true
 });
 
 var console = window.console || {
@@ -19,10 +20,13 @@ App.Router.map(function() {
 
 App.ApplicationRoute = Ember.Route.extend({
     renderTemplate: function () {
+        this._super();
+        var controller = this.controllerFor('user');
         this.render();
         this.render("user", {
             outlet: "user",
-            into: "application"
+            into: "application",
+            controller: controller
         });
     },
 });
@@ -123,10 +127,20 @@ App.ProjectIndexController = Ember.ObjectController.extend({
     }
 });
 
+
+
 App.UserController = Ember.ObjectController.extend({
-    setupController: function (controller, song) {
-        console.log("settingup usercontroller");
-        controller.set('model', App.User.create());
+    loginFailed: false,
+    registrationSucceeded: false,
+    registrationFailed: false,
+    registrationFailedMessage: "",
+    signIn: function () {
+        console.log("signin action");
+        console.log(this.get('model'));
+    },
+    register: function () {
+        console.log("register action");
+        this.set('registrationSucceeded', true);
     }
 });
 
