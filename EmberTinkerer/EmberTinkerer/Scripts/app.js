@@ -22,6 +22,7 @@ App.ApplicationRoute = Ember.Route.extend({
     renderTemplate: function () {
         this._super();
         var controller = this.controllerFor('user');
+        controller.set('content', controller.get('content') || App.User.create({}));
         this.render();
         this.render("user", {
             outlet: "user",
@@ -136,11 +137,24 @@ App.UserController = Ember.ObjectController.extend({
     registrationFailedMessage: "",
     signIn: function () {
         console.log("signin action");
+        console.log(this);
         console.log(this.get('model'));
     },
     register: function () {
-        console.log("register action");
-        this.set('registrationSucceeded', true);
+        var controller = this;
+        this.get('model').register().then(function (response) {
+            console.log("login recieved");
+            console.log(response);
+            if (response.RegistrationFailed === false) {
+                controller.set('registrationSucceeded', true);
+                controller.set('registrationFailed', false);
+            } else {
+                controller.set('registrationFailed', true);
+                controller.set('registrationSucceeded', false);
+                controller.set('registrationFailedMessage', response.ErrorMessage);
+            }
+            
+        });
     }
 });
 

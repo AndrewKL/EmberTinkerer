@@ -13,7 +13,20 @@ App.User = Ember.Object.extend({
             console.log("login recieved");
             console.log(response);
         });
-    }
+    },
+    register: function () {
+        console.log("register user");
+        console.log(this);
+        return $.ajax({
+            type: "POST",
+            url: Tinkerer.registerURL,
+            data: {
+                Username: this.registerUsername,
+                Password: this.registerPassword,
+                Email: this.registerEmail
+            },
+        });
+    },
 });
 
 App.Project = Ember.Object.extend({

@@ -27,7 +27,9 @@
         
         Tinkerer.loginURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "User", action = "Login"})';
         Tinkerer.logoutURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "User", action = "Logout"})';
-        Tinkerer.RegisterURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "User", action = "Register"})';
+        Tinkerer.registerURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "User", action = "Register"})';
+
+        Tinkerer.username = '';
     </script>
 </head>
 <body>
@@ -70,11 +72,15 @@
                                             </div>
                                             <div class="control-group">
                                                 <label class="control-label" for="inputUsername">Username or Email</label>
-                                                <div class="controls"><input type="text" id="inputUsername" placeholder="E.g. user1234"></div>
+                                                <div class="controls">
+                                                    {{view Ember.TextField valueBinding='usernameOrEmail' id="inputUsername" placeholder="E.g. user1234"}}
+                                                </div>
                                             </div>
                                             <div class="control-group">
                                                 <label class="control-label" for="inputPassword">Password</label>
-                                                <div class="controls"><input type="password" id="inputPassword" placeholder="Min. 8 Characters"></div>
+                                                <div class="controls">
+                                                    {{view Ember.TextField valueBinding='loginPassword' type="password" placeholder="Min. 8 Characters"}}
+                                                </div>
                                             </div>
                                             <div class="control-group">
                                                 <div class="controls">
@@ -100,19 +106,20 @@
                                             <div class="control-group">
                                                 <label class="control-label" for="inputEmail">Email</label>
                                                 <div class="controls">
-                                                    <input type="text" id="inputEmail" placeholder="E.g. user@somewhere.com">
+                                                    {{view Ember.TextField valueBinding='registerEmail' type="text" placeholder="E.g. user@somewhere.com"}}
+
                                                 </div>
                                             </div>
                                             <div class="control-group">
                                                 <label class="control-label" for="inputUser">Username</label>
                                                 <div class="controls">
-                                                    <input type="text" id="inputUser" placeholder="E.g. username">
+                                                    {{view Ember.TextField valueBinding='registerUsername' type="text" placeholder="E.g. username"}}
                                                 </div>
                                             </div>
                                             <div class="control-group">
                                                 <label class="control-label" for="inputPassword">Password</label>
                                                 <div class="controls">
-                                                    <input type="password" id="inputPassword" placeholder="Min. 8 Characters">
+                                                    {{view Ember.TextField valueBinding='registerPassword' type="password" placeholder="Min. 8 Characters"}}
                                                 </div>
                                             </div>
                                             <div class="control-group">
@@ -121,8 +128,7 @@
                                             {{#if registrationSucceeded}}
                                             <div class="alert alert-info">
                                                 <button type="button" class="close" data-dismiss="alert">×</button>
-                                                <strong>Confirmation: </strong>A confirmation email has been sent to your email.<br>
-                                                Thank you for your registration.
+                                                <strong>Congratulatons: </strong>Your account is ready to use
                                             </div>
                                             {{/if}}
                                             {{#if registrationFailed}}
@@ -193,8 +199,8 @@
             <div class="col-2">
                 {{#linkTo 'run' classNames="btn btn-default"}}Run{{/linkTo}}<br />
                 {{#if editMode}}
-                    Name: {{view Ember.TextField valueBinding='name'}}{{name}}
-                    Description: {{view Ember.TextArea valueBinding='description'}}{{description}}
+                    Name: {{view Ember.TextField valueBinding='name'}}<br />
+                    Description: {{view Ember.TextArea valueBinding='description'}}
                     <button class="btn" {{action 'save' classNames="btn"}}>Save</button><br />
                 {{else}}
                     <b>{{name}}</b>: {{description}}<br/>
@@ -220,10 +226,7 @@
                 {{#linkTo 'project' classNames="btn btn-default"}}Edit{{/linkTo}}
             </div>
             <div class="col-10">
-                <iframe
-                    id="run-frame" 
-                    frameborder="0"
-                    src=""></iframe>
+                <iframe id="run-frame" frameborder="0" src=""></iframe>
             </div>
         </div>
     </script>
