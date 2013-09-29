@@ -8,16 +8,19 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Security;
 using EmberTinkerer.Core.Auth;
+using EmberTinkerer.Core.Documents;
 
 namespace EmberTinkerer.Controllers
 {
     public class AccountController : Controller
     {
         private IUserProvider _membershipProvider;
+        private User user;
 
-        public AccountController(IUserProvider membershipProvider)
+        public AccountController(IUserProvider membershipProvider, User user)
         {
             _membershipProvider = membershipProvider;
+            this.user = user;
         }
 
         public ActionResult Index()
@@ -27,6 +30,11 @@ namespace EmberTinkerer.Controllers
                     RegistrationFailed = false,
                     LoginFailed = false
                 });
+        }
+
+        public User GetCurrentUser()
+        {
+            return user;
         }
 
 

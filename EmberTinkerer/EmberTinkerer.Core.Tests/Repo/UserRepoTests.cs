@@ -121,6 +121,33 @@ namespace EmberTinkerer.Core.Tests.Repo
         }
 
         [Test]
+        public void AddAndGetUserByUsernameDifferingCase()
+        {
+            var user = new User
+            {
+                Username = "usera",
+                DateCreated = new DateTimeOffset(new DateTime(2001, 1, 1)),
+                Email = "user@gmail.com",
+                FailedPasswordAnswerAttempts = 12,
+                FailedPasswordAttempts = 10,
+                LastFailedPasswordAttempt = new DateTime(2001, 1, 1),
+                FullName = "asmithee",
+                IsLockedOut = false,
+                PasswordSalt = "asdf1234",
+                PasswordAnswer = "some answer",
+                PasswordHash = "asdfaqwer12341341234",
+                PasswordQuestion = "some question",
+                Id = "nonsense id",
+            };
+
+            _userRepo.AddUser(user);
+            WaitForIndexing(_store);
+            var reloadedUser = _userRepo.GetByUsername("UsErA");
+
+            Assert.True(comparer.Compare(user, reloadedUser));
+        }
+
+        [Test]
         public void AddUserTwiceThrowsException()
         {
             var usera = new User

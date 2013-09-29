@@ -10,6 +10,7 @@ using Autofac;
 using Autofac.Integration.WebApi;
 using EmberTinkerer.Controllers;
 using EmberTinkerer.Core.Auth;
+using EmberTinkerer.Core.Documents;
 using EmberTinkerer.Core.Repo;
 using Raven.Client;
 using Raven.Client.Document;
@@ -48,6 +49,17 @@ namespace EmberTinkerer.Code
             builder.RegisterType<ProjectRepo>().As<IProjectRepo>().SingleInstance();
             builder.RegisterType<UserRepo>().As<IUserRepo>().SingleInstance();
             builder.RegisterType<UserProvider>().As<IUserProvider>().SingleInstance();
+
+            //auth
+            builder.Register(c =>
+                {
+                    if (String.IsNullOrWhiteSpace(HttpContext.Current.User.Identity.Name)) return new User();
+                    else
+                    {
+                        var user = c.Resolve<IUserRepo>().GetByUsername(HttpContext.Current.User.Identity.Name);
+                        return user;
+                    }
+                }).InstancePerHttpRequest();
 
             return builder.Build();
         }

@@ -2,16 +2,20 @@
 using System.Web.Http;
 using System.Web.Security;
 using EmberTinkerer.Core.Auth;
+using EmberTinkerer.Core.Documents;
+using EmberTinkerer.Core.Repo;
 
 namespace EmberTinkerer.Controllers
 {
     public class UserController : ApiController
     {
         private IUserProvider _membershipProvider;
+        private IUserRepo _userRepo;
 
-        public UserController(IUserProvider membershipProvider)
+        public UserController(IUserProvider membershipProvider, IUserRepo userRepo)
         {
             _membershipProvider = membershipProvider;
+            _userRepo = userRepo;
         }
 
         [HttpPost]
@@ -63,6 +67,32 @@ namespace EmberTinkerer.Controllers
         public void LogOut()
         {
             FormsAuthentication.SignOut();
+        }
+
+        [HttpGet]
+        public User GetByUsername(string id)
+        {
+            var user = _userRepo.GetByUsername(id);
+            if(user == null)throw new HttpException(404, "No User With the Id: "+id);
+            return user;
+        }
+
+        [HttpGet]
+        public User GetById(string id)
+        {
+            return _userRepo.GetById(id);
+        }
+
+        [HttpGet]
+        public User GetByEmail(string id)
+        {
+            return _userRepo.GetByEmail(id);
+        }
+
+        [HttpPost]
+        public void Update(User user)
+        {
+            _userRepo.Update(user);
         }
     }
 
