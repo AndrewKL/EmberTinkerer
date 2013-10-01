@@ -44,6 +44,7 @@ namespace EmberTinkerer.Code
             //controllers
             builder.RegisterControllers(Assembly.GetExecutingAssembly());//.InjectActionInvoker();
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());//.InjectActionInvoker();
+            //builder.Register(c => new ProjectController(c.Resolve<IProjectRepo>(), HttpContext.Current.User.Identity.Name));
 
             //repos
             builder.RegisterType<ProjectRepo>().As<IProjectRepo>().SingleInstance();

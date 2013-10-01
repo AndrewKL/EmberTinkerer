@@ -19,17 +19,22 @@ namespace EmberTinkerer.Controllers
         }
 
         [HttpPost]
-        public void Login(UserModel user)
+        public LoginModel Login(UserModel user)
         {
             if (_membershipProvider.ValidateUser(user.Username, user.Password))
             {
                 FormsAuthentication.SetAuthCookie(user.Username, user.RememberMe);
-                return;
+                return new LoginModel(){ LoginSucceeded = true};
             }
             else
             {
-                throw new HttpException(401, "Bad username or password");
+                return new LoginModel() { LoginSucceeded = false, ErrorMessage = "Log in failed. Bad username or password."};
             }
+        }
+        public class LoginModel
+        {
+            public bool LoginSucceeded { get; set; }
+            public string ErrorMessage { get; set; }
         }
 
         [HttpPost]

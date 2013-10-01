@@ -156,6 +156,7 @@
     <Compile Include="Controllers\DebugController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -168,8 +169,8 @@
     <Content Include="Scripts\app-objects.js" />
     <Content Include="Scripts\app.js" />
     <Content Include="Scripts\include\bootstrap.js" />
-    <Content Include="Scripts\include\ember-1.0.0-rc.6.1.js" />
-    <Content Include="Scripts\include\handlebars-1.0.0-rc.4.js" />
+    <Content Include="Scripts\include\ember-1.0.0.js" />
+    <Content Include="Scripts\include\handlebars-1.0.0.js" />
     <Content Include="Scripts\include\jquery-1.10.2.js" />
     <Content Include="Scripts\include\jquery-1.9.1.js" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />

@@ -3,7 +3,7 @@ App = Ember.Application.create({
     LOG_TRANSITIONS_INTERNAL: true
 });
 
-var console = window.console || {
+console = window.console || {
     log: function() {
     }
 };
@@ -19,21 +19,9 @@ App.Router.map(function() {
 });
 
 App.ApplicationRoute = Ember.Route.extend({
-    renderTemplate: function () {
-        this._super();
-        var controller = this.controllerFor('user');
-        controller.set('content', controller.get('content') || App.User.create({}));
-        this.render();
-        this.render("user", {
-            outlet: "user",
-            into: "application",
-            controller: controller
-        });
-    },
-});
-App.UserRoute = Ember.Route.extend({
-    model: function(params) {
-        return App.User.create();
+    setupController: function (controller, song) {
+        console.log("settingup user");
+        controller.set('user', App.User.create({}));
     }
 });
 
@@ -135,26 +123,46 @@ App.UserController = Ember.ObjectController.extend({
     registrationSucceeded: false,
     registrationFailed: false,
     registrationFailedMessage: "",
-    signIn: function () {
-        console.log("signin action");
-        console.log(this);
-        console.log(this.get('model'));
-    },
-    register: function () {
-        var controller = this;
-        this.get('model').register().then(function (response) {
-            console.log("login recieved");
-            console.log(response);
-            if (response.RegistrationFailed === false) {
-                controller.set('registrationSucceeded', true);
-                controller.set('registrationFailed', false);
-            } else {
-                controller.set('registrationFailed', true);
-                controller.set('registrationSucceeded', false);
-                controller.set('registrationFailedMessage', response.ErrorMessage);
-            }
-            
-        });
+    actions: {
+        signIn: function () {
+            var controller = this;
+            this.get('model').login().then(function (response) {
+                console.log("login recieved");
+                console.log(response);
+                if (response.LoginSucceeded === true) {
+                    controller.set('loginFailed', false);
+                    controller.set('loginSucceeded', false);
+                } else {
+                    controller.set('loginFailed', true);
+                    controller.set('loginSucceeded', false);
+                }
+
+            });
+        },
+        signOut: function () {
+            var controller = this;
+            this.get('model').logout().then(function (response) {
+                console.log("logout recieved");
+                controller.set('model', App.User.create({}));
+                console.log(response);
+            });
+        },
+        register: function () {
+            var controller = this;
+            this.get('model').register().then(function (response) {
+                console.log("registration recieved");
+                console.log(response);
+                if (response.RegistrationFailed === false) {
+                    controller.set('registrationSucceeded', true);
+                    controller.set('registrationFailed', false);
+                } else {
+                    controller.set('registrationFailed', true);
+                    controller.set('registrationSucceeded', false);
+                    controller.set('registrationFailedMessage', response.ErrorMessage);
+                }
+
+            });
+        }
     }
 });
 
