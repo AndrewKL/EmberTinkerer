@@ -14,6 +14,7 @@ using EmberTinkerer.Core.Documents;
 using EmberTinkerer.Core.Repo;
 using Raven.Client;
 using Raven.Client.Document;
+using Raven.Client.UniqueConstraints;
 
 namespace EmberTinkerer.Code
 {
@@ -29,11 +30,14 @@ namespace EmberTinkerer.Code
             //MembershipProvider.UserRepo = new UserRepo(store);
 
             builder.Register(x =>
-            {
-                var store = new DocumentStore()
                 {
-                    ConnectionStringName = "RavenDB"
-                }.Initialize();
+                    var store = new DocumentStore()
+                        {
+                            ConnectionStringName = "RavenDB"
+                        };
+                
+                    store.RegisterListener(new UniqueConstraintsStoreListener());
+                    store.Initialize();
                 return store;
             })
            .As<IDocumentStore>()
