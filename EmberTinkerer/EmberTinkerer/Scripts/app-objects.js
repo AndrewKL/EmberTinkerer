@@ -3,7 +3,7 @@
 */
 
 App.User = Ember.Object.extend({
-    isLoggedin: false,
+    isLoggedIn: false,
     loginFailed: false,
     loginSucceeded: false,
     registrationFailed: false,
@@ -12,11 +12,10 @@ App.User = Ember.Object.extend({
     login: function () {
         return $.ajax({
             type: "POST",
-            url: Tinkerer.loginUrl,
+            url: Tinkerer.loginURL,
             data: {
-                Username: this.registerUsername,
-                Password: this.registerPassword,
-                Email: this.registerEmail
+                Username: this.loginUsername,
+                Password: this.loginPassword
             },
         }); 
     },

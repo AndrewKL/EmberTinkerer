@@ -130,6 +130,7 @@ App.UserController = Ember.ObjectController.extend({
                 console.log("login recieved");
                 console.log(response);
                 if (response.LoginSucceeded === true) {
+                    controller.set('isLoggedIn', true);
                     controller.set('loginFailed', false);
                     controller.set('loginSucceeded', false);
                 } else {
@@ -142,6 +143,7 @@ App.UserController = Ember.ObjectController.extend({
         signOut: function () {
             var controller = this;
             this.get('model').logout().then(function (response) {
+                controller.set('isLoggedIn', false);
                 console.log("logout recieved");
                 controller.set('model', App.User.create({}));
                 console.log(response);
@@ -153,6 +155,7 @@ App.UserController = Ember.ObjectController.extend({
                 console.log("registration recieved");
                 console.log(response);
                 if (response.RegistrationFailed === false) {
+                    controller.set('isLoggedIn', true);
                     controller.set('registrationSucceeded', true);
                     controller.set('registrationFailed', false);
                 } else {
