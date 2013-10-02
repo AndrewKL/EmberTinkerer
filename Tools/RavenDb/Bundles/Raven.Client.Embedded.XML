@@ -162,7 +162,7 @@
              Create a new instance
             </summary>
         </member>
-        <member name="M:Raven.Client.Embedded.EmbeddedDatabaseCommands.StartsWith(System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+        <member name="M:Raven.Client.Embedded.EmbeddedDatabaseCommands.StartsWith(System.String,System.String,System.Int32,System.Int32,System.Boolean,System.String)">
             <summary>
             Gets documents for the specified key prefix
             </summary>
@@ -351,7 +351,7 @@
             of the number of items that might be returned.
             </summary>
         </member>
-        <member name="M:Raven.Client.Embedded.EmbeddedDatabaseCommands.StreamDocs(Raven.Abstractions.Data.Etag,System.String,System.String,System.Int32,System.Int32)">
+        <member name="M:Raven.Client.Embedded.EmbeddedDatabaseCommands.StreamDocs(Raven.Abstractions.Data.Etag,System.String,System.String,System.Int32,System.Int32,System.String)">
             <summary>
             Streams the documents by etag OR starts with the prefix and match the matches
             Will return *all* results, regardless of the number of itmes that might be returned.
