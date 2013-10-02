@@ -50,12 +50,13 @@
             {{render "user" user}}
         </div>
         {{outlet}}
+
     </script>
     
     <script type="text/x-handlebars" data-template-name="user">
         <!-- userDropdown  -->
         <div class="nav-collapse collapse bs-navbar-collapse pull-right">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-right pull-right">
                 {{#if isLoggedIn}}
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">User: username<b class="caret"></b></a>
@@ -66,27 +67,28 @@
                 </li>
                 {{else}}
                 <li class="dropdown">
-                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Signin and Register<strong class="caret"></strong></a>
+				    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
 					<div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-                        
-                        {{view Ember.TextField valueBinding='loginUsername' placeholder="Username"}}
-                        {{view Ember.TextField valueBinding='loginPassword' type="password" placeholder="Password"}}
-						<input class="btn btn-primary btn-block" {{action "signIn"}} value="Sign In">
-                        {{#if loginFailed}}
-                        <div class="alert alert-error"><strong>Access Denied!</strong> Please provide valid authorization.</div>
-                        {{/if}}
-
-						<label style="text-align:center;margin-top:5px">or register</label>
-                        {{view Ember.TextField valueBinding='registerUsername' type="text" placeholder="Username"}}
-                        {{view Ember.TextField valueBinding='registerEmail' type="text" placeholder="Email"}}
-                        {{view Ember.TextField valueBinding='registerPassword' type="password" placeholder="Password"}}
-						<input class="btn btn-primary btn-block" {{action "register"}}  value="Register">
-                        {{#if registrationSucceeded}}
-                        <div class="alert alert-info"><strong>Congratulatons: </strong>Your account is ready to use</div>
-                        {{/if}}
-                        {{#if registrationFailed}}
-                        <div class="alert alert-error"><strong>Access Denied!</strong> Please provide valid authorization.</div>
-                        {{/if}}
+						<form>
+                            {{view Ember.TextField valueBinding='loginUsername' placeholder="Username"}}
+                            {{view Ember.TextField valueBinding='loginPassword' type="password" placeholder="Password"}}
+					        <input class="btn btn-primary btn-block" {{action "signIn"}} value="Sign In">
+                            {{#if loginFailed}}
+                            <div class="alert alert-error"><strong>Access Denied!</strong> Please provide valid authorization.</div>
+                            {{/if}}
+                            
+						    <label style="text-align:center;margin-top:5px">or register</label>
+                            {{view Ember.TextField valueBinding='registerUsername' type="text" placeholder="Username"}}
+                            {{view Ember.TextField valueBinding='registerEmail' type="text" placeholder="Email"}}
+                            {{view Ember.TextField valueBinding='registerPassword' type="password" placeholder="Password"}}
+						    <input class="btn btn-primary btn-block" {{action "register"}}  value="Register">
+                            {{#if registrationSucceeded}}
+                            <div class="alert alert-info"><strong>Congratulatons: </strong>Your account is ready to use</div>
+                            {{/if}}
+                            {{#if registrationFailed}}
+                            <div class="alert alert-error"><strong>Access Denied!</strong> Please provide valid authorization.</div>
+                            {{/if}}
+						</form>
 					</div>
 				</li>
                 {{/if}}
