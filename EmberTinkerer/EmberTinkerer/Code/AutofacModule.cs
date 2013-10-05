@@ -66,6 +66,8 @@ namespace EmberTinkerer.Code
                     }
                 }).InstancePerHttpRequest();
 
+            builder.RegisterType<UserInjectorModelBinder>();
+
             return builder.Build();
         }
 

@@ -1,4 +1,5 @@
-﻿using EmberTinkerer.Core.Documents;
+﻿using System;
+using EmberTinkerer.Core.Documents;
 using Raven.Abstractions.Exceptions;
 using Raven.Client;
 using Raven.Client.UniqueConstraints;
@@ -34,8 +35,13 @@ namespace EmberTinkerer.Core.Repo
                 {
                     session.SaveChanges();
                 }
-                catch (OperationVetoedException)
+                catch (Exception e)
                 {
+                    /* Oren Ini has bad opinions.  the ravendb client should throw a OperationVetoedException
+                     * and not an InvalidOperationException when an insert is vetoed by the unique
+                     * constraints bundle.(and for some strange reason embeded ravenDB does the right thing) */ 
+                    if (e.GetType() == typeof(OperationVetoedException)
+                        || e.GetType() == typeof(InvalidOperationException))
                     return false;
                 }
                 return true;
