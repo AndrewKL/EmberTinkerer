@@ -20,8 +20,8 @@
         Tinkerer = window.Tinkerer || {};
 
         Tinkerer.getURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "Get"})';
-        Tinkerer.getAll = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Search", action = "GetAll"})';
-        Tinkerer.searchURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Search", action = "Projects"})';
+        Tinkerer.getAll = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "GetAll"})';
+        Tinkerer.searchURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "Search"})';
         Tinkerer.updateURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "Update"})';
         Tinkerer.addURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "Project", action = "Add"})';
         
@@ -29,7 +29,7 @@
         Tinkerer.logoutURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "User", action = "Logout"})';
         Tinkerer.registerURL = '@Url.RouteUrl("DefaultApi", new {httproute = "", controller = "User", action = "Register"})';
 
-        Tinkerer.username = '';
+        Tinkerer.username = '@HttpContext.Current.User.Identity.Name';
     </script>
 </head>
 <body>
@@ -43,7 +43,6 @@
             {{#linkTo 'index' classNames="navbar-brand"}}Ember Tinkerer{{/linkTo}}
             <div class="nav-collapse collapse bs-navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active">{{#linkTo 'index'}}Ember Tinkerer{{/linkTo}}</li>
                     <li>{{#linkTo 'about'}}About{{/linkTo}}</li>
                 </ul>
             </div>
@@ -59,9 +58,9 @@
             <ul class="nav navbar-nav navbar-right pull-right">
                 {{#if isLoggedIn}}
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">User: username<b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">User: {{username}}<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Profile</a></li>
+                        <li>{{#linkTo 'userProfile'}}Profile{{/linkTo}}</li>
                         <li><a {{action "signOut"}}>Log out</a></li>
                     </ul>
                 </li>
@@ -74,7 +73,7 @@
                             {{view Ember.TextField valueBinding='loginPassword' type="password" placeholder="Password"}}
 					        <input class="btn btn-primary btn-block" {{action "signIn"}} value="Sign In">
                             {{#if loginFailed}}
-                            <div class="alert alert-error"><strong>Access Denied!</strong> Please provide valid authorization.</div>
+                                <div class="alert alert-error"><strong>Access Denied!</strong> Please provide valid authorization.</div>
                             {{/if}}
                             
 						    <label style="text-align:center;margin-top:5px">or register</label>
@@ -83,10 +82,10 @@
                             {{view Ember.TextField valueBinding='registerPassword' type="password" placeholder="Password"}}
 						    <input class="btn btn-primary btn-block" {{action "register"}}  value="Register">
                             {{#if registrationSucceeded}}
-                            <div class="alert alert-info"><strong>Congratulatons: </strong>Your account is ready to use</div>
+                                <div class="alert alert-info"><strong>Congratulatons: </strong>Your account is ready to use</div>
                             {{/if}}
                             {{#if registrationFailed}}
-                            <div class="alert alert-error"><strong>Access Denied!</strong> Please provide valid authorization.</div>
+                                <div class="alert alert-error"><strong>Access Denied!</strong> Please provide valid authorization.</div>
                             {{/if}}
 						</form>
 					</div>
@@ -94,6 +93,7 @@
                 {{/if}}
             </ul>
         </div>
+    
     
     </script>
 
@@ -156,6 +156,12 @@
         </div>
 
     </script>
+    
+    <script type="text/x-handlebars" data-template-name="userProfile">
+        <h1>check 1 2 3 4 5 </h1>
+    
+    </script>
+
 
     <script type="text/x-handlebars" data-template-name="run">
         <div class="main-container row">
@@ -166,6 +172,7 @@
                 <iframe id="run-frame" frameborder="0" src=""></iframe>
             </div>
         </div>
+    
     </script>
 
     <script type="text/x-handlebars" data-template-name="about">

@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Http.Controllers;
 using System.Web.Http.ModelBinding;
-using System.Web.Http.ValueProviders;
 using EmberTinkerer.Core.Documents;
 using EmberTinkerer.Core.Repo;
 
@@ -23,7 +20,8 @@ namespace EmberTinkerer.Code
         {
             if (actionContext == null) throw new ArgumentNullException("actionContext");
             if (bindingContext == null) throw new ArgumentNullException("bindingContext");
-            if (bindingContext.ModelType != typeof(User)) return false;
+
+            if (bindingContext.ModelType != typeof(User))return false;
 
             if (String.IsNullOrWhiteSpace(HttpContext.Current.User.Identity.Name))
             {

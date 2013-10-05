@@ -157,12 +157,10 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Code\AutofacModule.cs" />
     <Compile Include="Code\UserInjectorModelBinder.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DebugApiController.cs" />
     <Compile Include="Controllers\DebugController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
-    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -210,7 +208,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-2.0.3.min.map" />
     <Content Include="Scripts\underscore.min.map" />
-    <Content Include="Views\Account\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

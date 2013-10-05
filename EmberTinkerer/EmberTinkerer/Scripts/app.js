@@ -16,17 +16,25 @@ App.Router.map(function() {
 	this.route('new');
 	this.resource('about');
 	this.resource('loginregister');
+	this.resource('userProfile');
 });
 
 App.ApplicationRoute = Ember.Route.extend({
     setupController: function (controller, song) {
         console.log("settingup user");
-        controller.set('user', App.User.create({}));
+        if (Tinkerer.username && Tinkerer.username.length >0) {
+            controller.set('user', App.User.create({
+                username: Tinkerer.username,
+                isLoggedIn: true
+            }));
+        } else {
+            controller.set('user', App.User.create({}));
+        }
     }
 });
 
 App.IndexRoute = Ember.Route.extend({
-    model: function (params) {
+    model: function (params) {//todo replace this with search
         return $.getJSON(Tinkerer.getAll).then(function (response) {
             var projects = [];
 
@@ -126,10 +134,12 @@ App.UserController = Ember.ObjectController.extend({
     actions: {
         signIn: function () {
             var controller = this;
-            this.get('model').login().then(function (response) {
+            var model = this.get('model');
+            model.login().then(function (response) {
                 console.log("login recieved");
                 console.log(response);
                 if (response.LoginSucceeded === true) {
+                    controller.set('username', model.get('loginUsername'));
                     controller.set('isLoggedIn', true);
                     controller.set('loginFailed', false);
                     controller.set('loginSucceeded', false);
@@ -154,7 +164,9 @@ App.UserController = Ember.ObjectController.extend({
             this.get('model').register().then(function (response) {
                 console.log("registration recieved");
                 console.log(response);
+                var model = this.get('model');
                 if (response.RegistrationFailed === false) {
+                    controller.set('username', model.get('this.registerUsername'));
                     controller.set('isLoggedIn', true);
                     controller.set('registrationSucceeded', true);
                     controller.set('registrationFailed', false);

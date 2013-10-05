@@ -8,7 +8,7 @@ App.User = Ember.Object.extend({
     loginSucceeded: false,
     registrationFailed: false,
     registrationSucceeded: false,
-    test: "asdfasdfasdf",
+    
     login: function () {
         return $.ajax({
             type: "POST",
