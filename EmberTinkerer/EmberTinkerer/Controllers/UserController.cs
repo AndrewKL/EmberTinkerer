@@ -1,6 +1,8 @@
 ﻿using System.Web;
 using System.Web.Http;
+using System.Web.Http.ModelBinding;
 using System.Web.Security;
+using EmberTinkerer.Code;
 using EmberTinkerer.Core.Auth;
 using EmberTinkerer.Core.Documents;
 using EmberTinkerer.Core.Repo;
@@ -10,12 +12,10 @@ namespace EmberTinkerer.Controllers
     public class UserController : ApiController
     {
         private IUserProvider _membershipProvider;
-        private IUserRepo _userRepo;
 
-        public UserController(IUserProvider membershipProvider, IUserRepo userRepo)
+        public UserController(IUserProvider membershipProvider)
         {
             _membershipProvider = membershipProvider;
-            _userRepo = userRepo;
         }
 
         [HttpPost]
@@ -62,6 +62,13 @@ namespace EmberTinkerer.Controllers
                     return new RegistrationModel { RegistrationFailed = true, ErrorMessage = "Error" };
             }
         }
+        public class UserModel
+        {
+            public string Username { get; set; }
+            public string Email { get; set; }
+            public string Password { get; set; }
+            public bool RememberMe { get; set; }
+        }
         public class RegistrationModel
         {
             public bool RegistrationFailed { get; set; }
@@ -73,42 +80,21 @@ namespace EmberTinkerer.Controllers
         {
             FormsAuthentication.SignOut();
         }
-
+        
         [HttpGet]
-        public User GetByUsername(string id)
+        public UserInformationModel GetCurrentUserInformation([ModelBinder(typeof(UserInjectorModelBinder))] User user)
         {
-            var user = _userRepo.GetByUsername(id);
-            if(user == null)throw new HttpException(404, "No User With the Id: "+id);
-            return user;
+            if (user == null || string.IsNullOrWhiteSpace(user.Username))throw new HttpException("user not logged in or doesn't exist");
+            return new UserInformationModel()
+                {
+                    Username = user.Username,
+                    Email = user.Email
+                };
         }
-
-        [HttpGet]
-        public User GetById(string id)
+        public class UserInformationModel
         {
-            return _userRepo.GetById(id);
+            public string Username { get; set; }
+            public string Email { get; set; }
         }
-
-        [HttpGet]
-        public User GetByEmail(string id)
-        {
-            return _userRepo.GetByEmail(id);
-        }
-
-        [HttpPost]
-        public void Update(User user)
-        {
-            _userRepo.Update(user);
-        }
-    }
-
-    public class UserModel
-    {
-        public string Username { get; set; }
-        public string Email { get; set; }
-        public string Password { get; set; }
-        public bool RememberMe { get; set; }
-        public bool LoginFailed { get; set; }
-        public bool RegistrationFailed { get; set; }
-        public string ErrorMessage { get; set; }
     }
 }

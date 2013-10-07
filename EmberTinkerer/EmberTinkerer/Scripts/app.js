@@ -181,6 +181,18 @@ App.UserController = Ember.ObjectController.extend({
     }
 });
 
+App.UserProfileRoute = Ember.Route.extend({
+    model: function (params) {
+        return $.getJSON(Tinkerer.getCurrentUserInfo).then(function (response) {
+            console.log(response);
+            return {
+                email: response.Email,
+                username: response.Username
+            };
+        });
+    }
+});
+
 App.RunView = Ember.View.extend({
     didInsertElement: function () {//after iframe is inserted
         var model = this.get('controller').get('model');
