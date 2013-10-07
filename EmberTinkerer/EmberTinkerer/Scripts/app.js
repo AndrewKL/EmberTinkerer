@@ -136,8 +136,6 @@ App.UserController = Ember.ObjectController.extend({
             var controller = this;
             var model = this.get('model');
             model.login().then(function (response) {
-                console.log("login recieved");
-                console.log(response);
                 if (response.LoginSucceeded === true) {
                     controller.set('username', model.get('loginUsername'));
                     controller.set('isLoggedIn', true);
@@ -154,16 +152,12 @@ App.UserController = Ember.ObjectController.extend({
             var controller = this;
             this.get('model').logout().then(function (response) {
                 controller.set('isLoggedIn', false);
-                console.log("logout recieved");
                 controller.set('model', App.User.create({}));
-                console.log(response);
             });
         },
         register: function () {
             var controller = this;
             this.get('model').register().then(function (response) {
-                console.log("registration recieved");
-                console.log(response);
                 var model = this.get('model');
                 if (response.RegistrationFailed === false) {
                     controller.set('username', model.get('this.registerUsername'));
@@ -184,7 +178,6 @@ App.UserController = Ember.ObjectController.extend({
 App.UserProfileRoute = Ember.Route.extend({
     model: function (params) {
         return $.getJSON(Tinkerer.getCurrentUserInfo).then(function (response) {
-            console.log(response);
             return {
                 email: response.Email,
                 username: response.Username

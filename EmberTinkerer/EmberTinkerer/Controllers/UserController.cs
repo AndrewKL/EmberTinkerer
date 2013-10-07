@@ -11,37 +11,54 @@ namespace EmberTinkerer.Controllers
 {
     public class UserController : ApiController
     {
-        private IUserProvider _membershipProvider;
+        private readonly IUserProvider _userProvider;
 
         public UserController(IUserProvider membershipProvider)
         {
-            _membershipProvider = membershipProvider;
+            _userProvider = membershipProvider;
         }
 
-        [HttpPost]
-        public LoginModel Login(UserModel user)
+        //=======================================================================
+
+        public class LoginModel
         {
-            if (_membershipProvider.ValidateUser(user.Username, user.Password))
+            public string Username { get; set; }
+            public string Password { get; set; }
+            public bool RememberMe { get; set; }
+        }
+        [HttpPost]
+        public LoginResponseModel Login(LoginModel user)
+        {
+            if (_userProvider.ValidateUser(user.Username, user.Password))
             {
                 FormsAuthentication.SetAuthCookie(user.Username, user.RememberMe);
-                return new LoginModel(){ LoginSucceeded = true};
+                return new LoginResponseModel(){ LoginSucceeded = true};
             }
             else
             {
-                return new LoginModel() { LoginSucceeded = false, ErrorMessage = "Log in failed. Bad username or password."};
+                return new LoginResponseModel() { LoginSucceeded = false, ErrorMessage = "Log in failed. Bad username or password."};
             }
         }
-        public class LoginModel
+        public class LoginResponseModel
         {
             public bool LoginSucceeded { get; set; }
             public string ErrorMessage { get; set; }
         }
 
+        //=======================================================================
+
+        public class UserModel
+        {
+            public string Username { get; set; }
+            public string Email { get; set; }
+            public string Password { get; set; }
+            public bool RememberMe { get; set; }
+        }
         [HttpPost]
         public RegistrationModel Register(UserModel user)
         {
             MembershipCreateStatus createStatus;
-            _membershipProvider.CreateUser(user.Username, user.Password, user.Email, passwordQuestion: null, passwordAnswer: null, isApproved: true, status: out createStatus);
+            _userProvider.CreateUser(user.Username, user.Password, user.Email, passwordQuestion: null, passwordAnswer: null, isApproved: true, status: out createStatus);
 
             switch (createStatus)
             {
@@ -62,25 +79,22 @@ namespace EmberTinkerer.Controllers
                     return new RegistrationModel { RegistrationFailed = true, ErrorMessage = "Error" };
             }
         }
-        public class UserModel
-        {
-            public string Username { get; set; }
-            public string Email { get; set; }
-            public string Password { get; set; }
-            public bool RememberMe { get; set; }
-        }
         public class RegistrationModel
         {
             public bool RegistrationFailed { get; set; }
             public string ErrorMessage { get; set; }
         }
 
+        //=======================================================================
+
         [HttpPost]
         public void LogOut()
         {
             FormsAuthentication.SignOut();
         }
-        
+
+        //=======================================================================
+
         [HttpGet]
         public UserInformationModel GetCurrentUserInformation([ModelBinder(typeof(UserInjectorModelBinder))] User user)
         {
